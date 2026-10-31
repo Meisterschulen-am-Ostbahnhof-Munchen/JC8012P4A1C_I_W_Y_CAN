@@ -1426,6 +1426,42 @@
 						)
 					)
 				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
@@ -9206,6 +9242,46 @@
 	(no_connect
 		(at 33.02 82.55)
 		(uuid "f0982316-e942-43d7-acf0-3fa26f288280")
+	)
+	(wire
+		(pts
+			(xy 228.6 152.4) (xy 226.06 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6471b7ca-093d-4ece-b4ec-e4322cf01e27")
+	)
+	(label "GND"
+		(at 226.06 152.4 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "20fb14ad-255d-411a-a000-ad0d37504a7f")
+	)
+	(wire
+		(pts
+			(xy 243.84 152.4) (xy 246.38 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2775e003-aa93-4ee4-bc9c-934c738e294b")
+	)
+	(label "GND"
+		(at 246.38 152.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5f67a550-d855-4db3-8420-1a2017874789")
 	)
 	(sheet_instances
 		(path "/"

@@ -1483,7 +1483,7 @@
 	(footprint "JC8012P4A1C_CAN:J_Wurth_WR-PHD_610110249121"
 		(layer "F.Cu")
 		(uuid "29277a35-846f-49f1-8863-fa1990c08ab8")
-		(at 124 145.46 180)
+		(at 124 152 180)
 		(descr "2.54 mm SMT Pin Header Double Row Right Angled, body 12.7x16.16x6.48mm, https://www.we-online.com/en/components/products/datasheet/610110249121?ki")
 		(tags "SMT")
 		(property "Reference" "J1"
@@ -5122,7 +5122,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "1" "2" "3" "4")
+				(pins "MP1" "1" "2" "3" "4" "MP2")
 			)
 		)
 		(attr smd)
@@ -5454,6 +5454,9 @@
 			(at -4.425 0.1)
 			(size 2.1 3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "/GND")
+			(pinfunction "MP_MP1")
+			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "a2018668-6127-4632-9b9f-2b232c050b7b")
 		)
@@ -5461,6 +5464,9 @@
 			(at 4.425 0.1)
 			(size 2.1 3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "/GND")
+			(pinfunction "MP_MP2")
+			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "5556a446-04e7-481c-8341-4b16b5fb3c88")
 		)
