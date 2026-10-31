@@ -102,6 +102,18 @@ TBC_GND return for its terminator, fit R8 with a 0 Ω resistor (0603).
   the schematic symbol.
 - Buck converter Würth MagI³C 171030601: 5 V / 3 A for the transceiver and the display board
 
+## Test points
+
+SMD pads (1.5 mm), labelled with the net name on the silkscreen:
+
+| TP | Net | Position |
+|---|---|---|
+| TP1 | +5V | next to J3 |
+| TP2 | GND | next to J3 |
+| TP3 | CAN_H | between D1 and J1 |
+| TP4 | CAN_L | between D1 and J1 |
+| TP5 | VIN_PROT (12 V after fuse and reverse polarity protection) | below C9 |
+
 ## PCB
 
 66 × 54 mm, 1.6 mm, 6 layers:
