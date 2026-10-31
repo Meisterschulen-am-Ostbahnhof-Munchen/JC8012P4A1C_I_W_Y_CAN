@@ -277,7 +277,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "61201022921"
+	(symbol "610110249121"
 		(pin_names
 			(hide yes)
 		)
@@ -296,7 +296,7 @@
 				)
 			)
 		)
-		(property "Value" "61201022921"
+		(property "Value" "610110249121"
 			(at 0 -12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -307,7 +307,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JC8012P4A1C_CAN:J_Wurth_WR-BHD_61201022921"
+		(property "Footprint" "JC8012P4A1C_CAN:J_Wurth_WR-PHD_610110249121"
 			(at 0 15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -318,8 +318,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.we-online.com/en/components/products/datasheet/61201022921?ki"
-			(at 45.72 17.78 0)
+		(property "Datasheet" "https://www.we-online.com/en/components/products/datasheet/610110249121?ki"
+			(at 45.72 12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -329,7 +329,7 @@
 				)
 			)
 		)
-		(property "Description" "2.54 mm Male Angled Box Header with long lever"
+		(property "Description" "2.54 mm SMT Pin Header Double Row Right Angled"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -341,28 +341,6 @@
 			)
 		)
 		(property "Manufacturer" "Wurth Elektronik"
-			(at 45.72 15.24 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer URL" "https://www.we-online.com"
-			(at 45.72 12.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Series" "WR-BHD"
 			(at 45.72 10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -373,7 +351,7 @@
 				)
 			)
 		)
-		(property "Pins (pcs)" "10"
+		(property "Manufacturer URL" "https://www.we-online.com"
 			(at 45.72 7.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -384,7 +362,7 @@
 				)
 			)
 		)
-		(property "Pitch (mm)" "2.54"
+		(property "Series" "WR-PHD"
 			(at 45.72 5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -395,7 +373,7 @@
 				)
 			)
 		)
-		(property "Version" "With locking lever"
+		(property "Pitch" "2.54 mm"
 			(at 45.72 2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -406,7 +384,7 @@
 				)
 			)
 		)
-		(property "Gender" "Male"
+		(property "Mounting Technology" "SMT"
 			(at 45.72 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -417,7 +395,7 @@
 				)
 			)
 		)
-		(property "Type" "Straight"
+		(property "Pins (pcs)" "10"
 			(at 45.72 -2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -428,7 +406,7 @@
 				)
 			)
 		)
-		(property "Mounting Technology" "THT"
+		(property "Rows" "Dual"
 			(at 45.72 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -439,7 +417,7 @@
 				)
 			)
 		)
-		(property "L (mm)" "32.2"
+		(property "Gender" "Pin Header"
 			(at 45.72 -7.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -450,7 +428,7 @@
 				)
 			)
 		)
-		(property "IR (A)" "3"
+		(property "Type" "Angled"
 			(at 45.72 -10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -461,7 +439,7 @@
 				)
 			)
 		)
-		(property "Working Voltage (V (AC))" "250"
+		(property "IR (A)" "3"
 			(at 45.72 -12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -472,29 +450,7 @@
 				)
 			)
 		)
-		(property "Contact Resistance (mohm)" "20"
-			(at 45.72 -15.24 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tol. R" "max."
-			(at 45.72 -17.78 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_keywords" "THT"
+		(property "ki_keywords" "SMT"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -505,7 +461,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "*WR-BHD*"
+		(property "ki_fp_filters" "*WR-PHD*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -516,229 +472,10 @@
 				)
 			)
 		)
-		(symbol "61201022921_1_1"
-			(polyline
-				(pts
-					(xy -5.08 1.778) (xy -5.08 2.54)
-				)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center -5.08 1.27)
-				(radius 0.508)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(circle
-				(center -5.08 -1.27)
-				(radius 0.508)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(polyline
-				(pts
-					(xy -5.08 -1.778) (xy -5.08 -2.54)
-				)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -2.54 1.778) (xy -2.54 2.54)
-				)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center -2.54 1.27)
-				(radius 0.508)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(circle
-				(center -2.54 -1.27)
-				(radius 0.508)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(polyline
-				(pts
-					(xy -2.54 -1.778) (xy -2.54 -2.54)
-				)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 1.778) (xy 0 2.54)
-				)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center 0 1.27)
-				(radius 0.508)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(circle
-				(center 0 -1.27)
-				(radius 0.508)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -1.778) (xy 0 -2.54)
-				)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 2.54 1.778) (xy 2.54 2.54)
-				)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center 2.54 1.27)
-				(radius 0.508)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(circle
-				(center 2.54 -1.27)
-				(radius 0.508)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(polyline
-				(pts
-					(xy 2.54 -1.778) (xy 2.54 -2.54)
-				)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 5.08 1.778) (xy 5.08 2.54)
-				)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center 5.08 1.27)
-				(radius 0.508)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(circle
-				(center 5.08 -1.27)
-				(radius 0.508)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(polyline
-				(pts
-					(xy 5.08 -1.778) (xy 5.08 -2.54)
-				)
+		(symbol "610110249121_1_1"
+			(rectangle
+				(start -6.35 2.54)
+				(end 6.35 -2.54)
 				(stroke
 					(width 0.254)
 					(type solid)
@@ -748,18 +485,117 @@
 				)
 			)
 			(rectangle
-				(start 7.62 -2.54)
-				(end -7.62 2.54)
+				(start -4.445 2.4765)
+				(end -5.715 0.5715)
 				(stroke
 					(width 0.254)
 					(type solid)
 				)
 				(fill
-					(type none)
+					(type outline)
+				)
+			)
+			(rectangle
+				(start -4.445 -0.635)
+				(end -5.715 -2.54)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start -1.905 2.4765)
+				(end -3.175 0.5715)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start -1.905 -0.635)
+				(end -3.175 -2.54)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start 0.635 2.4765)
+				(end -0.635 0.5715)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start 0.635 -0.635)
+				(end -0.635 -2.54)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start 3.175 2.4765)
+				(end 1.905 0.5715)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start 3.175 -0.635)
+				(end 1.905 -2.54)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start 5.715 2.4765)
+				(end 4.445 0.5715)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start 5.715 -0.635)
+				(end 4.445 -2.54)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type outline)
 				)
 			)
 			(pin passive line
-				(at 5.08 6.35 270)
+				(at 5.08 -6.35 90)
 				(length 3.81)
 				(name "1"
 					(effects
@@ -777,7 +613,7 @@
 				)
 			)
 			(pin passive line
-				(at 5.08 -6.35 90)
+				(at 5.08 6.35 270)
 				(length 3.81)
 				(name "2"
 					(effects
@@ -795,7 +631,7 @@
 				)
 			)
 			(pin passive line
-				(at 2.54 6.35 270)
+				(at 2.54 -6.35 90)
 				(length 3.81)
 				(name "3"
 					(effects
@@ -813,7 +649,7 @@
 				)
 			)
 			(pin passive line
-				(at 2.54 -6.35 90)
+				(at 2.54 6.35 270)
 				(length 3.81)
 				(name "4"
 					(effects
@@ -831,7 +667,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 6.35 270)
+				(at 0 -6.35 90)
 				(length 3.81)
 				(name "5"
 					(effects
@@ -849,7 +685,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -6.35 90)
+				(at 0 6.35 270)
 				(length 3.81)
 				(name "6"
 					(effects
@@ -867,7 +703,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 6.35 270)
+				(at -2.54 -6.35 90)
 				(length 3.81)
 				(name "7"
 					(effects
@@ -885,7 +721,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 -6.35 90)
+				(at -2.54 6.35 270)
 				(length 3.81)
 				(name "8"
 					(effects
@@ -903,7 +739,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 6.35 270)
+				(at -5.08 -6.35 90)
 				(length 3.81)
 				(name "9"
 					(effects
@@ -921,7 +757,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -6.35 90)
+				(at -5.08 6.35 270)
 				(length 3.81)
 				(name "10"
 					(effects

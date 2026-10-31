@@ -1059,670 +1059,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JC8012P4A1C_CAN:61201022921"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "61201022921"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "JC8012P4A1C_CAN:J_Wurth_WR-BHD_61201022921"
-				(at 0 15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.we-online.com/en/components/products/datasheet/61201022921?ki"
-				(at 45.72 17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "2.54 mm Male Angled Box Header with long lever"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "Wurth Elektronik"
-				(at 45.72 15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer URL" "https://www.we-online.com"
-				(at 45.72 12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Series" "WR-BHD"
-				(at 45.72 10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Pins (pcs)" "10"
-				(at 45.72 7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Pitch (mm)" "2.54"
-				(at 45.72 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Version" "With locking lever"
-				(at 45.72 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Gender" "Male"
-				(at 45.72 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Type" "Straight"
-				(at 45.72 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Mounting Technology" "THT"
-				(at 45.72 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "L (mm)" "32.2"
-				(at 45.72 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "IR (A)" "3"
-				(at 45.72 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Working Voltage (V (AC))" "250"
-				(at 45.72 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Contact Resistance (mohm)" "20"
-				(at 45.72 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Tol. R" "max."
-				(at 45.72 -17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "THT"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "*WR-BHD*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "61201022921_1_1"
-				(polyline
-					(pts
-						(xy -5.08 1.778) (xy -5.08 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -5.08 1.27)
-					(radius 0.508)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center -5.08 -1.27)
-					(radius 0.508)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 -1.778) (xy -5.08 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 1.778) (xy -2.54 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -2.54 1.27)
-					(radius 0.508)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center -2.54 -1.27)
-					(radius 0.508)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -1.778) (xy -2.54 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.778) (xy 0 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 1.27)
-					(radius 0.508)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 0 -1.27)
-					(radius 0.508)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.778) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.778) (xy 2.54 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.27)
-					(radius 0.508)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.27)
-					(radius 0.508)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -1.778) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 1.778) (xy 5.08 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.08 1.27)
-					(radius 0.508)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 5.08 -1.27)
-					(radius 0.508)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -1.778) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 7.62 -2.54)
-					(end -7.62 2.54)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 5.08 6.35 270)
-					(length 3.81)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -6.35 90)
-					(length 3.81)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 6.35 270)
-					(length 3.81)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -6.35 90)
-					(length 3.81)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 6.35 270)
-					(length 3.81)
-					(name "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -6.35 90)
-					(length 3.81)
-					(name "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 6.35 270)
-					(length 3.81)
-					(name "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -6.35 90)
-					(length 3.81)
-					(name "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 6.35 270)
-					(length 3.81)
-					(name "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -6.35 90)
-					(length 3.81)
-					(name "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "JC8012P4A1C_CAN:653104131822"
 			(pin_names
 				(hide yes)
@@ -4598,6 +3934,506 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "JC8012P4A1C_CAN:610110249121"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "610110249121"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "JC8012P4A1C_CAN:J_Wurth_WR-PHD_610110249121"
+				(at 0 15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.we-online.com/en/components/products/datasheet/610110249121?ki"
+				(at 45.72 12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "2.54 mm SMT Pin Header Double Row Right Angled"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Wurth Elektronik"
+				(at 45.72 10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer URL" "https://www.we-online.com"
+				(at 45.72 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Series" "WR-PHD"
+				(at 45.72 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pitch" "2.54 mm"
+				(at 45.72 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Mounting Technology" "SMT"
+				(at 45.72 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pins (pcs)" "10"
+				(at 45.72 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Rows" "Dual"
+				(at 45.72 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Gender" "Pin Header"
+				(at 45.72 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Type" "Angled"
+				(at 45.72 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "IR (A)" "3"
+				(at 45.72 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "SMT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*WR-PHD*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "610110249121_1_1"
+				(rectangle
+					(start -6.35 2.54)
+					(end 6.35 -2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -4.445 2.4765)
+					(end -5.715 0.5715)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -4.445 -0.635)
+					(end -5.715 -2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.905 2.4765)
+					(end -3.175 0.5715)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.905 -0.635)
+					(end -3.175 -2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.635 2.4765)
+					(end -0.635 0.5715)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.635 -0.635)
+					(end -0.635 -2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 3.175 2.4765)
+					(end 1.905 0.5715)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 3.175 -0.635)
+					(end 1.905 -2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 5.715 2.4765)
+					(end 4.445 0.5715)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 5.715 -0.635)
+					(end 4.445 -2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at 5.08 -6.35 90)
+					(length 3.81)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 6.35 270)
+					(length 3.81)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -6.35 90)
+					(length 3.81)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 6.35 270)
+					(length 3.81)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -6.35 90)
+					(length 3.81)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 6.35 270)
+					(length 3.81)
+					(name "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -6.35 90)
+					(length 3.81)
+					(name "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 6.35 270)
+					(length 3.81)
+					(name "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -6.35 90)
+					(length 3.81)
+					(name "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 6.35 270)
+					(length 3.81)
+					(name "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(no_connect
 		(at 139.7 162.56)
@@ -4606,10 +4442,6 @@
 	(no_connect
 		(at 242.57 87.63)
 		(uuid "20c3c9e9-9f86-4af4-a891-077cb663e721")
-	)
-	(no_connect
-		(at 33.02 82.55)
-		(uuid "3785c9e9-4c5a-4d5d-8d30-a7962ba2b719")
 	)
 	(no_connect
 		(at 229.87 87.63)
@@ -4638,10 +4470,6 @@
 	(no_connect
 		(at 224.79 87.63)
 		(uuid "c641287a-828d-4461-a4ec-53ef3067e2f1")
-	)
-	(no_connect
-		(at 33.02 69.85)
-		(uuid "de899fe5-885b-48db-bd72-5e243f8c9baa")
 	)
 	(no_connect
 		(at 232.41 87.63)
@@ -4969,26 +4797,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 82.55) (xy 35.56 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58b6d2f2-941a-43b7-abfb-06bc5c8edd60")
-	)
-	(wire
-		(pts
-			(xy 40.64 82.55) (xy 40.64 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f2856ed-8e10-4f7d-bf23-9a1ee2ac6ae5")
-	)
-	(wire
-		(pts
 			(xy 152.4 168.91) (xy 152.4 171.45)
 		)
 		(stroke
@@ -5066,16 +4874,6 @@
 			(type default)
 		)
 		(uuid "77478bec-cef3-416c-a2f2-8292e52c5507")
-	)
-	(wire
-		(pts
-			(xy 43.18 69.85) (xy 43.18 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77af8480-a404-494a-b123-db7f5453fa0a")
 	)
 	(wire
 		(pts
@@ -5279,16 +5077,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 69.85) (xy 40.64 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "afaf9de0-220c-46e2-81dd-56577ca438ad")
-	)
-	(wire
-		(pts
 			(xy 124.46 92.71) (xy 124.46 90.17)
 		)
 		(stroke
@@ -5359,16 +5147,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 69.85) (xy 35.56 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9ea57aa-b421-4ac4-ac97-e73e5c1e1088")
-	)
-	(wire
-		(pts
 			(xy 60.96 182.88) (xy 60.96 185.42)
 		)
 		(stroke
@@ -5376,16 +5154,6 @@
 			(type default)
 		)
 		(uuid "e012db83-aff2-46a6-bfd3-6e27cf96ecad")
-	)
-	(wire
-		(pts
-			(xy 43.18 82.55) (xy 43.18 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e63c5e74-2854-4d07-a244-51c42f04104d")
 	)
 	(wire
 		(pts
@@ -5487,16 +5255,6 @@
 		)
 		(uuid "0fdac1ac-add9-4d88-923b-52fffb3872f4")
 	)
-	(label "ECU_PWR_IN"
-		(at 35.56 85.09 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1917867e-40ed-43e5-bfcd-d2b0ceb7f618")
-	)
 	(label "+5V"
 		(at 129.54 39.37 90)
 		(effects
@@ -5597,16 +5355,6 @@
 		)
 		(uuid "2c9d3b64-5021-491e-941e-3cab028ba18f")
 	)
-	(label "CAN_L"
-		(at 43.18 67.31 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2cb78f1d-61bd-4d09-92e3-edeecf5c87b5")
-	)
 	(label "GND"
 		(at 200.66 153.67 270)
 		(effects
@@ -5646,16 +5394,6 @@
 			(justify left bottom)
 		)
 		(uuid "2ee96d51-2d02-4423-8201-a003da2d6df4")
-	)
-	(label "GND"
-		(at 43.18 85.09 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2f1deb67-a159-4292-ae0c-56ccabcc7b79")
 	)
 	(label "ECU_PWR"
 		(at 30.48 161.29 270)
@@ -5807,16 +5545,6 @@
 		)
 		(uuid "5f2082f4-9a1d-421d-ab2f-2fb2bb3a7832")
 	)
-	(label "CAN_H"
-		(at 40.64 85.09 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6029f0a1-0e33-459c-bed1-b989e777d20e")
-	)
 	(label "CAN_SPLIT"
 		(at 101.6 74.93 270)
 		(effects
@@ -5906,16 +5634,6 @@
 			(justify right bottom)
 		)
 		(uuid "800b5c85-0809-4963-9bfa-74aa76198cc1")
-	)
-	(label "CAN_L"
-		(at 40.64 67.31 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8449baab-3046-475a-9a6f-6bf91995c3e4")
 	)
 	(label "VIN_PROT"
 		(at 124.46 140.97 90)
@@ -6036,16 +5754,6 @@
 			(justify left bottom)
 		)
 		(uuid "baf1a60e-bee9-4e23-9f42-dc0fd42eaa77")
-	)
-	(label "CAN_H"
-		(at 35.56 67.31 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c044e4a9-3af0-4528-b85a-67567cde07f6")
 	)
 	(label "CAN_L"
 		(at 167.64 81.28 0)
@@ -7239,110 +6947,6 @@
 			(project "JC8012P4A1C_I_W_Y_CAN"
 				(path "/3d717ebe-2c48-4d74-a932-f01128cae071"
 					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "JC8012P4A1C_CAN:61201022921")
-		(at 38.1 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "91347619-a77f-44e1-88a8-4c1a1c64a8a4")
-		(property "Reference" "J1"
-			(at 38.1 88.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "61201022921"
-			(at 38.1 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "JC8012P4A1C_CAN:J_Wurth_WR-BHD_61201022921"
-			(at 38.1 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.we-online.com/en/components/products/datasheet/61201022921?ki"
-			(at 83.82 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "2.54 mm Male Angled Box Header with long lever"
-			(at 38.1 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3e3744fc-d0c8-425c-933d-f7f4c671520a")
-		)
-		(pin "10"
-			(uuid "1290e4d3-0814-4c6f-a761-b04d5d233a3e")
-		)
-		(pin "2"
-			(uuid "cec87426-5033-4de8-861b-b2db44ff29e2")
-		)
-		(pin "3"
-			(uuid "c8ef9510-319a-4881-ae0a-c141695cab1a")
-		)
-		(pin "4"
-			(uuid "a52546c8-6f83-4a8d-a55a-5ba90f571d23")
-		)
-		(pin "5"
-			(uuid "98d2d0e2-3232-44f1-9d15-661c85c56cb5")
-		)
-		(pin "6"
-			(uuid "fb0e4f3c-f8ad-4ae7-b694-68d5b68c9977")
-		)
-		(pin "7"
-			(uuid "2a8e7315-40bf-4578-b858-175550f44776")
-		)
-		(pin "8"
-			(uuid "970a418c-8f64-42fb-a626-b5c00be7cb9b")
-		)
-		(pin "9"
-			(uuid "f2714cb4-ce86-4487-87c3-15944970a83e")
-		)
-		(instances
-			(project "JC8012P4A1C_I_W_Y_CAN"
-				(path "/3d717ebe-2c48-4d74-a932-f01128cae071"
-					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -8878,46 +8482,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 82.55) (xy 38.1 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7fcd1b66-8958-4e65-b02f-bd94dfcfe5bb")
-	)
-	(label "TBC_PWR_OUT"
-		(at 38.1 85.09 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3f28da85-98f7-44a0-a051-148929dbccfc")
-	)
-	(wire
-		(pts
-			(xy 38.1 69.85000000000001) (xy 38.1 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4656f8f-8660-4da9-97ed-17b96bcee3e0")
-	)
-	(label "TBC_GND"
-		(at 38.1 67.31 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "79f134aa-cfcc-42b2-91cb-7896988a9d14")
-	)
-	(wire
-		(pts
 			(xy 30.48 120.64999999999999) (xy 30.48 118.11)
 		)
 		(stroke
@@ -9369,6 +8933,279 @@
 			(justify right bottom)
 		)
 		(uuid "2e81d149-425c-42bd-b530-3f2423d09bd9")
+	)
+	(symbol
+		(lib_id "JC8012P4A1C_CAN:610110249121")
+		(at 38.1 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fe9e9b96-da7f-4c4d-b3fc-a25e59c5c553")
+		(property "Reference" "J1"
+			(at 38.1 88.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "610110249121"
+			(at 38.1 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JC8012P4A1C_CAN:J_Wurth_WR-PHD_610110249121"
+			(at 38.1 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.we-online.com/en/components/products/datasheet/610110249121?ki"
+			(at 83.82 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2.54 mm SMT Pin Header Double Row Right Angled"
+			(at 38.1 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8b62617c-e176-47ca-a6d4-d562a36cee2c")
+		)
+		(pin "10"
+			(uuid "c02c6295-d47b-419a-abea-f7bca495bbfe")
+		)
+		(pin "2"
+			(uuid "a307eb6e-f5a5-4ca3-a6e9-2fb453f799d3")
+		)
+		(pin "3"
+			(uuid "1e8cce62-d3da-4fc3-830f-e740c0b776ee")
+		)
+		(pin "4"
+			(uuid "ff9c26b5-088d-4339-bb2b-096443cf6657")
+		)
+		(pin "5"
+			(uuid "b22091de-3fef-4b8f-ba46-cc4fe35c060c")
+		)
+		(pin "6"
+			(uuid "26645179-aa5d-4653-a50c-83842f57b148")
+		)
+		(pin "7"
+			(uuid "ed6511f5-2893-44fc-ad4a-eb8c2919b86e")
+		)
+		(pin "8"
+			(uuid "06cf6830-39bf-4d53-ab97-65260e9f3a86")
+		)
+		(pin "9"
+			(uuid "75b8a8df-3186-4895-9947-0632913dfeb5")
+		)
+		(instances
+			(project "JC8012P4A1C_I_W_Y_CAN"
+				(path "/3d717ebe-2c48-4d74-a932-f01128cae071"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+		(mirror x)
+	)
+	(wire
+		(pts
+			(xy 43.18 69.85000000000001) (xy 43.18 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c769cb09-8ba9-41c5-9ae7-67dff64d843a")
+	)
+	(label "CAN_L"
+		(at 43.18 67.31 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "14259c08-b3c0-41d8-9924-27f46437e7b1")
+	)
+	(wire
+		(pts
+			(xy 43.18 82.55) (xy 43.18 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43bdc308-704e-4308-87e2-bdc89f9bbd11")
+	)
+	(label "GND"
+		(at 43.18 85.09 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ae72c67c-e523-4477-a0dc-73dd86140569")
+	)
+	(wire
+		(pts
+			(xy 40.64 69.85000000000001) (xy 40.64 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37f39453-7619-45e5-b42d-20648978681d")
+	)
+	(label "CAN_L"
+		(at 40.64 67.31 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2d4032ee-3b20-4ea9-b2c2-029f4a3e6569")
+	)
+	(wire
+		(pts
+			(xy 40.64 82.55) (xy 40.64 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8941f64-6e67-476c-b934-725cec595959")
+	)
+	(label "CAN_H"
+		(at 40.64 85.09 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3fbc3dd0-7144-4969-8adb-ef546d6e5a55")
+	)
+	(wire
+		(pts
+			(xy 38.1 69.85000000000001) (xy 38.1 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5edf45d-1310-4f46-857d-31a2235ebf10")
+	)
+	(label "TBC_GND"
+		(at 38.1 67.31 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "090b1360-f60a-4a26-84df-e67bebf5141e")
+	)
+	(wire
+		(pts
+			(xy 38.1 82.55) (xy 38.1 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bbc6667-9a5a-47a0-ba05-ade2a2086888")
+	)
+	(label "TBC_PWR_OUT"
+		(at 38.1 85.09 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4d1f48ee-cc94-4f40-9915-ddaf5b4b412f")
+	)
+	(wire
+		(pts
+			(xy 35.56 69.85000000000001) (xy 35.56 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ac504bd-d881-4086-9d81-017c93bdbd29")
+	)
+	(label "CAN_H"
+		(at 35.56 67.31 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "55596c9c-59dd-4fa1-801a-39e08e6c329b")
+	)
+	(wire
+		(pts
+			(xy 35.56 82.55) (xy 35.56 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80c76a30-cf1c-4724-8e54-742c49bafa4f")
+	)
+	(label "ECU_PWR_IN"
+		(at 35.56 85.09 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a8d3b9df-76bb-4f92-b7c2-3795b603d086")
+	)
+	(no_connect
+		(at 33.02 69.85000000000001)
+		(uuid "72121e19-4c02-48eb-a347-185d1e747008")
+	)
+	(no_connect
+		(at 33.02 82.55)
+		(uuid "f0982316-e942-43d7-acf0-3fa26f288280")
 	)
 	(sheet_instances
 		(path "/"

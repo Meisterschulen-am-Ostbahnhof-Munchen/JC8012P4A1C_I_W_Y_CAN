@@ -12,7 +12,7 @@ KiCad 10 project. Project-local libraries are in `lib/`.
 
 | Connector | Part | Purpose |
 |---|---|---|
-| J1 | Würth WR-BHD 61201022921 (2×5 box header) | ribbon cable to IDC D-Sub 9 female Würth 618009221923 |
+| J1 | Würth WR-PHD 610110249121 (2×5 pin header, SMT, right angled) | ribbon cable to IDC D-Sub 9 female Würth 618009221923 |
 | J2 | Würth WR-FPC 68711414522 (14 pin, 0.5 mm) | FFC to FPC3 "EXTEND1" of the display board |
 | J3 | Würth WR-WTB 653104131822 (4 pin, 1.25 mm) | 5 V to CN2 of the display board |
 
@@ -35,6 +35,23 @@ adapter cable 481595 (D-Sub 9 male to In-Cab CPC-9 female).
 | – | 10 | not used |
 
 CAN_L (1/2) and CAN_H (4/7) are connected on the board to loop the bus through.
+
+**Polarisation:** J1 has no shroud (an 8 mm high part is the maximum under
+the cover, a box header with IDC socket would be too high). To prevent the
+IDC socket from being plugged in turned by 180°, cut off pin 10 of J1 and
+close position 10 of the IDC socket with a coding plug. Pins 9 and 10 are
+not used. Plugged in turned, the bus TBC_PWR and ECU_PWR (12 V) would end up
+on the board GND and CAN_L.
+
+## Mechanics
+
+- All parts on the top side (SMT only), nothing on the bottom side
+- Stack height: cover 14 mm − display board 1.5 mm − M2 standoffs 3 mm −
+  addon board 1.5 mm ≈ 8 mm free above the addon board
+- Mounting holes M2 (2.2 mm, plated, GND) on the 58 × 46 mm grid of the
+  display board standoffs S1–S4 (H1 = S1, H2 = S4, H3 = S2, H4 = S3)
+- Notches for CN5 (pin header), the 100 µF capacitor next to S4 and the
+  CR1220 RTC holder of the display board
 
 ### FPC3 (J2)
 
