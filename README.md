@@ -150,4 +150,21 @@ kicad-cli pcb export drill -o production/gerber/ --format excellon --excellon-un
 Zip the content of `production/gerber` and upload it (e.g. JLCPCB:
 6 layers, 1.6 mm, via covering "Epoxy Filled & Capped").
 
+### Assembly
+
+The boards are assembled by hand (school workshop), not by the PCB
+manufacturer. Only the bare PCB and an SMD stencil are ordered:
+
+- Stencil for the **top side only** (all parts are on top), made from
+  `F.Paste` in the same Gerber zip. At JLCPCB: add "SMT-Stencil" to the
+  PCB order, top side.
+- R8 is not fitted (DNP), the test points TP1–TP5 are bare pads and are
+  not in the BOM.
+
+Bill of materials (grouped, with manufacturer and MPN):
+
+```
+kicad-cli sch export bom -o production/JC8012P4A1C_I_W_Y_CAN_bom.csv --fields "Reference,QUANTITY,Value,Manufacturer,MPN,Footprint,DNP" --labels "Reference,Qty,Value,Manufacturer,MPN,Footprint,DNP" --group-by "Value,Footprint,MPN,Manufacturer,DNP" JC8012P4A1C_I_W_Y_CAN.kicad_sch
+```
+
 The 3D images in `docs/` are made with `kicad-cli pcb render`.
