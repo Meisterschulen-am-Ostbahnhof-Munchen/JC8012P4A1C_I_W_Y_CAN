@@ -8,6 +8,10 @@ board net. It also supplies 5 V to the display board.
 
 KiCad 10 project. Project-local libraries are in `lib/`.
 
+![3D view](docs/board_3d_iso.png)
+
+Top view: [docs/board_3d_top.png](docs/board_3d_top.png)
+
 ## Connections
 
 | Connector | Part | Purpose |
@@ -39,7 +43,8 @@ CAN_L (1/2) and CAN_H (4/7) are connected on the board to loop the bus through.
 **Polarisation:** J1 has no shroud (an 8 mm high part is the maximum under
 the cover, a box header with IDC socket would be too high). To prevent the
 IDC socket from being plugged in turned by 180°, cut off pin 10 of J1 and
-close position 10 of the IDC socket with a coding plug. Pins 9 and 10 are
+close position 10 of the IDC socket with a coding plug. Pin 10 is marked
+"cut" on the silkscreen. Pins 9 and 10 are
 not used. Plugged in turned, the bus TBC_PWR and ECU_PWR (12 V) would end up
 on the board GND and CAN_L.
 
@@ -96,3 +101,41 @@ TBC_GND return for its terminator, fit R8 with a 0 Ω resistor (0603).
   DMP6050SSD (same SO-8 pinout S1 G1 S2 G2 D2 D2 D1 D1), which is used as
   the schematic symbol.
 - Buck converter Würth MagI³C 171030601: 5 V / 3 A for the transceiver and the display board
+
+## PCB
+
+66 × 54 mm, 1.6 mm, 6 layers:
+
+| Layer | Use |
+|---|---|
+| F.Cu | all parts and signals, GND pour, local pours for VIN_PROT, VIN_BUCK and +5V |
+| In1.Cu | GND plane |
+| In2.Cu | +5V plane |
+| In3.Cu | GND plane (also balances the copper of In2) |
+| In4.Cu | GND plane |
+| B.Cu | GND plane, one short signal (CAN_NEN) |
+
+- Vias 0.45 mm / 0.2 mm drill. Many vias are placed in SMD pads (GND and
+  +5V pads, 77 thermal vias under the exposed pad of U2), so the vias
+  **must be epoxy filled and capped** (via-in-pad). Without this, solder
+  is drawn into the holes during reflow.
+- GND stitching vias on a 4 mm grid connect all GND layers.
+- Pours connect solid to SMD pads, thermal reliefs only on the plated
+  mounting holes.
+- Net classes: Power 0.8 mm (12 V path and +5V), CAN 0.3 mm, Default 0.25 mm.
+
+## Manufacturing
+
+Gerber and drill files are generated into `production/` (not part of the
+repository). In KiCad: PCB editor → File → Fabrication Outputs → Gerbers
+and Drill Files. From the command line:
+
+```
+kicad-cli pcb export gerbers -o production/gerber -l F.Cu,In1.Cu,In2.Cu,In3.Cu,In4.Cu,B.Cu,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,F.Mask,B.Mask,Edge.Cuts --subtract-soldermask --no-x2 --no-netlist --check-zones JC8012P4A1C_I_W_Y_CAN.kicad_pcb
+kicad-cli pcb export drill -o production/gerber/ --format excellon --excellon-units mm --excellon-separate-th JC8012P4A1C_I_W_Y_CAN.kicad_pcb
+```
+
+Zip the content of `production/gerber` and upload it (e.g. JLCPCB:
+6 layers, 1.6 mm, via covering "Epoxy Filled & Capped").
+
+The 3D images in `docs/` are made with `kicad-cli pcb render`.

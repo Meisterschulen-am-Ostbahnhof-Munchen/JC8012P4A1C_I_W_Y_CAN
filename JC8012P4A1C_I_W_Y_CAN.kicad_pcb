@@ -9832,6 +9832,50 @@
 		(layer "Edge.Cuts")
 		(uuid "d22869b2-9992-44e1-8777-531592e80f94")
 	)
+	(gr_text "cut"
+		(at 116.3 144.58 0)
+		(layer "F.SilkS")
+		(uuid "bd8061df-3b9d-4b54-831e-bafa9297364e")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "JC8012P4A1C"
+		(at 148.5 134 0)
+		(layer "F.SilkS")
+		(uuid "691e58d1-b763-4f59-9dd1-e082b8e50e7f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "I_W_Y_CAN"
+		(at 148.5 135.8 0)
+		(layer "F.SilkS")
+		(uuid "7a0e2725-f8de-41b6-9f9b-afd1386e3d57")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "Rev A  2026-10"
+		(at 148.5 137.6 0)
+		(layer "F.SilkS")
+		(uuid "d21a133b-09ec-4be0-96f7-8b29bc94d354")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
 	(segment
 		(start 136.25 137.75)
 		(end 136.25 135)
