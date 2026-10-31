@@ -5778,7 +5778,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/catalog/datasheet/824551241.pdf"
 			(at 50.8 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -5800,6 +5800,12 @@
 				)
 			)
 		)
+    (property "MPN" "824551241" (at 50.8 116.84 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Wurth Elektronik" (at 50.8 116.84 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "4fb4b392-ea94-43ac-80f9-3c2cb9416f4f")
 		)
@@ -6691,6 +6697,12 @@
 				)
 			)
 		)
+    (property "MPN" "171030601" (at 149.86 114.3 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Wurth Elektronik" (at 149.86 114.3 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "b0378d7b-0a96-4501-b9dc-8ea941c8b022")
 		)
