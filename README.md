@@ -46,6 +46,15 @@ CAN_L (1/2) and CAN_H (4/7) are connected on the board to loop the bus through.
 | 9 | CAN_NEN (GPIO3, 10k pull-down: transceiver active by default) |
 | 13, 14 | +3V3 (VDDA, transceiver VIO) |
 
+FFC: 14 pin, 0.5 mm pitch, **type B (contacts on opposite sides)**.
+The cable leaves FPC3 towards the board edge, makes one 180° turn and enters
+J2 from the edge of the addon board. Both connectors are bottom-contact ZIF
+with the same orientation (opening towards the edge, pin 1 on the right
+side seen from the back of the display, next to the TF card), so pin 1
+connects to pin 1. A type A cable would have its contacts facing up at J2;
+turning it over to make it fit reverses the pin order and swaps GND (1/2)
+and 3V3 (13/14).
+
 ## Termination
 
 ISO 11783-2 ECU Type I WEAK: split termination 750 Ω + 750 Ω with 47 nF to GND.
