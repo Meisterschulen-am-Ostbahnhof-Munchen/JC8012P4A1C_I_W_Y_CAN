@@ -5393,17 +5393,6 @@
 		)
 		(uuid "1c50800e-3411-44ff-b762-9700e272bc3a")
 	)
-	(global_label "GND"
-		(shape passive)
-		(at 160.02 146.05 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1ef0b540-eefa-4945-9f0b-9bb42b37fa67")
-	)
 	(label "BUCK_RON"
 		(at 137.16 114.3 180)
 		(effects
@@ -5611,17 +5600,6 @@
 		)
 		(uuid "97e5e3f0-de96-4c2f-90ad-b7568a3c0075")
 	)
-	(global_label "GND"
-		(shape passive)
-		(at 180.34 113.03 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "aa028725-88ae-4160-9d8b-9b76f1ad3533")
-	)
 	(global_label "+5V"
 		(shape passive)
 		(at 162.56 111.76 0)
@@ -5684,17 +5662,6 @@
 			(justify right bottom)
 		)
 		(uuid "d2ec2d82-7ded-46ff-a6cd-e8cd4061339a")
-	)
-	(global_label "GND"
-		(shape passive)
-		(at 162.56 116.84 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d6a60172-6add-484b-a404-391eff2d41fc")
 	)
 	(label "BUCK_FB"
 		(at 180.34 100.33 90)
@@ -5800,12 +5767,24 @@
 				)
 			)
 		)
-    (property "MPN" "824551241" (at 50.8 116.84 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "Manufacturer" "Wurth Elektronik" (at 50.8 116.84 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "824551241"
+			(at 50.8 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 50.8 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4fb4b392-ea94-43ac-80f9-3c2cb9416f4f")
 		)
@@ -6769,12 +6748,24 @@
 				)
 			)
 		)
-    (property "MPN" "171030601" (at 149.86 114.3 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "Manufacturer" "Wurth Elektronik" (at 149.86 114.3 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "171030601"
+			(at 149.86 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 149.86 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b0378d7b-0a96-4501-b9dc-8ea941c8b022")
 		)
@@ -8591,17 +8582,6 @@
 		)
 		(uuid "eca8b418-3339-4a1f-9bde-7f45d969906d")
 	)
-	(global_label "GND"
-		(shape passive)
-		(at 149.86 90.17 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d25cefcd-c4f5-48e9-bd2a-50399fd92434")
-	)
 	(wire
 		(pts
 			(xy 139.7 116.84) (xy 137.16 116.84)
@@ -8623,4 +8603,152 @@
 		(uuid "1e9db3c1-ba3a-4707-9fab-0bd900180d38")
 	)
 	(embedded_fonts no)
+	(label "BUCK_AGND"
+		(at 162.56 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "701693f5-e08e-4812-8a06-6eeed123aac2")
+	)
+	(label "BUCK_AGND"
+		(at 160.02 146.05 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "36511326-6f7c-4958-b389-6306c6af083d")
+	)
+	(label "BUCK_AGND"
+		(at 180.34 113.03 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cc3fae3e-321d-4098-8529-753795f74632")
+	)
+	(label "BUCK_AGND"
+		(at 149.86 90.17 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1ba52da9-ceac-4ed4-84a4-53df0e395508")
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 172.72 127 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1e893b8c-0829-4a78-82fb-1f4bb72be2e1")
+		(property "Reference" "#FLG04"
+			(at 172.72 128.905 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 172.72 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 172.72 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f835c71c-8940-46f6-9b71-f6372365e769")
+		)
+		(instances
+			(project "JC8012P4A1C_I_W_Y_CAN"
+				(path "/3d717ebe-2c48-4d74-a932-f01128cae071/a2dcd761-dc69-4ab3-8065-aad2540c49d1"
+					(reference "#FLG04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 172.72 127.0) (xy 172.72 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7536645-60ec-49df-911a-1a21fbd7fe1b")
+	)
+	(label "BUCK_AGND"
+		(at 172.72 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7d8b84f8-0003-41d2-a1cb-41ba0499ecaf")
+	)
+	(text "BUCK_AGND: AGND is connected to PGND inside U2.\nRoute C6, R7, R10 ground only to U2 pin 4,\ndo NOT connect to the GND plane (datasheet p. 41)."
+		(exclude_from_sim no)
+		(at 165.1 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6ac5eca4-0749-4ac1-8715-d557c792cfb6")
+	)
 )
