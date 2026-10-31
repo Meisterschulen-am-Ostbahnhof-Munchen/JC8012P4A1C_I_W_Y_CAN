@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "JC8012P4A1C_CAN") (type "KiCad") (uri "${KIPRJMOD}/lib/JC8012P4A1C_CAN.kicad_sym") (options "") (descr "Projektlokale Symbole"))
+)
