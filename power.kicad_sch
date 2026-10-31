@@ -7901,7 +7901,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47u/50V"
+		(property "Value" "22u/50V"
 			(at 127.635 127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7912,7 +7912,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "JC8012P4A1C_CAN:CP_Wurth_WCAP-ASLI-D8L6.5"
+		(property "Footprint" "JC8012P4A1C_CAN:CP_Wurth_WCAP-ASLI-D6.3L5.5"
 			(at 127.965 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -7923,7 +7923,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.we-online.com/catalog/datasheet/865080649013.pdf"
+		(property "Datasheet" "https://www.we-online.com/catalog/datasheet/865080643008.pdf"
 			(at 127 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -7945,7 +7945,7 @@
 				)
 			)
 		)
-		(property "MPN" "865080649013"
+		(property "MPN" "865080643008"
 			(at 127 129.54 0)
 			(effects
 				(font
@@ -7973,6 +7973,105 @@
 			(project "JC8012P4A1C_I_W_Y_CAN"
 				(path "/3d717ebe-2c48-4d74-a932-f01128cae071/a2dcd761-dc69-4ab3-8065-aad2540c49d1"
 					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 127 160.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5dd5ddd4-d0d2-46fc-915d-0078834b5be6")
+		(property "Reference" "C13"
+			(at 127.635 162.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22u/50V"
+			(at 127.635 157.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "JC8012P4A1C_CAN:CP_Wurth_WCAP-ASLI-D6.3L5.5"
+			(at 127.965 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.we-online.com/catalog/datasheet/865080643008.pdf"
+			(at 127 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 127 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "865080643008"
+			(at 127 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 127 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e9ab614a-2091-4565-a6b6-254c32e9d1e3")
+		)
+		(pin "2"
+			(uuid "a497b686-68c7-41a4-a1dd-08ec55e9d78e")
+		)
+		(instances
+			(project "JC8012P4A1C_I_W_Y_CAN"
+				(path "/3d717ebe-2c48-4d74-a932-f01128cae071/a2dcd761-dc69-4ab3-8065-aad2540c49d1"
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -8960,4 +9059,45 @@
 		)
 		(uuid "f573a546-700c-4bbb-8479-3ec0be5de6f0")
 	)
-)
+
+	(wire
+		(pts
+			(xy 127 156.21) (xy 127 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75ab5b72-8c7c-485e-aea3-e2049a7ec39d")
+	)
+	(label "VIN_PROT"
+		(at 127 153.67 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2f90931d-5be9-4059-85c8-287b697318b1")
+	)
+	(wire
+		(pts
+			(xy 127 163.83) (xy 127 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "326683cf-35a6-4d4d-89ac-1d0d4e0b4248")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 127 166.37 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "151562db-f70d-4c22-a3ff-3e840c1425e2")
+	))
