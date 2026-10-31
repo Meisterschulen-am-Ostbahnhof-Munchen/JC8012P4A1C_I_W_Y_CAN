@@ -91,5 +91,8 @@ TBC_GND return for its terminator, fit R8 with a 0 Ω resistor (0603).
 
 - 12 V board net only (ECU_PWR), fuse F1 1 A slow
 - Bidirectional TVS Würth 824551241 (SMDJ24CA), clamping ≤ 38.9 V
-- Reverse polarity protection: dual P-MOSFET DMP6050SSD, both halves in parallel
+- Reverse polarity protection: dual P-MOSFET Vishay Si4948BEY (SO-8), both
+  halves in parallel, 15 V gate zener. Drop-in for the KiCad symbol
+  DMP6050SSD (same SO-8 pinout S1 G1 S2 G2 D2 D2 D1 D1), which is used as
+  the schematic symbol.
 - Buck converter Würth MagI³C 171030601: 5 V / 3 A for the transceiver and the display board

@@ -5842,7 +5842,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "100k 1%"
 			(at 99.06 137.16 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5872,6 +5872,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 99.06 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-07100KL"
+			(at 99.06 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
@@ -5921,7 +5939,7 @@
 				)
 			)
 		)
-		(property "Value" "5k62"
+		(property "Value" "5k62 1%"
 			(at 180.34 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5951,6 +5969,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 180.34 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-075K62L"
+			(at 180.34 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
@@ -6406,6 +6442,24 @@
 				)
 			)
 		)
+		(property "Manufacturer" "onsemi"
+			(at 99.06 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MMSZ5245BT1G"
+			(at 99.06 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" "Zener diode"
 			(at 99.06 106.68 0)
 			(hide yes)
@@ -6553,7 +6607,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DMP6050SSD"
+		(property "Value" "Si4948BEY"
 			(at 81.28 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6577,7 +6631,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMP6050SSD.pdf"
+		(property "Datasheet" "https://www.vishay.com/docs/72847/si4948be.pdf"
 			(at 81.28 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -6587,6 +6641,24 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 76.2 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SI4948BEY-T1-E3"
+			(at 76.2 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Description" "-11.3A Id, -60V Vds, P-Channel Power MOSFET, 55mOhm Ron, 11.9nC Qg (typ), SO-8"
@@ -6757,7 +6829,7 @@
 				)
 			)
 		)
-		(property "Value" "1k07"
+		(property "Value" "1k07 1%"
 			(at 180.34 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6787,6 +6859,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 180.34 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-071K07L"
+			(at 180.34 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
@@ -6836,7 +6926,7 @@
 				)
 			)
 		)
-		(property "Value" "1A slow"
+		(property "Value" "1A slow 125V"
 			(at 28.575 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6846,7 +6936,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
+		(property "Footprint" "Fuse:Fuse_Littelfuse-NANO2-451_453"
 			(at 28.702 109.22 90)
 			(hide yes)
 			(show_name no)
@@ -6866,6 +6956,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer" "Littelfuse"
+			(at 30.48 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0452001.MRL"
+			(at 30.48 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Description" "Fuse"
@@ -6915,7 +7023,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "100k 1%"
 			(at 124.46 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6945,6 +7053,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 124.46 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-07100KL"
+			(at 124.46 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
@@ -6995,7 +7121,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DMP6050SSD"
+		(property "Value" "Si4948BEY"
 			(at 81.28 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7019,7 +7145,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMP6050SSD.pdf"
+		(property "Datasheet" "https://www.vishay.com/docs/72847/si4948be.pdf"
 			(at 81.28 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -7029,6 +7155,24 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 76.2 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SI4948BEY-T1-E3"
+			(at 76.2 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Description" "-11.3A Id, -60V Vds, P-Channel Power MOSFET, 55mOhm Ron, 11.9nC Qg (typ), SO-8"
@@ -7096,7 +7240,7 @@
 				)
 			)
 		)
-		(property "Value" "SS16"
+		(property "Value" "B160"
 			(at 27.94 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7126,6 +7270,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 27.94 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "B160-13-F"
+			(at 27.94 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Description" "Schottky diode"
@@ -7206,6 +7368,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer" "Bourns"
+			(at 45.72 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF-MSMF014-2"
+			(at 45.72 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
@@ -8200,6 +8380,24 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 142.24 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-0757K6L"
+			(at 142.24 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" "Resistor"
 			(at 142.24 76.2 0)
 			(hide yes)
@@ -8277,6 +8475,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 149.86 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 149.86 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
