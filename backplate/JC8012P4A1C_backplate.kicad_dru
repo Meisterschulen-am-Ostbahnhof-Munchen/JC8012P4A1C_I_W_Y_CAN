@@ -1,0 +1,7 @@
+(version 1)
+
+# Wurth WA-SMSI M4 spacer H1-H4: recommended land pattern from the datasheet,
+# pad right up to the 5.4 mm non-plated hole.
+(rule "Spacer pad to own NPTH"
+	(condition "A.memberOfFootprint('H*') && B.memberOfFootprint('H*')")
+	(constraint hole_clearance (min 0mm)))
