@@ -34,3 +34,17 @@ Open points:
   (spacer edge at 45.9 mm from the centre).
 - Speaker: the display board has a speaker connector. Speaker and opening
   are still to be chosen.
+
+## Manufacturing
+
+Files in `production/`: Gerber and drill files in the zip
+`production/JC8012P4A1C_backplate_gerber.zip` (ready for upload), the BOM in
+`production/JC8012P4A1C_backplate_bom.csv` (4 × M4 spacers). JLCPCB: 2 layers,
+1.6 mm, FR4. Stencil for the top side (spacers). Make them again after changes (the commands write to `production/gerber/`,
+which is not in the repository; zip its content to the zip above):
+
+```
+kicad-cli pcb export gerbers -o production/gerber -l F.Cu,B.Cu,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,F.Mask,B.Mask,Edge.Cuts --subtract-soldermask --no-x2 --no-netlist JC8012P4A1C_backplate.kicad_pcb
+kicad-cli pcb export drill -o production/gerber/ --format excellon --excellon-units mm --excellon-separate-th JC8012P4A1C_backplate.kicad_pcb
+kicad-cli sch export bom -o production/JC8012P4A1C_backplate_bom.csv --fields "Reference,QUANTITY,Value,Manufacturer,MPN,Footprint,DNP" --labels "Reference,Qty,Value,Manufacturer,MPN,Footprint,DNP" --group-by "Value,Footprint,MPN,Manufacturer,DNP" JC8012P4A1C_backplate.kicad_sch
+```

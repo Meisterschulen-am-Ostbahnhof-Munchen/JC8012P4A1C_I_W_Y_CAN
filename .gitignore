@@ -33,6 +33,8 @@ fp-info-cache
 *.xml
 *.csv
 !assembly_bom.csv
+!production/*_bom.csv
+!backplate/production/*_bom.csv
 
 # Archived Backups (KiCad 6.0)
 **/*-backups/*.zip
@@ -44,5 +46,8 @@ fp-info-cache
 *.kicad_prl
 
 # generated fabrication outputs
-production/
 __pycache__/
+
+# Gerber/drill files are kept only as zip
+production/gerber/
+backplate/production/gerber/

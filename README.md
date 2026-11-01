@@ -145,16 +145,19 @@ SMD pads (1.5 mm), labelled with the net name on the silkscreen:
 
 ## Manufacturing
 
-Gerber and drill files are generated into `production/` (not part of the
-repository). In KiCad: PCB editor → File → Fabrication Outputs → Gerbers
-and Drill Files. From the command line:
+The current Gerber and drill files are in the zip
+`production/JC8012P4A1C_I_W_Y_CAN_gerber.zip` (ready for upload), the BOM
+in `production/JC8012P4A1C_I_W_Y_CAN_bom.csv`. Make them again after changes
+to the board: in KiCad PCB editor → File → Fabrication Outputs → Gerbers and
+Drill Files, or from the command line:
 
 ```
 kicad-cli pcb export gerbers -o production/gerber -l F.Cu,In1.Cu,In2.Cu,In3.Cu,In4.Cu,B.Cu,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,F.Mask,B.Mask,Edge.Cuts --subtract-soldermask --no-x2 --no-netlist --check-zones JC8012P4A1C_I_W_Y_CAN.kicad_pcb
 kicad-cli pcb export drill -o production/gerber/ --format excellon --excellon-units mm --excellon-separate-th JC8012P4A1C_I_W_Y_CAN.kicad_pcb
 ```
 
-Zip the content of `production/gerber` and upload it (e.g. JLCPCB:
+Zip the content of `production/gerber` (the folder itself is not in the
+repository) to `production/JC8012P4A1C_I_W_Y_CAN_gerber.zip` and upload it (e.g. JLCPCB:
 6 layers, 1.6 mm, via covering "Epoxy Filled & Capped").
 
 ### Assembly
@@ -172,6 +175,16 @@ Mechanical parts and cables for the final assembly (screws, FFC, CAN
 cable with IDC D-Sub, jackposts) are listed in
 [assembly_bom.csv](assembly_bom.csv). Open items there are marked TBD or
 have no MPN yet.
+
+The three bills of materials:
+
+| BOM | File |
+|---|---|
+| CAN board | [production/JC8012P4A1C_I_W_Y_CAN_bom.csv](production/JC8012P4A1C_I_W_Y_CAN_bom.csv) |
+| back plate | [backplate/production/JC8012P4A1C_backplate_bom.csv](backplate/production/JC8012P4A1C_backplate_bom.csv) |
+| final assembly | [assembly_bom.csv](assembly_bom.csv) |
+
+The frame (`mechanics/`) is 3D printed.
 
 Bill of materials for the PCB (grouped, with manufacturer and MPN):
 
