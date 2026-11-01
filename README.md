@@ -134,7 +134,7 @@ SMD pads (1.5 mm), labelled with the net name on the silkscreen:
 | In4.Cu | GND plane |
 | B.Cu | GND plane, one short signal (CAN_NEN) |
 
-- Vias 0.45 mm / 0.2 mm drill. Many vias are placed in SMD pads (GND and
+- Vias 0.5 mm / 0.3 mm drill (a 0.2 mm drill costs extra at JLCPCB). Many vias are placed in SMD pads (GND and
   +5V pads, 77 thermal vias under the exposed pad of U2), so the vias
   **must be epoxy filled and capped** (via-in-pad). Without this, solder
   is drawn into the holes during reflow.
