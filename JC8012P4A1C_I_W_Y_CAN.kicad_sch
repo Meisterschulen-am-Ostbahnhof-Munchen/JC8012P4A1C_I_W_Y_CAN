@@ -7504,7 +7504,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files no)
 		(dnp no)
@@ -7519,7 +7519,7 @@
 				)
 			)
 		)
-		(property "Value" "M2"
+		(property "Value" "Spacer M2 L2.5"
 			(at 213.36 133.985 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7529,7 +7529,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
+		(property "Footprint" "JC8012P4A1C_CAN:A_Wurth_WA-SMST_9774025943R"
 			(at 213.36 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -7551,7 +7551,7 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
+		(property "Description" "SMD steel spacer, through hole 2.25 mm, L 2.5 mm, for M2x6 screw"
 			(at 213.36 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -7560,6 +7560,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "9774025943R"
+			(at 213.36 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 213.36 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7574,13 +7592,14 @@
 			)
 		)
 	)
+
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 223.52 129.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files no)
 		(dnp no)
@@ -7595,7 +7614,7 @@
 				)
 			)
 		)
-		(property "Value" "M2"
+		(property "Value" "Spacer M2 L2.5"
 			(at 223.52 133.985 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7605,7 +7624,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
+		(property "Footprint" "JC8012P4A1C_CAN:A_Wurth_WA-SMST_9774025943R"
 			(at 223.52 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -7627,7 +7646,7 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
+		(property "Description" "SMD steel spacer, through hole 2.25 mm, L 2.5 mm, for M2x6 screw"
 			(at 223.52 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -7636,6 +7655,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "9774025943R"
+			(at 223.52 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 223.52 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7650,13 +7687,14 @@
 			)
 		)
 	)
+
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 233.68 129.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files no)
 		(dnp no)
@@ -7671,7 +7709,7 @@
 				)
 			)
 		)
-		(property "Value" "M2"
+		(property "Value" "Spacer M2 L2.5"
 			(at 233.68 133.985 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7681,7 +7719,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
+		(property "Footprint" "JC8012P4A1C_CAN:A_Wurth_WA-SMST_9774025943R"
 			(at 233.68 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -7703,7 +7741,7 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
+		(property "Description" "SMD steel spacer, through hole 2.25 mm, L 2.5 mm, for M2x6 screw"
 			(at 233.68 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -7712,6 +7750,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "9774025943R"
+			(at 233.68 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 233.68 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7726,13 +7782,14 @@
 			)
 		)
 	)
+
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 243.84 129.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files no)
 		(dnp no)
@@ -7747,7 +7804,7 @@
 				)
 			)
 		)
-		(property "Value" "M2"
+		(property "Value" "Spacer M2 L2.5"
 			(at 243.84 133.985 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7757,7 +7814,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
+		(property "Footprint" "JC8012P4A1C_CAN:A_Wurth_WA-SMST_9774025943R"
 			(at 243.84 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -7779,7 +7836,7 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
+		(property "Description" "SMD steel spacer, through hole 2.25 mm, L 2.5 mm, for M2x6 screw"
 			(at 243.84 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -7788,6 +7845,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "9774025943R"
+			(at 243.84 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 243.84 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"

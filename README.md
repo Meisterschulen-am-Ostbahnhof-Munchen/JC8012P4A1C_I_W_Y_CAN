@@ -53,8 +53,13 @@ on the board GND and CAN_L.
 - All parts on the top side (SMT only), nothing on the bottom side
 - Stack height: cover 14 mm − display board 1.5 mm − M2 standoffs 3 mm −
   addon board 1.5 mm ≈ 8 mm free above the addon board
-- Mounting holes M2 (2.2 mm, plated, GND) on the 58 × 46 mm grid of the
-  display board standoffs S1–S4 (H1 = S1, H2 = S4, H3 = S2, H4 = S3)
+- Fixing on the 58 × 46 mm grid of the display board standoffs S1–S4
+  (H1 = S1, H2 = S4, H3 = S2, H4 = S3): SMD steel spacers Würth WA-SMST
+  9774025943R (L 2.5 mm, through hole 2.25 mm) soldered on top over a
+  plated 3.0 mm hole with a GND ring on all layers
+- Screws **M2×6**, without washer: spacer 2.5 mm + PCB 1.6 mm leaves 1.9 mm
+  thread engagement in the 2.5 mm deep blind thread of S1–S4. M2×8 would
+  bottom out.
 - Notches for CN5 (pin header), the 100 µF capacitor next to S4 and the
   CR1220 RTC holder of the display board
 
@@ -132,8 +137,8 @@ SMD pads (1.5 mm), labelled with the net name on the silkscreen:
   **must be epoxy filled and capped** (via-in-pad). Without this, solder
   is drawn into the holes during reflow.
 - GND stitching vias on a 4 mm grid connect all GND layers.
-- Pours connect solid to SMD pads, thermal reliefs only on the plated
-  mounting holes.
+- Pours connect solid to SMD pads and to the spacer pads H1–H4 (reflow
+  soldering, a hand soldering iron will not heat them).
 - Net classes: Power 0.8 mm (12 V path and +5V), CAN 0.3 mm, Default 0.25 mm.
 
 ## Manufacturing
