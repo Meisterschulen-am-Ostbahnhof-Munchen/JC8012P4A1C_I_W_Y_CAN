@@ -172,7 +172,7 @@ manufacturer. Only the bare PCB and an SMD stencil are ordered:
   not in the BOM.
 
 Mechanical parts and cables for the final assembly (screws, FFC, CAN
-cable with IDC D-Sub, jackposts) are listed in
+cable with IDC D-Sub, 5 V cable J3 to CN2, jackposts) are listed in
 [assembly_bom.csv](assembly_bom.csv). Open items there are marked TBD or
 have no MPN yet.
 
