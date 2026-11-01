@@ -16,10 +16,10 @@ bare PCB.
   The land pattern is the one from the datasheet (pad right up to the
   5.4 mm non-plated hole), so `JC8012P4A1C_backplate.kicad_dru` allows the
   pad-to-hole clearance for these footprints.
-- H5–H12: M3 holes (3.2 mm) for the screws to the frame: 4 in the corners,
-  2 at the top and 2 at the bottom at ±60 mm. They sit on the bosses of the
-  frame (`../mechanics`, M3 heat-set inserts), positions = `SCREWS` in
-  `make_frame.py`.
+- H5–H12: 3.2 mm holes for the screws to the frame (Würth WÜPLAST WN 1451
+  3 × 10, thread forming, into the plastic bosses of `../mechanics`): 4 in
+  the corners, 2 at the top and 2 at the bottom at ±60 mm. Positions =
+  `SCREWS` in `make_frame.py`.
 - The M4 spacers stand next to the display cover (the cover is 93.5 mm wide,
   the spacers are at ±50 mm), with about 8 mm clearance to the display back.
 - Text on the outside (B side): project name, VESA marking, D-Sub at the

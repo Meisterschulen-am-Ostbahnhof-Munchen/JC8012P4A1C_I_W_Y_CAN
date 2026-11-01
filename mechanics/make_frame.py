@@ -17,7 +17,8 @@
 #  1. D-Sub 9 cutout in the bottom wall, shifted to -x so that the IDC body
 #     clears the display boss at x = +16.4. Wall thinned locally for the
 #     jackposts.
-#  2. Bosses with holes for M3 heat-set inserts, for the back plate screws.
+#  2. Bosses for the back plate screws (Wuerth WUEPLAST WN 1451 3x10, thread
+#     forming screw for thermoplastics), pilot hole through the whole boss.
 #  3. Keyhole plates for wall mounting removed (VESA 100 on the back plate).
 
 import os
@@ -34,7 +35,8 @@ WALL_T = 3.0            # wall thickness (inner wall surface at -76.35)
 RIM_IN = 73.35          # back rim reaches inward to |y| = 73.35
 RIM_Z = 3.0             # back rim height (6 mm wide)
 
-DSUB_X = -4.0           # D-Sub centre (x)
+DSUB_X = -7.0           # D-Sub centre (x); flange ends at +8.6, the web of the
+                        # middle display boss (x = +16.4, r 7) starts at +9.4
 DSUB_Z = 10.5           # D-Sub centre (z), flange 12.5 high -> 4.25 .. 16.75
 DSUB_CUT_W = 20.0       # cutout for the mating plug shell
 DSUB_CUT_H = 11.0
@@ -44,11 +46,17 @@ DSUB_HOLE_D = 3.2
 DSUB_FLANGE_W = 31.6    # flange 30.8 + clearance
 DSUB_FLANGE_H = 13.0    # flange 12.5 + clearance
 DSUB_WALL_LOCAL = 2.0   # local wall thickness at the D-Sub (jackpost thread)
+DSUB_NUT_D = 5.8        # recess for the 4-40 nuts of 618009227221 (hex 5.42 across
+DSUB_NUT_DEPTH = 0.6    # corners), they stand 0.3 mm in front of the flange
 
-INSERT_D = 4.0          # hole for M3 heat-set insert (e.g. M3 x 5.7, OD 4.6)
-INSERT_DEPTH = 6.5
-BOSS_D = 8.0
-BOSS_H = 9.0            # from z = 0, stays below the display bosses (z 9.3)
+# EJOT PT / WUEPLAST design rules (d1 = 3): boss 2 x d1, pilot 0.7..0.8 x d1,
+# relief bore 1.05 x d1 x (0.3..0.5 x d1), engagement 2 x d1
+SCREW_PILOT_D = 2.5     # pilot hole (0.8 x d1 = 2.4, printed holes come out smaller)
+RELIEF_D = 3.2          # relief bore at the entry (>= 1.05 x d1 = 3.15)
+RELIEF_DEPTH = 1.2      # 0.3..0.5 x d1
+BOSS_D = 8.0            # >= 2.5 x d
+BOSS_H = 9.0            # from z = 0, stays below the display bosses (z 9.3);
+                        # 3x10 screw - 1.6 mm plate - 1.2 relief = 7.2 mm thread (>= 2 x d1)
 
 # back plate screw positions (must match ../backplate)
 SCREWS = [(-115.7, -73.6), (115.7, -73.6), (-115.7, 73.6), (115.7, 73.6),
@@ -91,6 +99,9 @@ frame = frame.cut(pocket).cut(cut)
 for sx in (-1, 1):
     h = Part.makeCylinder(DSUB_HOLE_D / 2, 10, V(DSUB_X + sx * DSUB_HOLE_PITCH / 2, -WALL_Y - 2, DSUB_Z), V(0, 1, 0))
     frame = frame.cut(h)
+    nut = Part.makeCylinder(DSUB_NUT_D / 2, DSUB_NUT_DEPTH + 0.1,
+                            V(DSUB_X + sx * DSUB_HOLE_PITCH / 2, -WALL_Y + DSUB_WALL_LOCAL - DSUB_NUT_DEPTH, DSUB_Z), V(0, 1, 0))
+    frame = frame.cut(nut)
 
 # 3: keyhole plates (only below the rim top, outside the rim)
 for x0, x1 in KEYHOLE_BOXES:
@@ -101,7 +112,8 @@ for x, y in SCREWS:
     boss = Part.makeCylinder(BOSS_D / 2, BOSS_H, V(x, y, 0)).common(outer)
     frame = frame.fuse(boss)
 for x, y in SCREWS:
-    frame = frame.cut(Part.makeCylinder(INSERT_D / 2, INSERT_DEPTH + 1, V(x, y, -1)))
+    frame = frame.cut(Part.makeCylinder(SCREW_PILOT_D / 2, BOSS_H + 1, V(x, y, -1)))
+    frame = frame.cut(Part.makeCylinder(RELIEF_D / 2, RELIEF_DEPTH + 1, V(x, y, -1)))
 
 frame = frame.removeSplitter()
 print("valid", frame.isValid(), "solids", len(frame.Solids), "volume", round(frame.Volume))

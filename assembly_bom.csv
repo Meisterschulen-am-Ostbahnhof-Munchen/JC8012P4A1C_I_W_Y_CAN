@@ -6,3 +6,6 @@
 "5","1","Coding plug for IDC socket","","","closes position 10 (pin 10 of J1 is cut off)"
 "6","1","Ribbon cable 9 wire, 1.27 mm pitch, 28 AWG, 1 m piece","Wurth Elektronik","63910915521CAB","CAN cable, length to be defined with the back plate; red wire = pin 1 on both ends, position 10 of the IDC socket stays empty (10 wire alternative: 63911015521CAB, then cut wire 10 short at the D-Sub)"
 "7","2","Jackpost (hex standoff) UNC 4-40, male/female, hex 4.5 mm (WE-HEX series, length TBD with the housing: 94510000 / 94511000 / 94513200 / 94518200)","Wurth Elektronik","TBD","fixes the D-Sub in the back plate (screwed into the nuts of pos. 3) and takes the thumbscrews of the mating plug; thread length must fit the back plate thickness"
+"8","8","Thread forming screw for thermoplastics, WUEPLAST WN 1451, 3x10, pan head with flange (dk 6 mm), TX10","Wurth","4234 3 10","back plate H5-H12 into the 2.5 mm pilot holes of the frame bosses (8.4 mm engagement)"
+"9","6","Screw M2.5x6 (original frame: M2.5x8)","","","frame to the brass posts of the display; with x6 only about 2 mm thread engagement unless the frame lugs get a counterbore"
+"10","4","Screw M4x12","","","VESA 100 bracket to the M4 spacers of the back plate (bracket 1-3 mm thick)"
