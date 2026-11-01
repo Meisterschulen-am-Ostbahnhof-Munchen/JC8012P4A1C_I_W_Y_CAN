@@ -2,7 +2,7 @@
   (layer "F.Cu")
   (descr "Steel Spacer with through hole Ø2.25, body 4.35x4.35x2.5mm, https://www.we-online.com/en/components/products/datasheet/9774025943R?ki")
   (tags "SMT")
-  (attr smd)
+  (attr smd allow_soldermask_bridges)
   (fp_text reference "REF**" (at 0 -3.9 unlocked) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -412,7 +412,8 @@
     (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd"))
   (fp_circle (center 0 0) (end 2.175 0)
     (stroke (width 0.1) (type solid)) (fill none) (layer "F.Fab"))
-  (pad "1" thru_hole circle (at 0 0) (size 5.3 5.3) (drill 3.0) (layers "*.Cu" "*.Mask")
+  (pad "" np_thru_hole circle (at 0 0) (size 3.0 3.0) (drill 3.0) (layers "*.Cu" "*.Mask"))
+  (pad "1" smd roundrect (at 0 0) (size 5.3 5.3) (layers "F.Cu" "F.Mask") (roundrect_rratio 0.5)
     (zone_connect 2) (thermal_bridge_angle 45))
   (model "${KIPRJMOD}/lib/3dmodels/A_Wurth_WA-SMST_9774025943R.step"
     (offset (xyz 0 0 0))

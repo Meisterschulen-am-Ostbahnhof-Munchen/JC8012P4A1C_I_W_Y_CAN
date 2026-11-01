@@ -1,0 +1,9 @@
+(version 1)
+
+# Wurth WA-SMST spacer H1-H4: recommended land pattern from the datasheet,
+# GND pad 5.3 mm right up to the 3.0 mm non-plated hole.
+# (The mask opening over pad + hole is allowed by the footprint attribute
+# allow_soldermask_bridges.)
+(rule "Spacer pad to own NPTH"
+	(condition "A.memberOfFootprint('H*') && B.memberOfFootprint('H*')")
+	(constraint hole_clearance (min 0mm)))

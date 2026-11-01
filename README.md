@@ -55,8 +55,10 @@ on the board GND and CAN_L.
   addon board 1.5 mm ≈ 8 mm free above the addon board
 - Fixing on the 58 × 46 mm grid of the display board standoffs S1–S4
   (H1 = S1, H2 = S4, H3 = S2, H4 = S3): SMD steel spacers Würth WA-SMST
-  9774025943R (L 2.5 mm, through hole 2.25 mm) soldered on top over a
-  plated 3.0 mm hole with a GND ring on all layers
+  9774025943R (L 2.5 mm, through hole 2.25 mm), land pattern as in the
+  datasheet: 5.3 mm GND pad on top, 3.0 mm **non-plated** hole for the
+  Ø 2.8 × 1.4 mm collar of the spacer. The DRC rule in
+  `JC8012P4A1C_I_W_Y_CAN.kicad_dru` allows the pad right up to the hole.
 - Screws **M2×6**, without washer: spacer 2.5 mm + PCB 1.6 mm leaves 1.9 mm
   thread engagement in the 2.5 mm deep blind thread of S1–S4. M2×8 would
   bottom out.
