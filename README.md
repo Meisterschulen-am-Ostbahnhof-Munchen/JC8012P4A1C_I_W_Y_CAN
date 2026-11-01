@@ -168,7 +168,12 @@ manufacturer. Only the bare PCB and an SMD stencil are ordered:
 - R8 is not fitted (DNP), the test points TP1–TP5 are bare pads and are
   not in the BOM.
 
-Bill of materials (grouped, with manufacturer and MPN):
+Mechanical parts and cables for the final assembly (screws, FFC, CAN
+cable with IDC D-Sub, jackposts) are listed in
+[assembly_bom.csv](assembly_bom.csv). Open items there are marked TBD or
+have no MPN yet.
+
+Bill of materials for the PCB (grouped, with manufacturer and MPN):
 
 ```
 kicad-cli sch export bom -o production/JC8012P4A1C_I_W_Y_CAN_bom.csv --fields "Reference,QUANTITY,Value,Manufacturer,MPN,Footprint,DNP" --labels "Reference,Qty,Value,Manufacturer,MPN,Footprint,DNP" --group-by "Value,Footprint,MPN,Manufacturer,DNP" JC8012P4A1C_I_W_Y_CAN.kicad_sch
