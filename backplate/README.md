@@ -22,6 +22,16 @@ bare PCB.
   `SCREWS` in `make_frame.py`.
 - The M4 spacers stand next to the display cover (the cover is 93.5 mm wide,
   the spacers are at ±50 mm), with about 8 mm clearance to the display back.
+- LS1: mount for the speaker XHXDZ-2828 (4 Ω, 3 W, 27.5 × 27.5 × 13 mm,
+  cable 120 mm with 2-pin 1.25 mm plug for CN3 of the display board).
+  Board-only footprint (no schematic symbol, not in the PCB BOM): 4 holes
+  2.7 mm on 23 × 23 mm for M2.5 screws (head outside, nut inside) and
+  19 sound holes 2.0 mm within Ø 20 mm, so the plate itself is the grille.
+  The speaker sits on the inside, membrane against the plate, next to the
+  display cover on the side of CN3: frame coordinates (+87, +30), seen from
+  behind top left. Checked in 3D: 4 mm to the cover, 14.6 mm to the frame,
+  5 mm to the display back. Turn the cable towards the cover (CN3 is at the
+  top left corner of the display board, seen from behind).
 - Text on the outside (B side): project name, VESA marking, D-Sub at the
   bottom.
 
@@ -32,8 +42,8 @@ Open points:
 
 - Check the width of the display cover at the spacers on the real part
   (spacer edge at 45.9 mm from the centre).
-- Speaker: the display board has a speaker connector. Speaker and opening
-  are still to be chosen.
+- Speaker: measure the thickness of the mounting lugs on the real part
+  (screw length, M2.5 × 8 assumed).
 
 ## Manufacturing
 

@@ -371,6 +371,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -382,6 +383,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -777,6 +779,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -788,6 +791,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1565,6 +1569,354 @@
 		)
 		(embedded_fonts no)
 	)
+	(footprint "Backplate:Speaker_XHXDZ-2828_Mount"
+		(layer "F.Cu")
+		(uuid "ac138517-c8a3-4d28-8ee7-e199efd3bead")
+		(at 237 70)
+		(descr "Mounting holes and sound holes for speaker XHXDZ-2828 (27.5 x 27.5 x 13 mm, 4 mounting holes 3.0 mm on 23 x 23 mm), speaker on the F side, M2.5 screws from the B side")
+		(tags "speaker")
+		(property "Reference" "LS1"
+			(at 0 -15.5 0)
+			(layer "F.SilkS")
+			(uuid "ad022417-a9cd-4811-ae0a-137864ddaaef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "Speaker XHXDZ-2828"
+			(at 0 15.5 0)
+			(layer "F.Fab")
+			(uuid "142deb75-805c-41b5-bdd5-5c8da8f49847")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b47ae6eb-3290-4728-86a3-c09123030e5e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "speaker mount, holes only"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8462a6ee-b8e2-4298-9e32-2cc4e3b6d076")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -13.9 -13.9)
+			(end 13.9 -13.9)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6e0409f1-fb30-42ee-bd47-8bed86cbbbd5")
+		)
+		(fp_line
+			(start -13.9 13.9)
+			(end -13.9 -13.9)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ad5e75dc-4c5e-4782-ad06-20cc17f7111e")
+		)
+		(fp_line
+			(start 13.9 -13.9)
+			(end 13.9 13.9)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8ccc4141-2540-4865-8277-a8358ac7764a")
+		)
+		(fp_line
+			(start 13.9 13.9)
+			(end -13.9 13.9)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d52f1257-7d58-46f9-8dc8-d686f9ba5637")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 10.5 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.SilkS")
+			(uuid "66d48562-05a8-4844-8282-109f0acbfdf1")
+		)
+		(fp_line
+			(start -14.25 -14.25)
+			(end 14.25 -14.25)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d8d9dad1-c087-48e0-8a01-0169e763117c")
+		)
+		(fp_line
+			(start -14.25 14.25)
+			(end -14.25 -14.25)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f77d25e0-036b-48ec-b49c-7cdf3b41980f")
+		)
+		(fp_line
+			(start 14.25 -14.25)
+			(end 14.25 14.25)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "ac988192-d0ca-4a4f-b2d8-e1fc89a779b4")
+		)
+		(fp_line
+			(start 14.25 14.25)
+			(end -14.25 14.25)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "78bf7d7c-58bb-4799-aa1d-e63f3cb9f924")
+		)
+		(fp_line
+			(start -13.75 -13.75)
+			(end 13.75 -13.75)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "32daeed6-767c-43c3-84a9-0115ecf62c3a")
+		)
+		(fp_line
+			(start -13.75 13.75)
+			(end -13.75 -13.75)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2feaf2c1-6451-4a09-95b7-23449c08c5f8")
+		)
+		(fp_line
+			(start 13.75 -13.75)
+			(end 13.75 13.75)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "fcd751ad-2b4e-4366-9738-78255a8741af")
+		)
+		(fp_line
+			(start 13.75 13.75)
+			(end -13.75 13.75)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d0d0b52b-6292-4264-a207-bac371a0a8d0")
+		)
+		(pad "" np_thru_hole circle
+			(at -11.5 -11.5)
+			(size 2.7 2.7)
+			(drill 2.7)
+			(layers "*.Cu" "*.Mask")
+			(uuid "d0be5861-d223-4deb-8f33-7d05b78432ff")
+		)
+		(pad "" np_thru_hole circle
+			(at -11.5 11.5)
+			(size 2.7 2.7)
+			(drill 2.7)
+			(layers "*.Cu" "*.Mask")
+			(uuid "30f2653f-2343-4ec1-aabd-b502db0fe852")
+		)
+		(pad "" np_thru_hole circle
+			(at -8.693 -2.329)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "0b047d5d-75cd-4c78-9c19-50bc250f35f1")
+		)
+		(pad "" np_thru_hole circle
+			(at -8.693 2.329)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "1e73d593-902f-4ee8-9759-0547a9afff26")
+		)
+		(pad "" np_thru_hole circle
+			(at -6.364 -6.364)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "272bde34-0fd3-43ad-b8d4-025a88f1d2d0")
+		)
+		(pad "" np_thru_hole circle
+			(at -6.364 6.364)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "9ea3876d-98ca-43b6-bf74-f077a27ca266")
+		)
+		(pad "" np_thru_hole circle
+			(at -4.5 0)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "cf76acf3-c225-44ea-8fb6-063b3df99d64")
+		)
+		(pad "" np_thru_hole circle
+			(at -2.329 -8.693)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "4de310e2-6a60-4900-876c-95dca6d26702")
+		)
+		(pad "" np_thru_hole circle
+			(at -2.329 8.693)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "cb732d03-82e5-4d19-b3eb-ff50d9e56358")
+		)
+		(pad "" np_thru_hole circle
+			(at -2.25 -3.897)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "7b142405-ea39-44d3-972a-9c2c91c9f113")
+		)
+		(pad "" np_thru_hole circle
+			(at -2.25 3.897)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "d6ad924e-1853-43cf-90ab-cf81b39fa15a")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "7953d6a7-4c2e-4c88-8105-8c99eeccf0b0")
+		)
+		(pad "" np_thru_hole circle
+			(at 2.25 -3.897)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "62a39aef-d346-4f67-9cb4-5951e7bb3e59")
+		)
+		(pad "" np_thru_hole circle
+			(at 2.25 3.897)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "67fa2c05-d1cc-4fc7-85dc-b31544f5fd9a")
+		)
+		(pad "" np_thru_hole circle
+			(at 2.329 -8.693)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "adefe2c1-9295-48c5-9aa3-472e3fb2e10a")
+		)
+		(pad "" np_thru_hole circle
+			(at 2.329 8.693)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "ecf08f05-edb0-4541-9b07-94f422a56743")
+		)
+		(pad "" np_thru_hole circle
+			(at 4.5 0)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "2123270a-8974-4560-878b-cc9fa339dda1")
+		)
+		(pad "" np_thru_hole circle
+			(at 6.364 -6.364)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "1b910a80-92a2-45ba-a67c-038aa063f0c2")
+		)
+		(pad "" np_thru_hole circle
+			(at 6.364 6.364)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "4325ac84-151c-4334-b93a-752682862c1d")
+		)
+		(pad "" np_thru_hole circle
+			(at 8.693 -2.329)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "969339db-fe6f-4a0f-bcf2-42661e816759")
+		)
+		(pad "" np_thru_hole circle
+			(at 8.693 2.329)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "7274df69-6015-43b7-830b-f650a253ea5a")
+		)
+		(pad "" np_thru_hole circle
+			(at 11.5 -11.5)
+			(size 2.7 2.7)
+			(drill 2.7)
+			(layers "*.Cu" "*.Mask")
+			(uuid "75b40937-fa9b-4866-ac82-a5ae6896395c")
+		)
+		(pad "" np_thru_hole circle
+			(at 11.5 11.5)
+			(size 2.7 2.7)
+			(drill 2.7)
+			(layers "*.Cu" "*.Mask")
+			(uuid "4688fe40-22a7-41d8-980d-6be80611629d")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Backplate:A_Wurth_WA-SMSI_9774100482R"
 		(layer "F.Cu")
 		(uuid "bd0c265f-6758-4b58-8f62-59e2e57c355f")
@@ -1627,6 +1979,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1638,6 +1991,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1922,6 +2276,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1933,6 +2288,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
