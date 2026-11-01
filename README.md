@@ -183,6 +183,24 @@ The three bills of materials:
 | CAN board | [production/JC8012P4A1C_I_W_Y_CAN_bom.csv](production/JC8012P4A1C_I_W_Y_CAN_bom.csv) |
 | back plate | [backplate/production/JC8012P4A1C_backplate_bom.csv](backplate/production/JC8012P4A1C_backplate_bom.csv) |
 | final assembly | [assembly_bom.csv](assembly_bom.csv) |
+| parts to order at Mouser (all non-Würth parts) | [mouser_order.csv](mouser_order.csv) |
+
+For hand assembly there is an interactive HTML BOM per board (open it in a
+browser, works offline): click a part in the list to highlight it on the
+board, pin 1 is marked, the columns "Gelötet" and "Kontrolliert" are
+checklists that the browser remembers.
+
+| Board | File |
+|---|---|
+| CAN board | [production/JC8012P4A1C_I_W_Y_CAN_ibom.html](production/JC8012P4A1C_I_W_Y_CAN_ibom.html) |
+| back plate | [backplate/production/JC8012P4A1C_backplate_ibom.html](backplate/production/JC8012P4A1C_backplate_ibom.html) |
+
+Made with the KiCad plugin InteractiveHtmlBom (Plugin and Content Manager),
+run again after changes:
+
+```
+python generate_interactive_bom.py --no-browser --dest-dir production --name-format "%f_ibom" --include-tracks --include-nets --highlight-pin1 all --checkboxes "Gelötet,Kontrolliert" --mark-when-checked "Gelötet" --show-fields "Value,Footprint,MPN" --group-fields "Value,Footprint,MPN" --extra-fields "MPN" --dnp-field kicad_dnp --bom-view left-right --layer-view F --show-fabrication JC8012P4A1C_I_W_Y_CAN.kicad_pcb
+```
 
 The frame (`mechanics/`) is 3D printed.
 
