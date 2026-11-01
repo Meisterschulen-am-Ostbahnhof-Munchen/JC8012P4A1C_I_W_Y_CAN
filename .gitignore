@@ -45,3 +45,4 @@ fp-info-cache
 
 # generated fabrication outputs
 production/
+__pycache__/

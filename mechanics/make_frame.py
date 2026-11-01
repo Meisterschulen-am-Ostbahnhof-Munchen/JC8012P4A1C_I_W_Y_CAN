@@ -15,8 +15,8 @@
 #
 # Changes to the original:
 #  1. D-Sub 9 cutout in the bottom wall, shifted to -x so that the IDC body
-#     clears the display boss at x = +16.4. Wall thinned locally for the
-#     jackposts.
+#     clears the display boss at x = +16.4. Wall 2.0 mm, 1.0 mm under the
+#     jackpost hexes (counterbores) so the mating plug goes in deep enough.
 #  2. Bosses for the back plate screws (Wuerth WUEPLAST WN 1451 3x10, thread
 #     forming screw for thermoplastics), pilot hole through the whole boss.
 #  3. Keyhole plates for wall mounting removed (VESA 100 on the back plate).
@@ -47,7 +47,13 @@ DSUB_FLANGE_W = 31.6    # flange 30.8 + clearance
 DSUB_FLANGE_H = 13.0    # flange 12.5 + clearance
 DSUB_WALL_LOCAL = 2.0   # local wall thickness at the D-Sub (jackpost thread)
 DSUB_NUT_D = 5.8        # recess for the 4-40 nuts of 618009227221 (hex 5.42 across
-DSUB_NUT_DEPTH = 0.6    # corners), they stand 0.3 mm in front of the flange
+DSUB_NUT_DEPTH = 0.4    # corners), they stand 0.3 mm in front of the flange
+# counterbores for the jackpost hexes on the outside: the mating plug rests on
+# the hex (5.0 mm), so every mm of wall under the hex costs mating depth.
+# Wall under the hex = DSUB_WALL_LOCAL - HEX_CB_DEPTH = 1.0 mm (0.6 mm at the
+# bush recess); the rest of the wall stays 2.0 mm.
+HEX_CB_D = 6.0          # hex 4.5 AF, 5.2 across corners
+HEX_CB_DEPTH = 1.0
 
 # EJOT PT / WUEPLAST design rules (d1 = 3): boss 2 x d1, pilot 0.7..0.8 x d1,
 # relief bore 1.05 x d1 x (0.3..0.5 x d1), engagement 2 x d1
@@ -102,6 +108,9 @@ for sx in (-1, 1):
     nut = Part.makeCylinder(DSUB_NUT_D / 2, DSUB_NUT_DEPTH + 0.1,
                             V(DSUB_X + sx * DSUB_HOLE_PITCH / 2, -WALL_Y + DSUB_WALL_LOCAL - DSUB_NUT_DEPTH, DSUB_Z), V(0, 1, 0))
     frame = frame.cut(nut)
+    cb = Part.makeCylinder(HEX_CB_D / 2, HEX_CB_DEPTH + 1,
+                           V(DSUB_X + sx * DSUB_HOLE_PITCH / 2, -WALL_Y - 1, DSUB_Z), V(0, 1, 0))
+    frame = frame.cut(cb)
 
 # 3: keyhole plates (only below the rim top, outside the rim)
 for x0, x1 in KEYHOLE_BOXES:
@@ -114,6 +123,11 @@ for x, y in SCREWS:
 for x, y in SCREWS:
     frame = frame.cut(Part.makeCylinder(SCREW_PILOT_D / 2, BOSS_H + 1, V(x, y, -1)))
     frame = frame.cut(Part.makeCylinder(RELIEF_D / 2, RELIEF_DEPTH + 1, V(x, y, -1)))
+
+# 4: close the cable notch of the original (rim z 0..3, wall up to z 5)
+NOTCH_X = (94.5, 102.5)
+frame = frame.fuse(box(NOTCH_X[0], NOTCH_X[1], -WALL_Y, -RIM_IN, 0.0, RIM_Z))
+frame = frame.fuse(box(NOTCH_X[0], NOTCH_X[1], -WALL_Y, -WALL_Y + WALL_T, 0.0, 6.0))
 
 frame = frame.removeSplitter()
 print("valid", frame.isValid(), "solids", len(frame.Solids), "volume", round(frame.Volume))

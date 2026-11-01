@@ -31,13 +31,17 @@ Make the frame again: `freecadcmd make_frame.py` (FreeCAD 1.1).
 1. **D-Sub 9** (Würth 618009227221) in the bottom wall, centre 7 mm off the
    middle, on the side away from the middle display boss (x = -7, the boss is
    at x = +16.4), so that the flange clears the web of the boss. Cutout 20 × 11 mm for the mating plug,
-   jackpost holes 3.2 mm with 25 mm pitch. The wall is thinned locally to
-   2 mm, and the flange (12.5 mm) sits in the pocket between the back rim
-   (z 0–3) and the display (z 18). The 4-40 nuts of the 618009227221 stand
-   0.3 mm in front of the flange, so they get a 5.8 × 0.6 mm recess. Checked
-   against the Würth STEP models of 618009227221 and 618009221923: no
-   collision. Between the outer surface and the nut there are 1.4 mm, so a
-   jackpost with 4.8 mm thread has 3.4 mm in the 4.6 mm long nut.
+   jackpost holes 3.2 mm with 25 mm pitch. The flange (12.5 mm) sits in a
+   pocket on the inside between the back rim (z 0–3) and the display (z 18),
+   and the wall there is 2.0 mm. The mating plug rests on the jackpost hex,
+   so every mm of wall under the hex costs mating depth: the hexes sit in
+   **Ø 6.0 × 1.0 mm counterbores**, 1.0 mm wall under them (1 mm less mating
+   depth than a D-Sub without a panel). The
+   threaded bushes of the 618009227221 stand 0.3 mm in front of the flange and
+   get a 5.8 × 0.4 mm recess (0.6 mm wall left under the hex). Jackposts:
+   Würth 94510000 (UNC 4-40, hex 5.0, thread 5.0), 4.2 mm thread in the
+   4.6 mm bush. Checked against the Würth STEP models of 618009227221,
+   618009221923 and 94510000: no collision.
 2. **8 bosses** (Ø 8 mm, 9 mm high) for the screws of the back plate:
    Würth WÜPLAST WN 1451 3 × 10 (art. 4234 3 10), thread forming screws for
    thermoplastics. Designed to the EJOT PT rules (same thread form): pilot
@@ -46,9 +50,11 @@ Make the frame again: `freecadcmd make_frame.py` (FreeCAD 1.1).
    printed frame, increase `SCREW_PILOT_D` to 2.5. The positions match the holes H5–H12 of the back plate.
 3. **Keyhole tabs** for wall mounting removed: the back plate carries a
    VESA 100 mount.
+4. **Cable notch** at the bottom closed: power and CAN come through the
+   D-Sub.
 
 The 6 bosses to the display (M2.5 × 8, onto the brass posts of the display)
-and the small cable hole at the bottom right are unchanged.
+are unchanged.
 
 ## Coordinates
 
