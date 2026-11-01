@@ -51,7 +51,7 @@ DSUB_NUT_DEPTH = 0.6    # corners), they stand 0.3 mm in front of the flange
 
 # EJOT PT / WUEPLAST design rules (d1 = 3): boss 2 x d1, pilot 0.7..0.8 x d1,
 # relief bore 1.05 x d1 x (0.3..0.5 x d1), engagement 2 x d1
-SCREW_PILOT_D = 2.5     # pilot hole (0.8 x d1 = 2.4, printed holes come out smaller)
+SCREW_PILOT_D = 2.4     # pilot hole (0.8 x d1), proven in our prints for 3 mm plastic screws
 RELIEF_D = 3.2          # relief bore at the entry (>= 1.05 x d1 = 3.15)
 RELIEF_DEPTH = 1.2      # 0.3..0.5 x d1
 BOSS_D = 8.0            # >= 2.5 x d

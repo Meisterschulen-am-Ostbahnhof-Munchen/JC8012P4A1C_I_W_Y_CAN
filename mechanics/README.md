@@ -41,9 +41,9 @@ Make the frame again: `freecadcmd make_frame.py` (FreeCAD 1.1).
 2. **8 bosses** (Ø 8 mm, 9 mm high) for the screws of the back plate:
    Würth WÜPLAST WN 1451 3 × 10 (art. 4234 3 10), thread forming screws for
    thermoplastics. Designed to the EJOT PT rules (same thread form): pilot
-   hole 2.5 mm through the whole boss, relief bore 3.2 × 1.2 mm at the entry,
+   hole 2.4 mm through the whole boss, relief bore 3.2 × 1.2 mm at the entry,
    7.2 mm thread engagement (≥ 2 × d). If the screws go in too hard in the
-   printed frame, increase `SCREW_PILOT_D` to 2.6 or 2.7. The positions match the holes H5–H12 of the back plate.
+   printed frame, increase `SCREW_PILOT_D` to 2.5. The positions match the holes H5–H12 of the back plate.
 3. **Keyhole tabs** for wall mounting removed: the back plate carries a
    VESA 100 mount.
 
