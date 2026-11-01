@@ -1,0 +1,4 @@
+Guition 10.1" ESP32P4 / JC8012P4A1C wall mount by 8bitmcu on Thingiverse: https://www.thingiverse.com/thing:7208630
+
+Summary:
+Wall mount your JC8012P4A1C panel in style with this bracket! Avoid cutting into your wall to get that flush mount. Two versions are included: a landscape and a portrait bracket. A small hole is placed at the bottom right of the mount to pass a cable through.On the landscape version, the two mounting holes are set 6" apart from each other.You will need 6x M2.5x8mm fasteners to attach the mount to the display panel. Additionally you will need one or two small nail to attach the mount to the wall.STEP files are included, should you want to customize this.ESPHome/Home Assistant Weather Dashboard available here!

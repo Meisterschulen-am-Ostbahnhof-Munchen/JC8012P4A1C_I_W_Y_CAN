@@ -17,8 +17,11 @@ bare PCB.
   5.4 mm non-plated hole), so `JC8012P4A1C_backplate.kicad_dru` allows the
   pad-to-hole clearance for these footprints.
 - H5–H12: M3 holes (3.2 mm) for the screws to the frame: 4 in the corners,
-  2 at the top and 2 at the bottom at ±60 mm. The bottom centre stays free
-  for the D-Sub in the frame.
+  2 at the top and 2 at the bottom at ±60 mm. They sit on the bosses of the
+  frame (`../mechanics`, M3 heat-set inserts), positions = `SCREWS` in
+  `make_frame.py`.
+- The M4 spacers stand next to the display cover (the cover is 93.5 mm wide,
+  the spacers are at ±50 mm), with about 8 mm clearance to the display back.
 - Text on the outside (B side): project name, VESA marking, D-Sub at the
   bottom.
 
@@ -27,9 +30,7 @@ is the inside. The bottom edge of the display (D-Sub) is +y.
 
 Open points:
 
-- The frame has to be about 10 mm deeper than the original
-  (thing:7208630): the display cover is ~15.5 mm high, and the spacers
-  need 10 mm above it. The frame also needs bosses for the M3 screws, and
-  the hole positions must match them.
+- Check the width of the display cover at the spacers on the real part
+  (spacer edge at 45.9 mm from the centre).
 - Speaker: the display board has a speaker connector. Speaker and opening
   are still to be chosen.
