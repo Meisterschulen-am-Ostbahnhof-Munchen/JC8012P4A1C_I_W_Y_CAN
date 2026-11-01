@@ -16,7 +16,7 @@ Top view: [docs/board_3d_top.png](docs/board_3d_top.png)
 
 | Connector | Part | Purpose |
 |---|---|---|
-| J1 | Würth WR-PHD 610110249121 (2×5 pin header, SMT, right angled) | ribbon cable to IDC D-Sub 9 female Würth 618009221923 |
+| J1 | Würth WR-PHD 610110249121 (2×5 pin header, SMT, right angled) | ribbon cable to IDC D-Sub 9 female Würth 618009227221 |
 | J2 | Würth WR-FPC 68711414522 (14 pin, 0.5 mm) | FFC to FPC3 "EXTEND1" of the display board |
 | J3 | Würth WR-WTB 653104131822 (4 pin, 1.25 mm) | 5 V to CN2 of the display board |
 
@@ -119,7 +119,7 @@ SMD pads (1.5 mm), labelled with the net name on the silkscreen:
 | TP2 | GND | next to J3 |
 | TP3 | CAN_H | between D1 and J1 |
 | TP4 | CAN_L | between D1 and J1 |
-| TP5 | VIN_PROT (12 V after fuse and reverse polarity protection) | below C9 |
+| TP5 | VIN_PROT (12 V after fuse and reverse polarity protection) | right of C13, below L2 |
 
 ## PCB
 
@@ -193,3 +193,15 @@ kicad-cli sch export bom -o production/JC8012P4A1C_I_W_Y_CAN_bom.csv --fields "R
 ```
 
 The 3D images in `docs/` are made with `kicad-cli pcb render`.
+
+## Licence
+
+- Schematics, PCB layouts, scripts and documentation: GPL-3.0 (`LICENSE`).
+- `lib/` and `backplate/lib/`: footprints and 3D models from the
+  Würth Elektronik eiSos libraries, licensed CC BY-SA 4.0 with the Würth
+  exception for designs that use them (see `Wurth_Disclaimer_READ_ME.txt` in
+  both folders). They stay under CC BY-SA 4.0 when passed on.
+- Footprints and 3D models from the KiCad standard libraries: CC BY-SA 4.0
+  with the KiCad exception for designs that use them.
+- `mechanics/`: derivative of a Thingiverse design by 8bitmcu, CC BY-SA, see
+  `mechanics/LICENSE.md`.
