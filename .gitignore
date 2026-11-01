@@ -33,6 +33,7 @@ fp-info-cache
 *.xml
 *.csv
 !assembly_bom.csv
+!mouser_order.csv
 !production/*_bom.csv
 !backplate/production/*_bom.csv
 
