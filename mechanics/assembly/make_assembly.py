@@ -73,6 +73,14 @@ try:
     def box(x0, x1, y0, y1, z0, z1):
         return Part.makeBox(x1 - x0, y1 - y0, z1 - z0, V(x0, y0, z0))
 
+    def rbox(x0, x1, y0, y1, z0, z1, r):
+        """box with rounded vertical edges (radius r)"""
+        b = box(x0 + r, x1 - r, y0, y1, z0, z1).fuse(box(x0, x1, y0 + r, y1 - r, z0, z1))
+        for cx in (x0 + r, x1 - r):
+            for cy in (y0 + r, y1 - r):
+                b = b.fuse(Part.makeCylinder(r, z1 - z0, V(cx, cy, z0)))
+        return b.removeSplitter()
+
     def fx(px): return px - 150.0          # back plate PCB -> frame
     def fy(py): return 100.0 - py
 
@@ -143,7 +151,7 @@ try:
             k = read(steps["kp"]); k.translate(V(XK - 150.0, 100.0, ZPCB_KP))
             add("E", k, (0.15, 0.55, 0.30), (0, 0, EXF), "E")
             z0 = ZPCB_KP + 1.6 + 0.17
-            pg = box(XK - 24, XK + 24, -75, 75, z0, z0 + 3.0)
+            pg = rbox(XK - 24, XK + 24, -75, 75, z0, z0 + 3.0, 1.5)      # same outline as the PCB (R 1.5)
             for c, cx in enumerate((XK - 12, XK + 12)):
                 for r in range(6):
                     cy = (r - 2.5) * 22.56
@@ -153,7 +161,7 @@ try:
                     pg = pg.cut(box(nx - 2.9, nx + 2.9, ny0, ny1, z0 - 1, z0 + 4))
                 for cy in (-70, 70):
                     pg = pg.cut(Part.makeCylinder(3.3, 5, V(cx, cy, z0 - 1)))
-            foil = box(XK - 24, XK + 24, -75, 75, ZPCB_KP + 5.1, ZPCB_KP + 5.5)
+            foil = rbox(XK - 24, XK + 24, -75, 75, ZPCB_KP + 5.1, ZPCB_KP + 5.5, 1.5)
             add("19", pg, (0.70, 0.85, 0.95), (0, 0, EXF), "19", trans=35)
             add("19f", foil, (0.78, 0.79, 0.80), (0, 0, EXF), "19")
             add("16", Part.makeCompound([screw(XK + dx, dy_, ZPCB_KP - 4.0, 2.5, 8, 4.5, 1.7) for dx in (-12, 12) for dy_ in (-70, 70)]),
