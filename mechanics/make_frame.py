@@ -20,6 +20,13 @@
 #  2. Bosses for the back plate screws (Wuerth WUEPLAST WN 1451 3x10, thread
 #     forming screw for thermoplastics), pilot hole through the whole boss.
 #  3. Keyhole plates for wall mounting removed (VESA 100 on the back plate).
+#
+# Variant 2 (keypad): set FRAME_VARIANT=keypad or run make_frame_keypad.py.
+# Output: frame_keypad.step, frame_keypad.stl. The frame gets a chamber on +x
+# (right side seen from the FRONT, left side seen from behind) for the keypad
+# sandwich ../keypad (PCB + plexiglass + PU foil, 5.5 mm). The sandwich lies in
+# a pocket 2 mm behind the glass front of the display and is held by M2.5 x 8
+# screws from behind through lugs into the SMD spacers of the keypad PCB.
 
 import os
 import FreeCAD as App
@@ -67,6 +74,32 @@ BOSS_H = 9.0            # from z = 0, stays below the display bosses (z 9.3);
 # back plate screw positions (must match ../backplate)
 SCREWS = [(-115.7, -73.6), (115.7, -73.6), (-115.7, 73.6), (115.7, 73.6),
           (-60.0, -76.35), (60.0, -76.35), (-60.0, 76.35), (60.0, 76.35)]
+
+VARIANT = os.environ.get("FRAME_VARIANT", "")
+KEYPAD = VARIANT == "keypad"
+
+# ---- variant 2: keypad chamber on +x --------------------------------------
+Z_GLASS = 25.0          # glass front of the display: rests on z = 18, module 7 mm
+KP_STEP = 2.0           # foil surface behind the glass plane
+KP_T = 5.5              # sandwich: PCB 1.6 + 300LSE + plexiglass 3 + 468MP + PU foil (flat part)
+KP_W, KP_H = 48.0, 150.0  # sandwich outline (= ../keypad PCB)
+KP_CLR = 0.3            # clearance sandwich to pocket
+KP_SHELL_GAP = 0.5      # display shell (242.8 +-0.3) to partition
+KP_PART_T = 2.0         # partition between display shell and keypad pocket (z 18 .. 25)
+KP_WALL_T = 3.0         # outer wall of the chamber
+KP_R = 10.0             # outer corner radius (as the back plate)
+KP_DISP_R = 10.1        # corner radius of the display (JC8012P4A1.dwg), the frame front follows it
+KP_LEDGE_W = 3.0        # ledge behind the PCB
+KP_LEDGE_T = 2.0
+KP_LUG_T = 4.0          # lugs for the M2.5 x 8 screws: lug 4 + PCB 1.6 + 2.4 in the spacer
+KP_LUG_W = 7.0
+KP_SCREW_D = 2.8        # M2.5 clearance
+KP_SPACERS = [(-12.0, -70.0), (12.0, -70.0), (-12.0, 70.0), (12.0, 70.0)]  # from the keypad centre
+KP_J1 = (0.0, 70.0)     # FFC connector J1 on the back of the keypad PCB (top)
+KP_J1_W = 17.0          # ledge cut for J1 (courtyard 14.5 mm)
+# cable slot from the main frame into the chamber (FFC from FPC4 EXTEND2)
+KP_SLOT_Y = (48.0, 69.0)
+KP_SLOT_Z = (3.5, 16.0)
 
 # keyhole plates of the original (top, x = +-76.2)
 KEYHOLE_BOXES = [(-89.0, -63.0), (63.0, 89.0)]
@@ -129,11 +162,79 @@ NOTCH_X = (94.5, 102.5)
 frame = frame.fuse(box(NOTCH_X[0], NOTCH_X[1], -WALL_Y, -RIM_IN, 0.0, RIM_Z))
 frame = frame.fuse(box(NOTCH_X[0], NOTCH_X[1], -WALL_Y, -WALL_Y + WALL_T, 0.0, 6.0))
 
+
+
+def rounded_slab(x0, x1, y0, y1, z0, z1, r, right_only=False):
+    """box with rounded vertical edges (all four, or only the two at x1)"""
+    xl = x0 if right_only else x0 + r
+    s = box(xl, x1 - r, y0, y1, z0, z1).fuse(box(x0, x1, y0 + r, y1 - r, z0, z1))
+    for yc in (y0 + r, y1 - r):
+        s = s.fuse(Part.makeCylinder(r, z1 - z0, V(x1 - r, yc, z0)))
+        if not right_only:
+            s = s.fuse(Part.makeCylinder(r, z1 - z0, V(x0 + r, yc, z0)))
+    return s.removeSplitter()
+
+
+NAME = "frame"
+if KEYPAD:
+    NAME = "frame_keypad"
+    XS = env.XMax                                   # outer wall of the original frame (+x)
+    PX0 = XS + KP_SHELL_GAP + KP_PART_T             # pocket, display side
+    XK = PX0 + KP_CLR + KP_W / 2                    # keypad centre
+    PX1 = XK + KP_W / 2 + KP_CLR                    # pocket, outer side
+    XO = PX1 + KP_WALL_T                            # new outer wall
+    PY = KP_H / 2 + KP_CLR
+    Z_PCB = Z_GLASS - KP_STEP - KP_T                # back of the keypad PCB
+    print("keypad centre x %.2f, outer x %.2f, width %.2f, PCB back z %.2f" % (XK, XO, XO + env.XMax, Z_PCB))
+    lower = rounded_slab(XS - 1.0, XO, -WALL_Y, WALL_Y, 0.0, 18.0, KP_R, True)
+    upper = rounded_slab(XS + KP_SHELL_GAP, XO, -WALL_Y, WALL_Y, 18.0, Z_GLASS, KP_R, True)
+    frame = frame.fuse(lower).fuse(upper)
+    # fill the notch between the rounded +x corners of the original and the chamber
+    for sy in (-1, 1):
+        y0, y1 = sorted((sy * (WALL_Y - 12.0), sy * WALL_Y))
+        frame = frame.fuse(box(XS - 12.0, XS, y0, y1, 0.0, 18.0).cut(outer))
+    # front part (z 18 .. glass) hugs the rounded corners of the display ("ploughshare"): the
+    # corner between the display (242.8 x 158.7, R 10.1, + gap) and the straight partition is filled
+    disp_gap = rounded_slab(-XS - KP_SHELL_GAP, XS + KP_SHELL_GAP, -WALL_Y - KP_SHELL_GAP, WALL_Y + KP_SHELL_GAP,
+                            18.0 - 0.01, Z_GLASS + 0.01, KP_DISP_R + KP_SHELL_GAP)
+    for sy in (-1, 1):
+        y0, y1 = sorted((sy * (WALL_Y - KP_DISP_R - 1.0), sy * WALL_Y))
+        fill = box(XS - KP_DISP_R - 1.0, XS + KP_SHELL_GAP + 0.01, y0, y1, 18.0, Z_GLASS).cut(disp_gap)
+        print("display corner fill", round(fill.Volume, 1))
+        frame = frame.fuse(fill)
+    # chamber behind the PCB, back rim (6 mm as the original) and ledge
+    frame = frame.cut(box(PX0, PX1, -(WALL_Y - WALL_T), WALL_Y - WALL_T, RIM_Z, Z_PCB - KP_LEDGE_T))
+    frame = frame.cut(box(PX0, XO - 6.0, -RIM_IN, RIM_IN, -1.0, RIM_Z + 0.01))
+    frame = frame.cut(box(PX0 + KP_LEDGE_W, PX1 - KP_LEDGE_W, -(PY - KP_LEDGE_W), PY - KP_LEDGE_W,
+                          Z_PCB - KP_LEDGE_T - 0.1, Z_PCB + 0.1))
+    frame = frame.cut(rounded_slab(PX0, PX1, -PY, PY, Z_PCB, Z_GLASS + 1.0, 1.5 + KP_CLR))
+    # lugs for the spacers of the keypad
+    for sx, sy in KP_SPACERS:
+        yin = sy - 4.0 if sy > 0 else sy + 4.0
+        y0, y1 = sorted((yin, (WALL_Y - WALL_T) * (1 if sy > 0 else -1)))
+        frame = frame.fuse(box(XK + sx - KP_LUG_W / 2, XK + sx + KP_LUG_W / 2, y0, y1, Z_PCB - KP_LUG_T, Z_PCB))
+    for sx, sy in KP_SPACERS:
+        frame = frame.cut(Part.makeCylinder(KP_SCREW_D / 2, KP_LUG_T + 1, V(XK + sx, sy, Z_PCB - KP_LUG_T - 0.5)))
+    # ledge cut for the FFC connector J1 and the cable
+    jx, jy = XK + KP_J1[0], KP_J1[1]
+    frame = frame.cut(box(jx - KP_J1_W / 2, jx + KP_J1_W / 2, jy - 4.0, WALL_Y - WALL_T + 0.01,
+                          Z_PCB - KP_LUG_T - 0.5, Z_PCB + 0.01))
+    # cable slot through the old side wall and the partition
+    frame = frame.cut(box(XS - WALL_T - 1.0, PX0 + 0.1, KP_SLOT_Y[0], KP_SLOT_Y[1], KP_SLOT_Z[0], KP_SLOT_Z[1]))
+    # back plate screws in the new corners
+    kp_env = rounded_slab(XS - 1.0, XO, -WALL_Y, WALL_Y, 0.0, 18.0, KP_R, True)
+    for y in (-73.6, 73.6):
+        frame = frame.fuse(Part.makeCylinder(BOSS_D / 2, BOSS_H, V(XO - 5.7, y, 0)).common(kp_env))
+    for y in (-73.6, 73.6):
+        frame = frame.cut(Part.makeCylinder(SCREW_PILOT_D / 2, BOSS_H + 1, V(XO - 5.7, y, -1)))
+        frame = frame.cut(Part.makeCylinder(RELIEF_D / 2, RELIEF_DEPTH + 1, V(XO - 5.7, y, -1)))
+    print("back plate screws added at x %.2f" % (XO - 5.7))
+
 frame = frame.removeSplitter()
 print("valid", frame.isValid(), "solids", len(frame.Solids), "volume", round(frame.Volume))
-frame.exportStep(os.path.join(HERE, "frame.step"))
+frame.exportStep(os.path.join(HERE, NAME + ".step"))
 import Mesh
 m = Mesh.Mesh()
 m.addFacets(frame.tessellate(0.05))
-m.write(os.path.join(HERE, "frame.stl"))
+m.write(os.path.join(HERE, NAME + ".stl"))
 print("written")

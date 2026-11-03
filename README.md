@@ -176,12 +176,14 @@ cable with IDC D-Sub, 5 V cable J3 to CN2, jackposts) are listed in
 [assembly_bom.csv](assembly_bom.csv). Open items there are marked TBD or
 have no MPN yet.
 
-The three bills of materials:
+The bills of materials:
 
 | BOM | File |
 |---|---|
 | CAN board | [production/JC8012P4A1C_I_W_Y_CAN_bom.csv](production/JC8012P4A1C_I_W_Y_CAN_bom.csv) |
 | back plate | [backplate/production/JC8012P4A1C_backplate_bom.csv](backplate/production/JC8012P4A1C_backplate_bom.csv) |
+| keypad (variant 2) | [keypad/production/JC8012P4A1C_keypad_bom.csv](keypad/production/JC8012P4A1C_keypad_bom.csv) |
+| back plate, keypad variant | [backplate_keypad/production/JC8012P4A1C_backplate_keypad_bom.csv](backplate_keypad/production/JC8012P4A1C_backplate_keypad_bom.csv) |
 | final assembly | [assembly_bom.csv](assembly_bom.csv) |
 | parts to order at Mouser (all non-Würth parts) | [mouser_order.csv](mouser_order.csv) |
 
@@ -194,6 +196,8 @@ checklists that the browser remembers.
 |---|---|
 | CAN board | [production/JC8012P4A1C_I_W_Y_CAN_ibom.html](production/JC8012P4A1C_I_W_Y_CAN_ibom.html) |
 | back plate | [backplate/production/JC8012P4A1C_backplate_ibom.html](backplate/production/JC8012P4A1C_backplate_ibom.html) |
+| keypad (variant 2) | [keypad/production/JC8012P4A1C_keypad_ibom.html](keypad/production/JC8012P4A1C_keypad_ibom.html) |
+| back plate, keypad variant | [backplate_keypad/production/JC8012P4A1C_backplate_keypad_ibom.html](backplate_keypad/production/JC8012P4A1C_backplate_keypad_ibom.html) |
 
 Made with the KiCad plugin InteractiveHtmlBom (Plugin and Content Manager),
 run again after changes:
@@ -203,6 +207,27 @@ python generate_interactive_bom.py --no-browser --dest-dir production --name-for
 ```
 
 The frame (`mechanics/`) is 3D printed.
+
+Assembly drawings (exploded view, parts list, order of assembly) for both
+variants: [mechanics/assembly/](mechanics/assembly/README.md).
+
+## Variant 2: keypad
+
+A second variant adds a keypad with 12 keys (2 x 6, Wurth WS-TASV) right of the
+display, seen from the front. It is read through FPC4 "EXTEND2" of the display
+board (GPIO28-34, 3 x 4 matrix with diodes, esp-iot-solution `keyboard_button`).
+The CAN board is the same for both variants.
+
+| Part | Variant 1 | Variant 2 (keypad) |
+|---|---|---|
+| frame | `mechanics/frame.stl` | `mechanics/frame_keypad.stl` |
+| back plate | `backplate/` | `backplate_keypad/` (296.9 mm wide) |
+| keypad PCB + foil + plexiglass | - | `keypad/` |
+
+Details: [keypad/README.md](keypad/README.md),
+[backplate_keypad/README.md](backplate_keypad/README.md),
+[mechanics/README.md](mechanics/README.md). The additional mechanical parts
+are positions 16-19 of [assembly_bom.csv](assembly_bom.csv).
 
 Bill of materials for the PCB (grouped, with manufacturer and MPN):
 
@@ -215,10 +240,10 @@ The 3D images in `docs/` are made with `kicad-cli pcb render`.
 ## Licence
 
 - Schematics, PCB layouts, scripts and documentation: GPL-3.0 (`LICENSE`).
-- `lib/` and `backplate/lib/`: footprints and 3D models from the
+- `lib/`, `backplate/lib/`, `backplate_keypad/lib/` and `keypad/lib/`: symbols, footprints and 3D models from the
   Würth Elektronik eiSos libraries, licensed CC BY-SA 4.0 with the Würth
   exception for designs that use them (see `Wurth_Disclaimer_READ_ME.txt` in
-  both folders). They stay under CC BY-SA 4.0 when passed on.
+  these folders). They stay under CC BY-SA 4.0 when passed on.
 - Footprints and 3D models from the KiCad standard libraries: CC BY-SA 4.0
   with the KiCad exception for designs that use them.
 - `mechanics/`: derivative of a Thingiverse design by 8bitmcu, CC BY-SA, see

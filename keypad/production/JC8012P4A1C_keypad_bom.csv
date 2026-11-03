@@ -1,0 +1,5 @@
+"Reference","Qty","Value","Manufacturer","MPN","Footprint","DNP"
+"D1-D12","12","D","","TBD","Diode_SMD:D_SOD-123",""
+"H1-H4","4","Spacer M2.5 L3","Wurth Elektronik","9774030151R","Keypad:A_Wurth_WA-SMSI_9774030151R",""
+"J1","1","68711414522","Wurth Elektronik","68711414522","Keypad:J_Wurth_WR-FPC_68711414522",""
+"S1-S12","12","430162043826","Wurth Elektronik","430162043826","Keypad:SW_Wurth_WS-TASV_430162043826",""

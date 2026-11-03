@@ -14,3 +14,7 @@
 "13","1","Speaker 4 Ohm 3 W, 27.5 x 27.5 x 13 mm, cable 120 mm with 2-pin 1.25 mm plug","","XHXDZ-2828","LS1 on the inside of the back plate, membrane against the sound holes; plug into CN3 of the display board (top left corner seen from behind), cable through the opening of the display cover"
 "14","4","Screw M2.5x8","","","speaker to the back plate, head outside; length depends on the thickness of the speaker lugs (to be measured)"
 "15","4","Nut M2.5","","","speaker screws, inside"
+"16","4","Screw M2.5x8","","","keypad variant only: keypad H1-H4 from behind through the 4 mm frame lugs and the PCB into the M2.5 spacers (2.4 mm thread). Never longer: an M2.5x10 pushes through the foil."
+"17","2","Thread forming screw for thermoplastics, WUEPLAST WN 1451, 3x10","Wurth","4234 3 10","keypad variant only: back plate H13/H14 in the corners of the keypad chamber (in addition to pos. 8)"
+"18","1","FFC 14 pin, 0.5 mm pitch, about 250 mm, type TBD","Wurth Elektronik","","keypad variant only: keypad J1 to FPC4 EXTEND2 of the display board; length and type (contacts on the same / opposite sides) to be checked on the test print, pin 1 must end on pin 1"
+"19","1","PU foil printed + 3 mm plexiglass, 48 x 150 mm","Folika","","keypad variant only: as FO SON PU 005 HOEPFINGER, drawing keypad/docs/folika_keypad_12.pdf"
