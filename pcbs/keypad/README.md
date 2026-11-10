@@ -1,7 +1,7 @@
 # JC8012P4A1C keypad (variant 2)
 
 Keypad with 12 keys (2 columns x 6 rows) right of the display, seen from the
-**front**. KiCad 10 project. Used together with the frame `../mechanics/frame_keypad.stl`
+**front**. KiCad 10 project. Used together with the frame `../../mechanics/frame_keypad.stl`
 and the wide back plate `../backplate_keypad`.
 
 ![keypad](docs/keypad_iso.png)

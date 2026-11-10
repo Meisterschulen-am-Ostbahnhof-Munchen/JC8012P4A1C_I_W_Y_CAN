@@ -11,7 +11,7 @@ overall size.
 
 ![variant 2, exploded view from behind](img/variant2_exploded_back.png)
 
-Positions 1-19 are those of [../../assembly_bom.csv](../../assembly_bom.csv)
+Positions 1-19 are those of [../assembly_bom.csv](../assembly_bom.csv)
 (the notes there give lengths, torques and cable details). Letters are the
 main parts: A display, B CAN board, C frame, D back plate, E keypad PCB.
 

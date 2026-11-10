@@ -23,8 +23,8 @@ as well (see [LICENSE.md](LICENSE.md)), not GPL like the rest of the repository.
 | `frame.step`, `frame.stl` | result (STL for the slicer) |
 | `make_frame_keypad.py`, `frame_keypad.step`, `frame_keypad.stl` | variant 2 with the keypad chamber (see below) |
 | `source/` | original landscape frame (STEP), licence and readme of the original |
-| `docs/` | renderings (FreeCAD), with the back plate from `../backplate` |
-| `assembly/` | assembly drawings of both variants (PDF) and their scripts, see [assembly/README.md](assembly/README.md) |
+| `docs/` | renderings (FreeCAD), with the back plate from `../pcbs/backplate` |
+| `../assembly/` | assembly drawings of both variants (PDF) and their scripts, see [../assembly/README.md](../assembly/README.md) |
 
 Make the frame again: `freecadcmd make_frame.py` (FreeCAD 1.1).
 

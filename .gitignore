@@ -34,16 +34,14 @@ fp-info-cache
 *.csv
 !assembly_bom.csv
 !mouser_order.csv
-!production/*_bom.csv
-!backplate/production/*_bom.csv
-!backplate_keypad/production/*_bom.csv
-!keypad/production/*_bom.csv
+!pcbs/*/production/*_bom.csv
 
 # Archived Backups (KiCad 6.0)
 **/*-backups/*.zip
 
 # Local git-based history (KiCad 9.0+)
 .history
+**/.history
 
 # Local project settings
 *.kicad_prl
@@ -52,13 +50,7 @@ fp-info-cache
 __pycache__/
 
 # Gerber/drill files are kept only as zip
-production/gerber/
-backplate/production/gerber/
-backplate_keypad/production/gerber/
+pcbs/*/production/gerber/
 
 # PCB STEP exports for the assembly drawings
-mechanics/assembly/cache/
-keypad/production/gerber/
-
-# PCB STEP exports for the assembly drawings
-mechanics/assembly/cache/
+assembly/cache/

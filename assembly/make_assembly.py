@@ -5,13 +5,13 @@
 # Output: img/<variant>_<view>.png and img/<variant>_views.json (camera and anchor points
 # of the position balloons). Step 2: python make_assembly_pdf.py makes the PDF drawings.
 #
-# Frame coordinates (see ../README.md): x = long side, +x right seen from the FRONT,
+# Frame coordinates (see ../mechanics/README.md): x = long side, +x right seen from the FRONT,
 # +y = top of the display, z = 0 back side of the frame, glass front of the display z = 25.
 # The PCB STEP files are exported with kicad-cli into cache/ (not in the repository).
 import os, sys, json, subprocess, traceback
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-REPO = os.path.abspath(os.path.join(HERE, "..", ".."))
+REPO = os.path.abspath(os.path.join(HERE, ".."))
 CACHE = os.path.join(HERE, "cache")
 IMG = os.path.join(HERE, "img")
 MODELS = os.path.join(HERE, "models")
@@ -32,10 +32,10 @@ def log(*a):
 def export_pcb_steps():
     os.makedirs(CACHE, exist_ok=True)
     out = {}
-    for key, rel in (("can", "JC8012P4A1C_I_W_Y_CAN.kicad_pcb"),
-                     ("bp1", "backplate/JC8012P4A1C_backplate.kicad_pcb"),
-                     ("bp2", "backplate_keypad/JC8012P4A1C_backplate_keypad.kicad_pcb"),
-                     ("kp", "keypad/JC8012P4A1C_keypad.kicad_pcb")):
+    for key, rel in (("can", "pcbs/can_power/JC8012P4A1C_I_W_Y_CAN.kicad_pcb"),
+                     ("bp1", "pcbs/backplate/JC8012P4A1C_backplate.kicad_pcb"),
+                     ("bp2", "pcbs/backplate_keypad/JC8012P4A1C_backplate_keypad.kicad_pcb"),
+                     ("kp", "pcbs/keypad/JC8012P4A1C_keypad.kicad_pcb")):
         src = os.path.join(REPO, rel); dst = os.path.join(CACHE, key + ".step")
         if not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(src):
             subprocess.run([KICAD_CLI, "pcb", "export", "step", "-o", dst, "--subst-models", "-f", src],
@@ -100,7 +100,7 @@ try:
     for hx, hy in spk_holes:
         spk = spk.cut(Part.makeCylinder(1.35, 2, V(hx, hy, -0.2)))
 
-    # screws (pos. numbers of ../../assembly_bom.csv)
+    # screws (pos. numbers of ../assembly_bom.csv)
     def ray_seat(shape, x, y, ztop, r=2.1):
         """lowest z of the material column below ztop next to a screw hole at (x, y) (the lug)"""
         z = ztop - 0.05; zlow = None
@@ -114,7 +114,7 @@ try:
 
     def variant(vn):
         kp = vn == "2"
-        frame = read(os.path.join(HERE, "..", "frame_keypad.step" if kp else "frame.step"))
+        frame = read(os.path.join(REPO, "mechanics", "frame_keypad.step" if kp else "frame.step"))
         items = {}      # key -> dict(shape|obj, colour, explode vector, label)
         def add(key, shape, col, ex=(0, 0, 0), label=None, trans=0):
             items[key] = dict(shape=shape, col=col, ex=V(*ex), label=label, trans=trans)

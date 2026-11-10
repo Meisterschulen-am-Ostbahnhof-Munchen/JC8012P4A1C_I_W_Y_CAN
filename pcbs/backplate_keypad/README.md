@@ -1,7 +1,7 @@
 # JC8012P4A1C back plate, keypad variant
 
 Copy of `../backplate`, widened for the keypad chamber of
-`../mechanics/frame_keypad.stl` (variant 2 with `../keypad`). Everything not
+`../../mechanics/frame_keypad.stl` (variant 2 with `../keypad`). Everything not
 listed here is the same as in [../backplate/README.md](../backplate/README.md).
 
 ![inside](docs/backplate_inside.png)

@@ -2,13 +2,13 @@
 # make_assembly.py, with position balloons and parts list.
 # Run:  python make_assembly_pdf.py        (needs PyMuPDF and Pillow)
 # Output: JC8012P4A1C_assembly_variant1.pdf, JC8012P4A1C_assembly_variant2_keypad.pdf
-# Position numbers 1-19 are those of ../../assembly_bom.csv, letters A-E are the main parts.
+# Position numbers 1-19 are those of ../assembly_bom.csv, letters A-E are the main parts.
 import os, csv, json, math, datetime
 import pymupdf
 from PIL import Image, ImageFilter
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-REPO = os.path.abspath(os.path.join(HERE, "..", ".."))
+REPO = os.path.abspath(os.path.join(HERE, ".."))
 IMG = os.path.join(HERE, "img")
 mm = 72 / 25.4
 PW, PH = 420, 297
@@ -16,12 +16,12 @@ BLK = (0, 0, 0); GRY = (0.45, 0.45, 0.45); LGR = (0.92, 0.92, 0.92)
 
 MAIN = {
     "A": ("1", "Display Guition JC8012P4A1C, 10.1\", ESP32-P4, with display cover", "Guition", "JC8012P4A1C_I_W_Y"),
-    "B": ("1", "CAN addon board (this repository), under the display cover on S1-S4", "", "JC8012P4A1C_I_W_Y_CAN"),
+    "B": ("1", "CAN addon board pcbs/can_power/, under the display cover on S1-S4", "", "JC8012P4A1C_I_W_Y_CAN"),
     "C1": ("1", "Frame, 3D printed, mechanics/frame.stl", "", ""),
     "C2": ("1", "Frame with keypad chamber, 3D printed, mechanics/frame_keypad.stl", "", ""),
-    "D1": ("1", "Back plate PCB backplate/, with VESA spacers H1-H4", "", ""),
-    "D2": ("1", "Back plate PCB backplate_keypad/, with VESA spacers H1-H4", "", ""),
-    "E": ("1", "Keypad PCB keypad/ (keys F1-F12, spacers H1-H4)", "", ""),
+    "D1": ("1", "Back plate PCB pcbs/backplate/, with VESA spacers H1-H4", "", ""),
+    "D2": ("1", "Back plate PCB pcbs/backplate_keypad/, with VESA spacers H1-H4", "", ""),
+    "E": ("1", "Keypad PCB pcbs/keypad/ (keys F1-F12, spacers H1-H4)", "", ""),
 }
 NOT_SHOWN = {"2", "4", "5", "6", "11", "12", "18"}
 KEYPAD_ONLY = {"16", "17", "18", "19"}
