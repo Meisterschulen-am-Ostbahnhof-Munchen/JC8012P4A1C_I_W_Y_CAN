@@ -5015,6 +5015,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+3.3V"
+    		(power global)
+    		(pin_numbers
+    			(hide yes)
+    		)
+    		(pin_names
+    			(offset 0)
+    			(hide yes)
+    		)
+    		(exclude_from_sim no)
+    		(in_bom yes)
+    		(on_board yes)
+    		(in_pos_files yes)
+    		(duplicate_pin_numbers_are_jumpers no)
+    		(property "Reference" "#PWR"
+    			(at 0 -3.81 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(hide yes)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(property "Value" "+3.3V"
+    			(at 0 3.556 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(property "Footprint" ""
+    			(at 0 0 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(hide yes)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(property "Datasheet" ""
+    			(at 0 0 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(hide yes)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+    			(at 0 0 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(hide yes)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(property "ki_keywords" "global power"
+    			(at 0 0 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(hide yes)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(symbol "+3.3V_0_1"
+    			(polyline
+    				(pts
+    					(xy -0.762 1.27) (xy 0 2.54)
+    				)
+    				(stroke
+    					(width 0)
+    					(type default)
+    				)
+    				(fill
+    					(type none)
+    				)
+    			)
+    			(polyline
+    				(pts
+    					(xy 0 2.54) (xy 0.762 1.27)
+    				)
+    				(stroke
+    					(width 0)
+    					(type default)
+    				)
+    				(fill
+    					(type none)
+    				)
+    			)
+    			(polyline
+    				(pts
+    					(xy 0 0) (xy 0 2.54)
+    				)
+    				(stroke
+    					(width 0)
+    					(type default)
+    				)
+    				(fill
+    					(type none)
+    				)
+    			)
+    		)
+    		(symbol "+3.3V_1_1"
+    			(pin power_in line
+    				(at 0 0 90)
+    				(length 0)
+    				(name ""
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    				(number "1"
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    			)
+    		)
+    		(embedded_fonts no)
+    	)
 		(symbol "power:+5V"
     		(power global)
     		(pin_numbers
@@ -7589,7 +7728,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 160.02 162.56 0)
+		(at 162.56 175.26 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7599,7 +7738,7 @@
 		(dnp no)
 		(uuid "774785df-adab-4c02-80e9-6a4972d9ad6f")
 		(property "Reference" "#FLG03"
-			(at 160.02 158.75 0)
+			(at 162.56 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7610,7 +7749,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 160.02 166.37 0)
+			(at 162.56 180.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7659,6 +7798,45 @@
 			(project "JC8012P4A1C_I_W_Y_CAN"
 				(path "/3d717ebe-2c48-4d74-a932-f01128cae071/c0000000-0000-0000-0000-000000000001"
 					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 162.56 162.56) (xy 162.56 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "774785df-adab-4c02-80e9-6a4972d9ad60")
+	)
+	(symbol (lib_id "power:+3.3V") (at 162.56 162.56 0) (unit 1)
+		(body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no)
+		(uuid "5c330003-0000-4000-8000-000000000003")
+		(property "Reference" "#PWR3037"
+			(at 162.56 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "+3.3V"
+			(at 162.56 158.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 162.56 162.56 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "" (at 162.56 162.56 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "" (at 162.56 162.56 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "5c330003-0000-4000-8000-000000000013"))
+		(instances
+			(project "JC8012P4A1C_I_W_Y_CAN"
+				(path "/3d717ebe-2c48-4d74-a932-f01128cae071/c0000000-0000-0000-0000-000000000001"
+					(reference "#PWR3037")
 					(unit 1)
 				)
 			)
@@ -8674,7 +8852,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 82.55) (xy 172.72 82.55)
+			(xy 167.64 82.55) (xy 177.80 82.55)
 		)
 		(stroke
 			(width 0)
@@ -8683,20 +8861,39 @@
 		(uuid "fc51ac9a-fea8-4f56-a1f1-f1bf6a7b768b")
 	)
 	(junction
-		(at 167.64 73.66)
+		(at 172.72 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "59aa743d-8bef-4810-a20b-ab9170c623d3")
 	)
-	(label "+3V3"
-		(at 167.64 73.66 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
+	(symbol (lib_id "power:+3.3V") (at 177.80 82.55 0) (unit 1)
+		(body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no)
+		(uuid "5c330001-0000-4000-8000-000000000001")
+		(property "Reference" "#PWR3035"
+			(at 177.80 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects (font (size 1.27 1.27)))
 		)
-		(uuid "876f1a3d-0b71-45a4-987c-dbcc489170cd")
+		(property "Value" "+3.3V"
+			(at 177.80 78.50 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 177.80 82.55 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "" (at 177.80 82.55 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "" (at 177.80 82.55 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "5c330001-0000-4000-8000-000000000011"))
+		(instances
+			(project "JC8012P4A1C_I_W_Y_CAN"
+				(path "/3d717ebe-2c48-4d74-a932-f01128cae071/c0000000-0000-0000-0000-000000000001"
+					(reference "#PWR3035")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(wire
 		(pts
@@ -9051,15 +9248,34 @@
 		(color 0 0 0 0)
 		(uuid "f6b2cb2c-7c68-4579-acaf-10a7b116ef16")
 	)
-	(label "+3V3"
-		(at 241.30 95.25 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
+	(symbol (lib_id "power:+3.3V") (at 241.30 95.25 0) (unit 1)
+		(body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no)
+		(uuid "5c330002-0000-4000-8000-000000000002")
+		(property "Reference" "#PWR3036"
+			(at 241.30 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects (font (size 1.27 1.27)))
 		)
-		(uuid "124d5de5-af64-4588-bbc4-ffa47f9daad0")
+		(property "Value" "+3.3V"
+			(at 241.30 90.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 241.30 95.25 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "" (at 241.30 95.25 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "" (at 241.30 95.25 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "5c330002-0000-4000-8000-000000000012"))
+		(instances
+			(project "JC8012P4A1C_I_W_Y_CAN"
+				(path "/3d717ebe-2c48-4d74-a932-f01128cae071/c0000000-0000-0000-0000-000000000001"
+					(reference "#PWR3036")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(wire
 		(pts
@@ -9334,16 +9550,7 @@
 			)
 		)
 	)
-	(label "+3V3"
-		(at 160.02 162.56 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "83099eea-fd0d-4a7f-99f6-dfce699fa42c")
-	)
+
 	(sheet_instances
 		(path "/3d717ebe-2c48-4d74-a932-f01128cae071/c0000000-0000-0000-0000-000000000001"
 			(page "3")
