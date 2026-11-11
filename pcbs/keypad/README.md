@@ -58,7 +58,7 @@ Same principle as the 4 key board `ISOBUS_Hardware/XL-accessories/Board_4_Button
 ## Electrics
 
 Schematic: 3 sheets (cover sheet, overview with key table, matrix with J1),
-PDF: [docs/schematic.pdf](docs/schematic.pdf).
+PDF: [docs/JC8012P4A1C_keypad_schematic.pdf](docs/JC8012P4A1C_keypad_schematic.pdf).
 
 3 x 4 key matrix with one diode per key (no ghost keys, any number of keys at
 the same time), read by the component
