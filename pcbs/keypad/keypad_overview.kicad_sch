@@ -1,0 +1,705 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "e1000000-0000-0000-0000-000000000001")
+	(paper "A4")
+	(title_block
+		(title "JC8012P4A1C Tastatur — System-Übersicht")
+		(date "2026-11-11")
+		(rev "A")
+		(company "Meisterschulen am Ostbahnhof München")
+		(comment 1 "Blatt 2 / 3: System-Übersicht & Tastenbelegung")
+		(comment 2 "Fachschule für Mechatronik- & Elektrotechnik")
+	)
+	(lib_symbols)
+	(rectangle
+		(start 155.5 104)
+		(end 278.13 160)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "501c6c3c-f54f-4668-9a95-fd7461204a25")
+	)
+	(rectangle
+		(start 17.78 17.78)
+		(end 281.94 195)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "960c834d-a1f8-41f7-bf41-93eb3b14154e")
+	)
+	(rectangle
+		(start 231.14 54)
+		(end 274.32 92)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "98b96882-8731-4304-b213-c75fff8d3d28")
+	)
+	(rectangle
+		(start 93.98 54)
+		(end 152.4 92)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "af93e986-1862-4be5-950d-ff189aafe538")
+	)
+	(rectangle
+		(start 162.56 54)
+		(end 220.98 92)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "bb678f15-95e5-4258-a4eb-506c49e49c7b")
+	)
+	(rectangle
+		(start 21.59 21.59)
+		(end 278.13 38)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "bc9b7951-4b52-4777-b436-3e78ab515c98")
+	)
+	(rectangle
+		(start 21.59 42)
+		(end 278.13 100)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "c4f98849-a3f1-441a-a88a-59f327255ec3")
+	)
+	(rectangle
+		(start 25.4 54)
+		(end 83.82 92)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "d743ef04-3452-4998-8db9-c2883ec04637")
+	)
+	(rectangle
+		(start 21.59 104)
+		(end 150.5 191)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "ee9dc06f-9ba7-471e-80f3-12b12c7a9c2b")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 29.94 125 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "1755b0d4-fe23-4d2e-a1e5-0f4dc29af9ee")
+	)
+	(text "• Befestigung: H1–H4 M2.5 L3, Schrauben M2.5 × 8"
+		(exclude_from_sim no)
+		(at 159.5 150.6 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "186509b2-c61f-4696-b970-19fe70ba9def")
+	)
+	(text "4"
+		(exclude_from_sim no)
+		(at 29.94 143 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "1c54a357-a53d-4bec-ba57-a6b28a0c6cf4")
+	)
+	(text "FPC4 \"EXTEND2\"  ->  FFC 14-pol.\n0,5 mm, ca. 250 mm, Pin n auf Pin n\nJ1: Würth WR-FPC 68711414522\n(Rückseite, obere Kante)\nGenutzt: Pin 6–12"
+		(exclude_from_sim no)
+		(at 96.52 62.5 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left top)
+		)
+		(uuid "33fe2cff-e03b-4c35-93a7-33577df88e03")
+	)
+	(text "2. TASTENBELEGUNG (Ansicht von vorne):"
+		(exclude_from_sim no)
+		(at 25.4 110 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "35160258-fa0c-4e44-8407-bb92e017967a")
+	)
+	(text "<>"
+		(exclude_from_sim no)
+		(at 226.06 73 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+				(bold yes)
+			)
+		)
+		(uuid "359ddb38-9885-405d-9821-bfdb4d3908ce")
+	)
+	(text "3"
+		(exclude_from_sim no)
+		(at 29.94 137 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "394cb7c2-bd49-4541-a5ba-8cf33ee5dc70")
+	)
+	(text "F6  =  S6 / D6    OUT2 / IN3"
+		(exclude_from_sim no)
+		(at 96.52 155 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "3c15ffa2-9828-46e1-8d0d-215171091c85")
+	)
+	(text "F3  =  S3 / D3    OUT1 / IN1"
+		(exclude_from_sim no)
+		(at 96.52 137 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "3d8b3304-9f77-448b-95eb-f4d2362d5853")
+	)
+	(text "Tastenraster 22,56 mm senkrecht (eine Taste je Softkey-Feld des Displays), 24 mm waagrecht.\nNummerierung wie am CCI 60 Terminal: F1–F6 äußere Spalte, F7–F12 Spalte neben dem Display,\njeweils von oben nach unten."
+		(exclude_from_sim no)
+		(at 25.4 166 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "418a8192-e4e9-4ae5-9ddb-937819cc1fa5")
+	)
+	(text "1. SIGNALFLUSS: DISPLAY-CONTROLLER  <->  FFC  <->  TASTENMATRIX  <->  TASTER:"
+		(exclude_from_sim no)
+		(at 25.4 48 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "48126ce7-546b-4de7-a8b9-3263d6ed2b1b")
+	)
+	(text "• keyboard_btn_config_t: output_gpios {31, 30, 32},"
+		(exclude_from_sim no)
+		(at 159.5 126.6 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "4bb6f99f-c86f-4963-9cc7-5250e8680a9e")
+	)
+	(text "• Logikpegel 3,3 V (ESP32-P4), keine LEDs, keine Versorgung"
+		(exclude_from_sim no)
+		(at 159.5 121.8 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "62210867-5950-4c6b-9c08-3f0902ead1ec")
+	)
+	(text "Zeilen OUT0–OUT2 (Ausgänge)\nSpalten IN0–IN3 (Eingänge)\nD1–D12: je eine Diode pro Taste\n(keine Geistertasten)\nKeine Versorgung nötig"
+		(exclude_from_sim no)
+		(at 165.1 62.5 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left top)
+		)
+		(uuid "64c5d5f3-2541-45da-aaf6-7e4f850cc6ef")
+	)
+	(text "F5  =  S5 / D5    OUT2 / IN1"
+		(exclude_from_sim no)
+		(at 96.52 149 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "65dcdf75-9f89-4ccf-a571-07a74a55a101")
+	)
+	(text "F11  =  S11 / D11    OUT2 / IN0"
+		(exclude_from_sim no)
+		(at 45.72 149 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "713e2c5f-5c68-4ea8-8997-e8822806533f")
+	)
+	(text "F9  =  S9 / D9    OUT1 / IN0"
+		(exclude_from_sim no)
+		(at 45.72 137 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "7cf5cd32-1e9d-492a-8298-842ad70b5d1a")
+	)
+	(text "F1  =  S1 / D1    OUT0 / IN1"
+		(exclude_from_sim no)
+		(at 96.52 125 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "7e327f01-9d8a-4304-967e-15108a0279f3")
+	)
+	(text "links (neben dem Display)"
+		(exclude_from_sim no)
+		(at 45.72 118 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "7f360530-df3d-4fc0-8b75-c5d2e2c829fe")
+	)
+	(text "S1–S12, Sn = Taste Fn\nWürth WS-TASV\n430162043826\n12 × 12 mm, H 4,3 mm\n260 gf"
+		(exclude_from_sim no)
+		(at 233.68 62.5 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left top)
+		)
+		(uuid "8358a6b6-fc1d-4a25-af6a-3a963681a92d")
+	)
+	(text "F12  =  S12 / D12    OUT2 / IN2"
+		(exclude_from_sim no)
+		(at 45.72 155 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "8974ae8f-d215-4ed0-b104-46fd4b32e82d")
+	)
+	(text "Zeile"
+		(exclude_from_sim no)
+		(at 27.94 118 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "8a644a6c-d8f0-4ed4-b737-82c1f36245c2")
+	)
+	(text "FFC-Verbindung"
+		(exclude_from_sim no)
+		(at 96.52 59 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "8f139e68-017d-4ad8-9983-a6f952f2eba0")
+	)
+	(text "F4  =  S4 / D4    OUT1 / IN3"
+		(exclude_from_sim no)
+		(at 96.52 143 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "915c2b4b-fa04-4be4-9e82-06b775bcb555")
+	)
+	(text "• Leiterplatte 48 × 150 mm, 1,6 mm, 2 Lagen, R 1,5 mm"
+		(exclude_from_sim no)
+		(at 159.5 136.2 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "91aa2b60-8688-4fd6-8825-fb2ba47f041d")
+	)
+	(text "• Aufbau: PU-Folie + 3 mm Plexiglas + FR4 = 5,5 mm"
+		(exclude_from_sim no)
+		(at 159.5 145.8 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "92186590-ccb4-4c91-97ef-601ed0118829")
+	)
+	(text "F8  =  S8 / D8    OUT0 / IN2"
+		(exclude_from_sim no)
+		(at 45.72 131 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "9ad43116-2d34-4567-9fc6-24dcbc03daf0")
+	)
+	(text "• Taster, Dioden, H1–H4 vorne (F), nur J1 hinten (B)"
+		(exclude_from_sim no)
+		(at 159.5 141 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "a1de5e09-1c44-42fa-ac56-d83523797476")
+	)
+	(text "2"
+		(exclude_from_sim no)
+		(at 29.94 131 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "a34de5ee-3699-42ea-9220-c918d63a21d8")
+	)
+	(text "Achtung: Die GPIO-Zuordnung gilt nur mit einem FFC, das Pin n auf Pin n verbindet."
+		(exclude_from_sim no)
+		(at 25.4 184 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "a458efe2-9864-4159-b6e1-26791596f685")
+	)
+	(text "F2  =  S2 / D2    OUT0 / IN3"
+		(exclude_from_sim no)
+		(at 96.52 131 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "ade00828-328e-4408-a1c3-ea0029bc0422")
+	)
+	(text "Tastenmatrix 3 × 4"
+		(exclude_from_sim no)
+		(at 165.1 59 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "bbe17826-a86b-4f9e-929a-63ddddaf128b")
+	)
+	(text "3. TECHNISCHE DATEN:"
+		(exclude_from_sim no)
+		(at 159.5 110 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "c03d51f3-7071-4093-b505-40040192eba6")
+	)
+	(text "rechts (außen)"
+		(exclude_from_sim no)
+		(at 96.52 118 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "c2fb814d-277d-4ae4-8643-92b24061ac6f")
+	)
+	(text "SYSTEM-ÜBERSICHT TASTATUR (SIGNALFLUSS & TASTENBELEGUNG)"
+		(exclude_from_sim no)
+		(at 25.4 27.5 0)
+		(effects
+			(font
+				(size 2.4 2.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "c8a776ec-752c-41e1-9427-1dd8ad421dde")
+	)
+	(text "• Matrix: 3 Ausgänge × 4 Eingänge = 12 Tasten"
+		(exclude_from_sim no)
+		(at 159.5 117 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "cd7ed39a-642c-407e-9803-902bda32a1ba")
+	)
+	(text "   input_gpios {28, 34, 29, 33}, active_level = 1"
+		(exclude_from_sim no)
+		(at 159.5 131.4 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "cedc63e0-cf06-4e68-877b-8a5352ff7330")
+	)
+	(text "<>"
+		(exclude_from_sim no)
+		(at 88.9 73 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+				(bold yes)
+			)
+		)
+		(uuid "cf8a554b-28ac-46b9-b950-afa02d5d5f76")
+	)
+	(text "Tastenabfrage mit esp-iot-solution\nKomponente keyboard_button\nAusgänge: GPIO31, 30, 32\nEingänge: GPIO28, 34, 29, 33\nInterner Pull-down, active_level = 1"
+		(exclude_from_sim no)
+		(at 27.94 62.5 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left top)
+		)
+		(uuid "d2d75f60-a22d-42d7-b1cd-46bb712d8260")
+	)
+	(text "F10  =  S10 / D10    OUT1 / IN2"
+		(exclude_from_sim no)
+		(at 45.72 143 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "d5238ee3-f5c5-4201-ada9-b7956dab942b")
+	)
+	(text "<>"
+		(exclude_from_sim no)
+		(at 157.48 73 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+				(bold yes)
+			)
+		)
+		(uuid "d57e50b8-e327-4d5c-912f-b2db6e66f4ac")
+	)
+	(text "• Dokumentations-Norm: DIN EN 61082 / DIN EN 60617"
+		(exclude_from_sim no)
+		(at 159.5 155.4 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "d87f0af2-5529-41e1-b418-0058fa935fe2")
+	)
+	(text "Didaktische Übersicht der Funktionsblöcke nach DIN EN 61082 — JC8012P4A1C Tastatur 2 × 6 (Variante 2)"
+		(exclude_from_sim no)
+		(at 25.4 33.5 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left)
+		)
+		(uuid "e12d8c62-5e01-4d26-af13-deee6b82068e")
+	)
+	(text "5"
+		(exclude_from_sim no)
+		(at 29.94 149 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "eb30d692-7f16-473e-be71-f54405135a74")
+	)
+	(text "F7  =  S7 / D7    OUT0 / IN0"
+		(exclude_from_sim no)
+		(at 45.72 125 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "ef177702-0f49-46ad-a5a4-0be8899d6936")
+	)
+	(text "6"
+		(exclude_from_sim no)
+		(at 29.94 155 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "f6e22658-38bb-42d7-a738-4a1ad529d88c")
+	)
+	(text "Taster F1–F12"
+		(exclude_from_sim no)
+		(at 233.68 59 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "f7ae187f-4fe7-4fbe-9aa7-a61ebcf77f2a")
+	)
+	(text "ESP32-P4 (Display-Board)"
+		(exclude_from_sim no)
+		(at 27.94 59 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "f8607178-19ee-40f5-94de-844cfdcb6762")
+	)
+	(polyline
+		(pts
+			(xy 25.4 120.5) (xy 147.32 120.5)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(uuid "010fc20e-b34a-4cdb-b38f-b4b0a23a9287")
+	)
+	(polyline
+		(pts
+			(xy 152.4 73) (xy 162.56 73)
+		)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(uuid "491872a9-935c-4e4a-b35d-1ff153e1971b")
+	)
+	(polyline
+		(pts
+			(xy 83.82 73) (xy 93.98 73)
+		)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(uuid "59310ce3-3eef-42c4-91af-331cb4038a83")
+	)
+	(polyline
+		(pts
+			(xy 220.98 73) (xy 231.14 73)
+		)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(uuid "7d822a67-422f-477b-bcc6-7e1d4f52f2a7")
+	)
+)

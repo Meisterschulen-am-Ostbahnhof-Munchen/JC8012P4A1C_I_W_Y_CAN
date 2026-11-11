@@ -243,7 +243,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "A"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -660,8 +660,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "JC8012P4A1C_backplate.kicad_sch",
-        "name": "JC8012P4A1C_backplate",
+        "filename": "JC8012P4A1C_keypad.kicad_sch",
+        "name": "JC8012P4A1C_keypad",
         "uuid": "3d717ebe-2c48-4d74-a932-f01128cae071"
       }
     ],
@@ -670,8 +670,16 @@
   },
   "sheets": [
     [
-      "327edc66-866f-48d2-93b0-99c9b847c6cb",
-      "Root"
+      "d38a0bdf-d690-477f-8005-02db3942b268",
+      "JC8012P4A1C_keypad"
+    ],
+    [
+      "e1000000-0000-0000-0000-000000000001",
+      "System_Overview"
+    ],
+    [
+      "e2000000-0000-0000-0000-000000000002",
+      "Tastenmatrix"
     ]
   ],
   "text_variables": {},
