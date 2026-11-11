@@ -90,14 +90,15 @@ MAT = {
     "brass": principled("Brass", (0.80, 0.62, 0.30), rough=0.3, metal=1.0),
     "steel": principled("Steel", (0.75, 0.75, 0.77), rough=0.28, metal=1.0),
     "nickel": principled("Nickel", (0.70, 0.69, 0.66), rough=0.22, metal=1.0),
+    "blackzinc": principled("BlackZinc", (0.035, 0.035, 0.04), rough=0.35, metal=0.9),   # Wurth "schw. vz."
     "mask": principled("SolderMask", (0.02, 0.18, 0.06), rough=0.35, coat=0.5),
     "black": principled("BlackPlastic", (0.02, 0.02, 0.02), rough=0.55),
     "plexi": principled("Plexiglass", (0.95, 0.97, 1.0), rough=0.02, alpha_tr=1.0, ior=1.49),
     "foil": image_material("Foil", os.path.join(TEX, "foil.png"), rough=0.38, coat=0.25),
     "screen": image_material("Screen", os.path.join(TEX, "screen.png"), emission=1.4, rough=0.08, coat=1.0),
 }
-PART_MAT = {"C": "frame", "3": "nickel", "7": "steel", "9": "steel", "8": "steel", "10": "steel",
-            "14": "steel", "15": "steel", "16": "steel", "17": "steel", "1": "steel",
+PART_MAT = {"C": "frame", "3": "nickel", "7": "steel", "9": "steel", "8": "blackzinc", "10": "steel",
+            "14": "steel", "15": "steel", "16": "steel", "17": "blackzinc", "1": "steel",
             "13": "black", "B": "mask", "D": "mask", "E": "mask", "19": "plexi", "19f": "foil"}
 
 

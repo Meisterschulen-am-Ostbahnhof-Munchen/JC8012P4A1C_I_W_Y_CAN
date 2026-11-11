@@ -28,7 +28,7 @@ Blender 5.3, FreeCAD 1.1, Python with PyMuPDF and Pillow.
 ## Notes
 
 - Materials: frame MJF PA12 (matt grey with a fine grain), black cover glass, foil satin
-  with the print, back plate and PCBs green solder mask, screws steel.
+  with the print, back plate and PCBs green solder mask, WÜPLAST screws black zinc, other screws steel.
 - The foil is modelled flat. In reality it forms a dome over each key (about 0.4 mm), so the
   keypad PCB is moved back by 0.6 mm in the picture, otherwise the actuators would show through.
 - The display is the envelope model (`../models/JC8012P4A1_envelope.step`); the active area
@@ -37,6 +37,7 @@ Blender 5.3, FreeCAD 1.1, Python with PyMuPDF and Pillow.
 
 ## TODO
 
-- Screws: replace the simple screw models (`screw()` in `../make_assembly.py`) with the
-  original 3D models from Würth, at least the WÜPLAST WN 1451 3 × 10 (art. 4234 3 10) of the
-  back plate, and export them like the other parts.
+- Screws: the WÜPLAST WN 1451 3 × 10 (Würth 4234 3 10, black zinc plated, pos. 8 and 17) use
+  the original Würth model `../models/WUEPLAST_Wuerth_4234_3_10.step` (simple model if the
+  file is missing). Still simple models: M2 × 6 (pos. 1), M2.5 (pos. 9, 14, 16), M4 × 12
+  (pos. 10) and the M2.5 nuts (pos. 15); replace them with Würth models as well.
