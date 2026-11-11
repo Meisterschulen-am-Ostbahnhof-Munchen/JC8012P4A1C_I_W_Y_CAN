@@ -19,6 +19,9 @@ os.makedirs(CACHE, exist_ok=True)
 LOG = open(os.path.join(CACHE, "make_assembly.log"), "w")
 KICAD_CLI = os.environ.get("KICAD_CLI", r"C:\Program Files\KiCad\10.0\bin\kicad-cli.exe")
 VARIANTS = [v.strip() for v in os.environ.get("ASSY_VARIANTS", "1,2").split(",")]
+# ASSY_EXPORT=1: instead of the drawings, export every part as STL (mm, frame coordinates) into
+# render/cache/variant<n>/ for the Blender rendering (render/render_blender.py)
+EXPORT = os.environ.get("ASSY_EXPORT", "") == "1"
 
 XK = 148.2          # keypad centre x (frame), see make_frame.py KP_*
 ZPCB_KP = 17.5      # back of the keypad PCB
@@ -276,8 +279,23 @@ try:
         json.dump(views, open(os.path.join(IMG, "%s_views.json" % name), "w"), indent=1)
         App.closeDocument(name)
 
+    def export_meshes(vn, items):
+        import MeshPart
+        out = os.path.join(HERE, "render", "cache", "variant%s" % vn)
+        os.makedirs(out, exist_ok=True)
+        meta = {}
+        for key, it in items.items():
+            m = MeshPart.meshFromShape(Shape=it["shape"], LinearDeflection=0.02, AngularDeflection=0.12, Relative=False)
+            m.write(os.path.join(out, key + ".stl"))
+            meta[key] = dict(col=list(it["col"]), ex=[it["ex"].x, it["ex"].y, it["ex"].z], label=it["label"])
+            log("mesh", vn, key, m.CountFacets)
+        json.dump(meta, open(os.path.join(out, "parts.json"), "w"), indent=1)
+
     for vn in VARIANTS:
-        render(vn, variant(vn))
+        if EXPORT:
+            export_meshes(vn, variant(vn))
+        else:
+            render(vn, variant(vn))
 except Exception:
     log(traceback.format_exc())
 finally:

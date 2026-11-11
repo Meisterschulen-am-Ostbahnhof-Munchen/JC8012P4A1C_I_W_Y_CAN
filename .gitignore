@@ -54,3 +54,4 @@ pcbs/*/production/gerber/
 
 # PCB STEP exports for the assembly drawings
 assembly/cache/
+assembly/render/cache/

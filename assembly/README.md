@@ -35,6 +35,8 @@ main parts: A display, B CAN board, C frame, D back plate, E keypad PCB.
 - `models/D-Sub_Wurth_618009227221.step`, `models/Jackpost_Wurth_94510000.step`:
   Würth Elektronik models (see `Wurth_Disclaimer_READ_ME.txt`).
 - Screws, nuts, speaker, plexiglass and foil are simple models made in the script.
+  TODO: use the original Würth 3D models for the screws (WÜPLAST 4234 3 10 first),
+  see [render/README.md](render/README.md).
 
 ## Simplifications
 

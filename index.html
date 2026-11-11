@@ -27,6 +27,9 @@
   a { color: var(--link); text-decoration: none; }
   a:hover { text-decoration: underline; }
   img.hero { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  img.render { border: 0; background: transparent; }
+  .shots { margin-top: 16px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  .shots img { width: 100%; height: auto; border-radius: 8px; background: var(--card); border: 1px solid var(--line); }
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
   .card h3 { margin: 0 0 4px; font-size: 1.05rem; }
@@ -46,7 +49,12 @@
     Interactive BOMs, schematics and drawings open directly in the browser.
     Source: <a href="https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/JC8012P4A1C_I_W_Y_CAN">GitHub repository</a>.</p>
 
-  <img class="hero" src="assembly/img/variant2_exploded_back.png" alt="Variant 2 with keypad, exploded view from behind">
+  <img class="hero render" src="assembly/img/render_variant2_front.png" alt="Variant 2 with keypad, rendering">
+  <div class="grid shots">
+    <img src="assembly/img/render_variant2_keypad.png" alt="Keypad with the printed foil">
+    <img src="assembly/img/render_variant2_back.png" alt="Back with VESA 100 back plate">
+    <img src="assembly/img/variant2_exploded_back.png" alt="Exploded view from behind">
+  </div>
 
   <h2>PCBs</h2>
   <div class="grid">
