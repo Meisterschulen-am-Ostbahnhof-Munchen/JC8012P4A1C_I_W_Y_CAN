@@ -240,7 +240,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "1.0"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -555,8 +555,8 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
-    "netclass_assignments": null,
+    "net_colors": {},
+    "netclass_assignments": {},
     "netclass_patterns": [
       {
         "netclass": "Power",
@@ -740,6 +740,18 @@
     [
       "3d717ebe-2c48-4d74-a932-f01128cae071",
       "JC8012P4A1C_I_W_Y_CAN"
+    ],
+    [
+      "b1000000-0000-0000-0000-000000000001",
+      "System_Overview"
+    ],
+    [
+      "c0000000-0000-0000-0000-000000000001",
+      "CAN_Interface"
+    ],
+    [
+      "a2dcd761-dc69-4ab3-8065-aad2540c49d1",
+      "Versorgung"
     ]
   ],
   "text_variables": {},

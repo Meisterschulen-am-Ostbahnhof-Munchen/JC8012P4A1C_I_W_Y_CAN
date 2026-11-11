@@ -12,12 +12,34 @@
 		(comment 1 "Blatt 1 / 4: Deckblatt & Dokumentenübersicht")
 		(comment 2 "Fachschule für Mechatronik- & Elektrotechnik")
 	)
-	(lib_symbols
+	(lib_symbols)
+	(rectangle
+		(start 21.59 66)
+		(end 175 190)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "3772f960-0831-47b2-8293-078a15d1782e")
 	)
-
+	(rectangle
+		(start 180 66)
+		(end 278.13 142)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "4a55a25e-d330-4862-91c1-bc856f61b937")
+	)
 	(rectangle
 		(start 17.78 17.78)
-		(end 281.94 195.00)
+		(end 281.94 195)
 		(stroke
 			(width 0.6)
 			(type solid)
@@ -29,7 +51,7 @@
 	)
 	(rectangle
 		(start 21.59 21.59)
-		(end 278.13 62.00)
+		(end 278.13 62)
 		(stroke
 			(width 0.35)
 			(type solid)
@@ -39,92 +61,9 @@
 		)
 		(uuid "d5a70aa8-36b7-4dfb-9375-d426c4482643")
 	)
-	(text "JC8012P4A1C  —  CAN & POWER INTERFACE"
-		(exclude_from_sim no)
-		(at 25.40 29.00 0)
-		(effects
-			(font
-				(size 3.5 3.5)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "c8db9fcd-4234-4857-bb5b-b4e3a1b2c737")
-	)
-	(text "Baugruppe für didaktischen JC8012 Display-Controller"
-		(exclude_from_sim no)
-		(at 25.40 37.00 0)
-		(effects
-			(font
-				(size 1.8 1.8)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "6a0c3087-36ea-465c-b3a6-a67cc220b0a6")
-	)
-	(text "Meisterschulen am Ostbahnhof München  |  Fachschule für Mechatronik- & Elektrotechnik"
-		(exclude_from_sim no)
-		(at 25.40 45.00 0)
-		(effects
-			(font
-				(size 1.4 1.4)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "46993e2a-55e7-4695-ba27-af22f34b9b89")
-	)
-	(text "SCHALTPLAN-PROJEKTDIRIGENT & DOKUMENTATIONSMAPPE NACH DIN EN 61082"
-		(exclude_from_sim no)
-		(at 25.40 53.00 0)
-		(effects
-			(font
-				(size 1.2 1.2)
-			)
-			(justify left)
-		)
-		(uuid "b43f1537-8383-4f85-8c83-c04dde634a1a")
-	)
-	(rectangle
-		(start 21.59 66.00)
-		(end 175.00 190.00)
-		(stroke
-			(width 0.3)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "3772f960-0831-47b2-8293-078a15d1782e")
-	)
-	(text "INHALTSVERZEICHNIS & MAPPEN-STRUKTUR:"
-		(exclude_from_sim no)
-		(at 25.40 72.00 0)
-		(effects
-			(font
-				(size 1.6 1.6)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "819fdc19-e601-4c3d-8696-bb512a6bb43d")
-	)
-	(text "• Blatt 1 / 4: Deckblatt & Dokumenten-Information"
-		(exclude_from_sim no)
-		(at 25.40 80.00 0)
-		(effects
-			(font
-				(size 1.3 1.3)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "cb911c1f-45ee-4941-ad2e-a7eee31c8e68")
-	)
 	(text "  Projektübersicht, Metadaten, Revisionshistorie und Normbezug"
 		(exclude_from_sim no)
-		(at 28.00 85.00 0)
+		(at 28 85 0)
 		(effects
 			(font
 				(size 1.1 1.1)
@@ -133,67 +72,9 @@
 		)
 		(uuid "02d9a3b8-b01d-4848-a80a-6b178c883aa7")
 	)
-	(text "• Blatt 2 / 4: System-Architektur & Technische Daten"
-		(exclude_from_sim no)
-		(at 25.40 93.00 0)
-		(effects
-			(font
-				(size 1.3 1.3)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "8fe0292f-3914-4806-95ca-e87d90978ac8")
-	)
-	(text "  Didaktisches System-Blockschaltbild (Energie- & Signalfluss), Spezifikationen"
-		(exclude_from_sim no)
-		(at 28.00 98.00 0)
-		(effects
-			(font
-				(size 1.1 1.1)
-			)
-			(justify left)
-		)
-		(uuid "33df81b7-d8cc-4fc5-a155-08d6eac5a595")
-	)
-	(text "• Blatt 3 / 4: CAN-Bus Schnittstelle & Display-Interface"
-		(exclude_from_sim no)
-		(at 25.40 106.00 0)
-		(effects
-			(font
-				(size 1.3 1.3)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "5b5dd380-a754-432b-a811-7aef142f9ad9")
-	)
-	(text "  TLE9250VSJ Transceiver, Split-Terminierung, WE-TVS ESD-Schutz, 14-Pol ZIF J2"
-		(exclude_from_sim no)
-		(at 28.00 111.00 0)
-		(effects
-			(font
-				(size 1.1 1.1)
-			)
-			(justify left)
-		)
-		(uuid "d5d4d90e-41d2-4151-bdf1-fef8e77246db")
-	)
-	(text "• Blatt 4 / 4: Spannungsversorgung & 5V Buck-Regler"
-		(exclude_from_sim no)
-		(at 25.40 119.00 0)
-		(effects
-			(font
-				(size 1.3 1.3)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "8816feba-afe0-4d20-af15-1f6f711e1fe5")
-	)
 	(text "  12V/24V Kfz-Einspeisung, P-FET Verpolungsschutz, Würth MagI3C Buck (171030601)"
 		(exclude_from_sim no)
-		(at 28.00 124.00 0)
+		(at 28 124 0)
 		(effects
 			(font
 				(size 1.1 1.1)
@@ -202,64 +83,9 @@
 		)
 		(uuid "12d2a7f0-918d-4f8a-8093-99e71d66868e")
 	)
-	(text "HIERARCHISCHE UNTERSCHALTPLÄNE (ZUM ÖFFNEN DOPPELKLICKEN):"
-		(exclude_from_sim no)
-		(at 25.40 134.00 0)
-		(effects
-			(font
-				(size 1.2 1.2)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "2bd0032c-0c93-4387-a90e-7c8654c996d6")
-	)
-	(sheet
-		(at 25.40 138.00)
-		(size 44.00 22.00)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.25)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0)
-		)
-		(uuid "b1000000-0000-0000-0000-000000000001")
-		(property "Sheetname" "System_Overview"
-			(at 27.94 143.08 0)
-			(effects
-				(font
-					(size 1.5 1.5)
-					(bold yes)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "system_overview.kicad_sch"
-			(at 27.94 150.70 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "JC8012P4A1C_I_W_Y_CAN"
-				(path "/3d717ebe-2c48-4d74-a932-f01128cae071"
-					(page "2")
-				)
-			)
-		)
-	)
 	(text "Blatt 2: Übersicht"
 		(exclude_from_sim no)
-		(at 25.40 164.00 0)
+		(at 25.4 164 0)
 		(effects
 			(font
 				(size 1.1 1.1)
@@ -269,63 +95,207 @@
 		)
 		(uuid "18b08661-90d1-49cd-aa4d-a9032861bc95")
 	)
-	(text "Blockschaltbild & Daten"
+	(text "• CAD-System: KiCad 10.0 (Eeschema)"
 		(exclude_from_sim no)
-		(at 25.40 168.50 0)
+		(at 183 98 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "1ebf8e62-dc4f-49ae-8cc5-edc8bc1f6ea5")
+	)
+	(text "• Revision: 1.0 (Freigegeben)"
+		(exclude_from_sim no)
+		(at 183 83 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "29c51f1f-0121-4ea9-b706-55bbd64218fe")
+	)
+	(text "HIERARCHISCHE UNTERSCHALTPLÄNE (ZUM ÖFFNEN DOPPELKLICKEN):"
+		(exclude_from_sim no)
+		(at 25.4 134 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "2bd0032c-0c93-4387-a90e-7c8654c996d6")
+	)
+	(text "  Didaktisches System-Blockschaltbild (Energie- & Signalfluss), Spezifikationen"
+		(exclude_from_sim no)
+		(at 28 98 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "33df81b7-d8cc-4fc5-a155-08d6eac5a595")
+	)
+	(text "• Netzlisten-Parität: 100% Bit-für-Bit"
+		(exclude_from_sim no)
+		(at 183 108 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "35088390-9fdf-41ec-bca5-a1e0b67fed3c")
+	)
+	(text "PROJEKT-METADATEN:"
+		(exclude_from_sim no)
+		(at 183 72 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "38ee8bd7-7c44-463d-9134-45fd8c9c6e1a")
+	)
+	(text "Meisterschulen am Ostbahnhof München  |  Fachschule für Mechatronik- & Elektrotechnik"
+		(exclude_from_sim no)
+		(at 25.4 45 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "46993e2a-55e7-4695-ba27-af22f34b9b89")
+	)
+	(text "• Norm: DIN EN 61082 / DIN EN 60617"
+		(exclude_from_sim no)
+		(at 183 103 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "56820e63-e7ca-4791-babe-f8280f47ae6b")
+	)
+	(text "• Blatt 3 / 4: CAN-Bus Schnittstelle & Display-Interface"
+		(exclude_from_sim no)
+		(at 25.4 106 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "5b5dd380-a754-432b-a811-7aef142f9ad9")
+	)
+	(text "Baugruppe für didaktischen JC8012 Display-Controller"
+		(exclude_from_sim no)
+		(at 25.4 37 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "6a0c3087-36ea-465c-b3a6-a67cc220b0a6")
+	)
+	(text "• Dokument-Typ: 4-Blatt-Schaltplanmappe"
+		(exclude_from_sim no)
+		(at 183 118 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "6ca02a81-3741-4e9d-9092-06cb1254f404")
+	)
+	(text "• ERC-Status: 0 Fehler, 0 Warnungen"
+		(exclude_from_sim no)
+		(at 183 113 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "6efeb9d5-7fc9-4e1d-804d-e40bdcb070f2")
+	)
+	(text "Blatt 4: Versorgung"
+		(exclude_from_sim no)
+		(at 123 164 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "7a970039-e8bb-4586-9fc7-9b080a3b8fd0")
+	)
+	(text "INHALTSVERZEICHNIS & MAPPEN-STRUKTUR:"
+		(exclude_from_sim no)
+		(at 25.4 72 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "819fdc19-e601-4c3d-8696-bb512a6bb43d")
+	)
+	(text "• Blatt 4 / 4: Spannungsversorgung & 5V Buck-Regler"
+		(exclude_from_sim no)
+		(at 25.4 119 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "8816feba-afe0-4d20-af15-1f6f711e1fe5")
+	)
+	(text "Buck-Regler & Schutz"
+		(exclude_from_sim no)
+		(at 123 168.5 0)
 		(effects
 			(font
 				(size 0.95 0.95)
 			)
 			(justify left)
 		)
-		(uuid "a61ab298-c064-40e3-9242-e27e6b3677de")
+		(uuid "8acca1d4-c26d-4e5f-b06a-fadc6cf2e766")
 	)
-	(sheet
-		(at 74.00 138.00)
-		(size 44.00 22.00)
+	(text "• Blatt 2 / 4: System-Architektur & Technische Daten"
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.25)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0)
-		)
-		(uuid "c0000000-0000-0000-0000-000000000001")
-		(property "Sheetname" "CAN_Interface"
-			(at 76.54 143.08 0)
-			(effects
-				(font
-					(size 1.5 1.5)
-					(bold yes)
-				)
-				(justify left bottom)
+		(at 25.4 93 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(bold yes)
 			)
+			(justify left)
 		)
-		(property "Sheetfile" "can_bus.kicad_sch"
-			(at 76.54 150.70 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "JC8012P4A1C_I_W_Y_CAN"
-				(path "/3d717ebe-2c48-4d74-a932-f01128cae071"
-					(page "3")
-				)
-			)
-		)
+		(uuid "8fe0292f-3914-4806-95ca-e87d90978ac8")
 	)
 	(text "Blatt 3: CAN & Display"
 		(exclude_from_sim no)
-		(at 74.00 164.00 0)
+		(at 74 164 0)
 		(effects
 			(font
 				(size 1.1 1.1)
@@ -335,9 +305,89 @@
 		)
 		(uuid "9ab118e8-fd4f-4176-ab04-f78690ead774")
 	)
+	(text "Blockschaltbild & Daten"
+		(exclude_from_sim no)
+		(at 25.4 168.5 0)
+		(effects
+			(font
+				(size 0.95 0.95)
+			)
+			(justify left)
+		)
+		(uuid "a61ab298-c064-40e3-9242-e27e6b3677de")
+	)
+	(text "SCHALTPLAN-PROJEKTDIRIGENT & DOKUMENTATIONSMAPPE NACH DIN EN 61082"
+		(exclude_from_sim no)
+		(at 25.4 53 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left)
+		)
+		(uuid "b43f1537-8383-4f85-8c83-c04dde634a1a")
+	)
+	(text "• Datum: 2026-11-11"
+		(exclude_from_sim no)
+		(at 183 88 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "bbe2c62c-7fed-46ff-9f6d-e58fbfe5c0a1")
+	)
+	(text "• Vertraulichkeit: Schulprojekt / Didaktik"
+		(exclude_from_sim no)
+		(at 183 123 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "c45e89bd-9159-4e8a-8851-74857b4bc508")
+	)
+	(text "JC8012P4A1C  —  CAN & POWER INTERFACE"
+		(exclude_from_sim no)
+		(at 25.4 29 0)
+		(effects
+			(font
+				(size 3.5 3.5)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "c8db9fcd-4234-4857-bb5b-b4e3a1b2c737")
+	)
+	(text "• Blatt 1 / 4: Deckblatt & Dokumenten-Information"
+		(exclude_from_sim no)
+		(at 25.4 80 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "cb911c1f-45ee-4941-ad2e-a7eee31c8e68")
+	)
+	(text "Die Bauteilbezeichner entsprechen 1:1 dem gerouteten PCB-Layout."
+		(exclude_from_sim no)
+		(at 25.4 184.5 0)
+		(effects
+			(font
+				(size 1 1)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "cd14adc6-9576-4aa6-9090-e429312fccfb")
+	)
 	(text "Transceiver & Buchsen"
 		(exclude_from_sim no)
-		(at 74.00 168.50 0)
+		(at 74 168.5 0)
 		(effects
 			(font
 				(size 0.95 0.95)
@@ -346,9 +396,53 @@
 		)
 		(uuid "d05031b9-a3b8-4a73-ac83-48c6d0f82a29")
 	)
+	(text "  TLE9250VSJ Transceiver, Split-Terminierung, WE-TVS ESD-Schutz, 14-Pol ZIF J2"
+		(exclude_from_sim no)
+		(at 28 111 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "d5d4d90e-41d2-4151-bdf1-fef8e77246db")
+	)
+	(text "Didaktischer Hinweis: Jeder Plan ist modular isoliert und vollständig beschriftet."
+		(exclude_from_sim no)
+		(at 25.4 180 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "e6964b29-de53-4d14-a1d3-950dfe79136e")
+	)
+	(text "• Autor: Franz (Meisterschulen München)"
+		(exclude_from_sim no)
+		(at 183 93 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "ea78f306-2d52-44dd-8580-6aa06d6e7d40")
+	)
+	(text "• Projekt: JC8012P4A1C CAN-Power Interface"
+		(exclude_from_sim no)
+		(at 183 78 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "f2ae4edf-41b0-4d32-99a1-71c28a300682")
+	)
 	(sheet
-		(at 123.00 138.00)
-		(size 44.00 22.00)
+		(at 123 138)
+		(size 44 22)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -359,11 +453,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0)
+			(color 0 0 0 0)
 		)
 		(uuid "a2dcd761-dc69-4ab3-8065-aad2540c49d1")
 		(property "Sheetname" "Versorgung"
 			(at 125.54 143.08 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.5 1.5)
@@ -373,7 +469,9 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 125.54 150.70 0)
+			(at 125.54 150.7 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -389,187 +487,99 @@
 			)
 		)
 	)
-	(text "Blatt 4: Versorgung"
+	(sheet
+		(at 25.4 138)
+		(size 44 22)
 		(exclude_from_sim no)
-		(at 123.00 164.00 0)
-		(effects
-			(font
-				(size 1.1 1.1)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "7a970039-e8bb-4586-9fc7-9b080a3b8fd0")
-	)
-	(text "Buck-Regler & Schutz"
-		(exclude_from_sim no)
-		(at 123.00 168.50 0)
-		(effects
-			(font
-				(size 0.95 0.95)
-			)
-			(justify left)
-		)
-		(uuid "8acca1d4-c26d-4e5f-b06a-fadc6cf2e766")
-	)
-	(text "Didaktischer Hinweis: Jeder Plan ist modular isoliert und vollständig beschriftet."
-		(exclude_from_sim no)
-		(at 25.40 180.00 0)
-		(effects
-			(font
-				(size 1.0 1.0)
-			)
-			(justify left)
-		)
-		(uuid "e6964b29-de53-4d14-a1d3-950dfe79136e")
-	)
-	(text "Die Bauteilbezeichner entsprechen 1:1 dem gerouteten PCB-Layout."
-		(exclude_from_sim no)
-		(at 25.40 184.50 0)
-		(effects
-			(font
-				(size 1.0 1.0)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "cd14adc6-9576-4aa6-9090-e429312fccfb")
-	)
-	(rectangle
-		(start 180.00 66.00)
-		(end 278.13 142.00)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
 		(stroke
-			(width 0.3)
+			(width 0.25)
 			(type solid)
 		)
 		(fill
-			(type none)
+			(color 0 0 0 0)
 		)
-		(uuid "4a55a25e-d330-4862-91c1-bc856f61b937")
-	)
-	(text "PROJEKT-METADATEN:"
-		(exclude_from_sim no)
-		(at 183.00 72.00 0)
-		(effects
-			(font
-				(size 1.4 1.4)
-				(bold yes)
+		(uuid "b1000000-0000-0000-0000-000000000001")
+		(property "Sheetname" "System_Overview"
+			(at 27.94 143.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+					(bold yes)
+				)
+				(justify left bottom)
 			)
-			(justify left)
 		)
-		(uuid "38ee8bd7-7c44-463d-9134-45fd8c9c6e1a")
-	)
-	(text "• Projekt: JC8012P4A1C CAN-Power Interface"
-		(exclude_from_sim no)
-		(at 183.00 78.00 0)
-		(effects
-			(font
-				(size 1.05 1.05)
+		(property "Sheetfile" "system_overview.kicad_sch"
+			(at 27.94 150.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
 			)
-			(justify left)
 		)
-		(uuid "f2ae4edf-41b0-4d32-99a1-71c28a300682")
-	)
-	(text "• Revision: 1.0 (Freigegeben)"
-		(exclude_from_sim no)
-		(at 183.00 83.00 0)
-		(effects
-			(font
-				(size 1.05 1.05)
+		(instances
+			(project "JC8012P4A1C_I_W_Y_CAN"
+				(path "/3d717ebe-2c48-4d74-a932-f01128cae071"
+					(page "2")
+				)
 			)
-			(justify left)
 		)
-		(uuid "29c51f1f-0121-4ea9-b706-55bbd64218fe")
 	)
-	(text "• Datum: 2026-11-11"
+	(sheet
+		(at 74 138)
+		(size 44 22)
 		(exclude_from_sim no)
-		(at 183.00 88.00 0)
-		(effects
-			(font
-				(size 1.05 1.05)
-			)
-			(justify left)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.25)
+			(type solid)
 		)
-		(uuid "bbe2c62c-7fed-46ff-9f6d-e58fbfe5c0a1")
-	)
-	(text "• Autor: Franz (Meisterschulen München)"
-		(exclude_from_sim no)
-		(at 183.00 93.00 0)
-		(effects
-			(font
-				(size 1.05 1.05)
-			)
-			(justify left)
+		(fill
+			(color 0 0 0 0)
 		)
-		(uuid "ea78f306-2d52-44dd-8580-6aa06d6e7d40")
-	)
-	(text "• CAD-System: KiCad 10.0 (Eeschema)"
-		(exclude_from_sim no)
-		(at 183.00 98.00 0)
-		(effects
-			(font
-				(size 1.05 1.05)
+		(uuid "c0000000-0000-0000-0000-000000000001")
+		(property "Sheetname" "CAN_Interface"
+			(at 76.54 143.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+					(bold yes)
+				)
+				(justify left bottom)
 			)
-			(justify left)
 		)
-		(uuid "1ebf8e62-dc4f-49ae-8cc5-edc8bc1f6ea5")
-	)
-	(text "• Norm: DIN EN 61082 / DIN EN 60617"
-		(exclude_from_sim no)
-		(at 183.00 103.00 0)
-		(effects
-			(font
-				(size 1.05 1.05)
+		(property "Sheetfile" "can_bus.kicad_sch"
+			(at 76.54 150.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
 			)
-			(justify left)
 		)
-		(uuid "56820e63-e7ca-4791-babe-f8280f47ae6b")
-	)
-	(text "• Netzlisten-Parität: 100% Bit-für-Bit"
-		(exclude_from_sim no)
-		(at 183.00 108.00 0)
-		(effects
-			(font
-				(size 1.05 1.05)
-				(bold yes)
+		(instances
+			(project "JC8012P4A1C_I_W_Y_CAN"
+				(path "/3d717ebe-2c48-4d74-a932-f01128cae071"
+					(page "3")
+				)
 			)
-			(justify left)
 		)
-		(uuid "35088390-9fdf-41ec-bca5-a1e0b67fed3c")
-	)
-	(text "• ERC-Status: 0 Fehler, 0 Warnungen"
-		(exclude_from_sim no)
-		(at 183.00 113.00 0)
-		(effects
-			(font
-				(size 1.05 1.05)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "6efeb9d5-7fc9-4e1d-804d-e40bdcb070f2")
-	)
-	(text "• Dokument-Typ: 4-Blatt-Schaltplanmappe"
-		(exclude_from_sim no)
-		(at 183.00 118.00 0)
-		(effects
-			(font
-				(size 1.05 1.05)
-			)
-			(justify left)
-		)
-		(uuid "6ca02a81-3741-4e9d-9092-06cb1254f404")
-	)
-	(text "• Vertraulichkeit: Schulprojekt / Didaktik"
-		(exclude_from_sim no)
-		(at 183.00 123.00 0)
-		(effects
-			(font
-				(size 1.05 1.05)
-			)
-			(justify left)
-		)
-		(uuid "c45e89bd-9159-4e8a-8851-74857b4bc508")
 	)
 	(sheet_instances
 		(path "/"
