@@ -7999,6 +7999,26 @@
 		)
 		(uuid "9c961a53-491e-42c9-9cfb-f68749c3e514")
 	)
+	(wire
+		(pts
+			(xy 132.08 68.58) (xy 139.70 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "264ce755-aec8-49e4-b675-5f20fc45bf89")
+	)
+	(wire
+		(pts
+			(xy 132.08 73.66) (xy 139.70 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9979aa0-9f49-42f7-9c38-5c0c0354945f")
+	)
 	(label "TBC_GND"
 		(at 30.48 60.96 180)
 		(effects
@@ -8327,7 +8347,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 58.42) (xy 144.78 58.42)
+			(xy 53.34 58.42) (xy 132.08 58.42)
 		)
 		(stroke
 			(width 0)
@@ -8367,7 +8387,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 88.90) (xy 144.78 88.90)
+			(xy 66.04 88.90) (xy 132.08 88.90)
 		)
 		(stroke
 			(width 0)
@@ -8595,7 +8615,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 58.42) (xy 139.70 68.58)
+			(xy 132.08 58.42) (xy 132.08 68.58)
 		)
 		(stroke
 			(width 0)
@@ -8605,7 +8625,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 88.90) (xy 139.70 73.66)
+			(xy 132.08 88.90) (xy 132.08 73.66)
 		)
 		(stroke
 			(width 0)
@@ -8728,7 +8748,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 58.42) (xy 137.16 66.04)
+			(xy 137.16 58.42) (xy 137.16 60.96)
 		)
 		(stroke
 			(width 0)
@@ -8736,25 +8756,25 @@
 		)
 		(uuid "1073cb47-77a7-42ca-8b9f-69718ee2cf92")
 	)
-	(symbol (lib_id "power:GND") (at 137.16 66.04 0) (unit 1)
+	(symbol (lib_id "power:GND") (at 137.16 60.96 0) (unit 1)
 		(body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no)
 		(uuid "ac7e6e1b-7e6f-4a72-adfd-3d682372cf9e")
 		(property "Reference" "#PWR3010"
-			(at 137.16 66.04 0)
+			(at 137.16 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects (font (size 1.27 1.27)))
 		)
 		(property "Value" "GND"
-			(at 137.16 69.54 0)
+			(at 137.16 64.46 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects (font (size 1.27 1.27)))
 		)
-		(property "Footprint" "" (at 137.16 66.04 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-		(property "Datasheet" "" (at 137.16 66.04 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-		(property "Description" "" (at 137.16 66.04 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 137.16 60.96 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "" (at 137.16 60.96 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "" (at 137.16 60.96 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "4926ec19-f54c-4b3d-a3f2-7f43410aca15"))
 		(instances
 			(project "JC8012P4A1C_I_W_Y_CAN"
