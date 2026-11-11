@@ -5516,7 +5516,7 @@
 	)
 	(rectangle
 		(start 234.95 27.94)
-		(end 287.02 134.62)
+		(end 279.40 134.62)
 		(stroke
 			(width 0.25)
 			(type dash)
@@ -5551,7 +5551,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 35.56 50.80 90)
+		(at 43.18 50.80 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5561,7 +5561,7 @@
 		(dnp no)
 		(uuid "e098d875-9649-48bf-9c32-1564a6b831b9")
 		(property "Reference" "F1"
-			(at 35.56 44.45 270)
+			(at 43.18 44.45 270)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5571,7 +5571,7 @@
 			)
 		)
 		(property "Value" "1A slow 125V"
-			(at 35.56 46.99 270)
+			(at 43.18 46.99 270)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5648,7 +5648,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_TVS")
-		(at 45.72 60.96 270)
+		(at 53.34 60.96 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7942,7 +7942,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 254.00 66.04 0)
+		(at 250.19 66.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7952,7 +7952,7 @@
 		(dnp no)
 		(uuid "069318d1-d5c1-43c3-9cb2-8c6817bf85aa")
 		(property "Reference" "C10"
-			(at 256.54 64.77 0)
+			(at 252.73 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7963,7 +7963,7 @@
 			)
 		)
 		(property "Value" "220u/10V"
-			(at 256.54 67.31 0)
+			(at 252.73 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8041,7 +8041,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 269.24 66.04 0)
+		(at 261.62 66.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8051,7 +8051,7 @@
 		(dnp no)
 		(uuid "e2664640-de0b-429a-a408-2c30fdcc0904")
 		(property "Reference" "C11"
-			(at 271.78 64.77 0)
+			(at 264.16 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8062,7 +8062,7 @@
 			)
 		)
 		(property "Value" "47u/10V"
-			(at 271.78 67.31 0)
+			(at 264.16 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8292,19 +8292,10 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 22.86 50.80) (xy 31.75 50.80)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b8cd691d-f224-4df4-bf2d-f732914e54fc")
-	)
+	
 	(global_label "ECU_PWR_IN"
 		(shape input)
-		(at 22.86 50.80 180)
+		(at 39.37 50.80 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8324,7 +8315,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 50.80) (xy 45.72 50.80)
+			(xy 46.99 50.80) (xy 53.34 50.80)
 		)
 		(stroke
 			(width 0)
@@ -8334,7 +8325,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 50.80) (xy 45.72 57.15)
+			(xy 53.34 50.80) (xy 53.34 57.15)
 		)
 		(stroke
 			(width 0)
@@ -8342,15 +8333,10 @@
 		)
 		(uuid "0c6bb037-f7ee-4525-886f-6a8cc1557998")
 	)
-	(junction
-		(at 45.72 50.80)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cabef36e-4d13-4f8e-8f94-4652105d55f8")
-	)
+	
 	(wire
 		(pts
-			(xy 45.72 64.77) (xy 45.72 71.12)
+			(xy 53.34 64.77) (xy 53.34 71.12)
 		)
 		(stroke
 			(width 0)
@@ -8358,25 +8344,25 @@
 		)
 		(uuid "b12363bc-9782-4b32-96a0-5cba8905e2bd")
 	)
-	(symbol (lib_id "power:GND") (at 45.72 71.12 0) (unit 1)
+	(symbol (lib_id "power:GND") (at 53.34 71.12 0) (unit 1)
 		(body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no)
 		(uuid "01d88e5a-1166-4857-8dd7-a2ff698c1864")
 		(property "Reference" "#PWR3022"
-			(at 45.72 71.12 0)
+			(at 53.34 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects (font (size 1.27 1.27)))
 		)
 		(property "Value" "GND"
-			(at 45.72 74.62 0)
+			(at 53.34 74.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects (font (size 1.27 1.27)))
 		)
-		(property "Footprint" "" (at 45.72 71.12 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-		(property "Datasheet" "" (at 45.72 71.12 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-		(property "Description" "" (at 45.72 71.12 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 53.34 71.12 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "" (at 53.34 71.12 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "" (at 53.34 71.12 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "31aa5b27-9c92-4aaa-a174-0e5704cc5617"))
 		(instances
 			(project "JC8012P4A1C_I_W_Y_CAN"
@@ -8387,16 +8373,7 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 45.72 50.80) (xy 53.34 50.80)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "28d22a0a-ef98-475c-bfcb-a1b0f990e035")
-	)
+	
 	(junction
 		(at 53.34 50.80)
 		(diameter 0)
@@ -8409,7 +8386,7 @@
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left top)
 		)
 		(uuid "48b4ee4b-ec98-4d43-bedd-8b7381959da6")
 	)
@@ -9454,7 +9431,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.20 50.80) (xy 281.94 50.80)
+			(xy 203.20 50.80) (xy 271.78 50.80)
 		)
 		(stroke
 			(width 0)
@@ -9468,25 +9445,25 @@
 		(color 0 0 0 0)
 		(uuid "40319132-6c7f-4fce-bc09-6c267de97b26")
 	)
-	(symbol (lib_id "power:+5V") (at 281.94 50.80 0) (unit 1)
+	(symbol (lib_id "power:+5V") (at 271.78 50.80 0) (unit 1)
 		(body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no)
 		(uuid "e319e920-a68b-4e4a-8156-b959708e3030")
 		(property "Reference" "#PWR3030"
-			(at 281.94 50.80 0)
+			(at 271.78 50.80 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects (font (size 1.27 1.27)))
 		)
 		(property "Value" "+5V"
-			(at 281.94 46.30 0)
+			(at 271.78 46.30 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects (font (size 1.27 1.27)))
 		)
-		(property "Footprint" "" (at 281.94 50.80 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-		(property "Datasheet" "" (at 281.94 50.80 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-		(property "Description" "" (at 281.94 50.80 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 271.78 50.80 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "" (at 271.78 50.80 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "" (at 271.78 50.80 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "e0d0004b-1a92-4981-ae13-110f7b882398"))
 		(instances
 			(project "JC8012P4A1C_I_W_Y_CAN"
@@ -9554,7 +9531,7 @@
 	)
 	(wire
 		(pts
-			(xy 254.00 62.23) (xy 254.00 50.80)
+			(xy 250.19 62.23) (xy 250.19 50.80)
 		)
 		(stroke
 			(width 0)
@@ -9563,14 +9540,14 @@
 		(uuid "f3bbce3d-0074-4954-a698-6fa60e2b9152")
 	)
 	(junction
-		(at 254.00 50.80)
+		(at 250.19 50.80)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6d6d1a29-4387-4810-b432-5bc31e8a17bf")
 	)
 	(wire
 		(pts
-			(xy 254.00 69.85) (xy 254.00 76.20)
+			(xy 250.19 69.85) (xy 250.19 76.20)
 		)
 		(stroke
 			(width 0)
@@ -9578,25 +9555,25 @@
 		)
 		(uuid "cd8a1df9-1ce9-477e-8af1-d45e0c1a8e5d")
 	)
-	(symbol (lib_id "power:GND") (at 254.00 76.20 0) (unit 1)
+	(symbol (lib_id "power:GND") (at 250.19 76.20 0) (unit 1)
 		(body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no)
 		(uuid "8607759d-a946-4a8a-a97f-283f136cb332")
 		(property "Reference" "#PWR3032"
-			(at 254.00 76.20 0)
+			(at 250.19 76.20 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects (font (size 1.27 1.27)))
 		)
 		(property "Value" "GND"
-			(at 254.00 79.70 0)
+			(at 250.19 79.70 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects (font (size 1.27 1.27)))
 		)
-		(property "Footprint" "" (at 254.00 76.20 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-		(property "Datasheet" "" (at 254.00 76.20 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-		(property "Description" "" (at 254.00 76.20 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 250.19 76.20 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "" (at 250.19 76.20 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "" (at 250.19 76.20 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "377478ce-baac-4074-8a19-f0a645310eae"))
 		(instances
 			(project "JC8012P4A1C_I_W_Y_CAN"
@@ -9609,7 +9586,7 @@
 	)
 	(wire
 		(pts
-			(xy 269.24 62.23) (xy 269.24 50.80)
+			(xy 261.62 62.23) (xy 261.62 50.80)
 		)
 		(stroke
 			(width 0)
@@ -9618,14 +9595,14 @@
 		(uuid "c6e36082-0168-4774-9b30-1dd996e43d01")
 	)
 	(junction
-		(at 269.24 50.80)
+		(at 261.62 50.80)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "792e28c2-4cd0-4174-b8b4-338e4ef712d4")
 	)
 	(wire
 		(pts
-			(xy 269.24 69.85) (xy 269.24 76.20)
+			(xy 261.62 69.85) (xy 261.62 76.20)
 		)
 		(stroke
 			(width 0)
@@ -9633,25 +9610,25 @@
 		)
 		(uuid "dc0d79c0-d9f9-442b-b8df-835fb45208fe")
 	)
-	(symbol (lib_id "power:GND") (at 269.24 76.20 0) (unit 1)
+	(symbol (lib_id "power:GND") (at 261.62 76.20 0) (unit 1)
 		(body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no)
 		(uuid "c75d703f-b329-44f2-99ee-b0134294aff8")
 		(property "Reference" "#PWR3033"
-			(at 269.24 76.20 0)
+			(at 261.62 76.20 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects (font (size 1.27 1.27)))
 		)
 		(property "Value" "GND"
-			(at 269.24 79.70 0)
+			(at 261.62 79.70 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects (font (size 1.27 1.27)))
 		)
-		(property "Footprint" "" (at 269.24 76.20 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-		(property "Datasheet" "" (at 269.24 76.20 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-		(property "Description" "" (at 269.24 76.20 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 261.62 76.20 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "" (at 261.62 76.20 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "" (at 261.62 76.20 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "08e2dc25-8ee8-409f-8269-2e28a118b83b"))
 		(instances
 			(project "JC8012P4A1C_I_W_Y_CAN"
