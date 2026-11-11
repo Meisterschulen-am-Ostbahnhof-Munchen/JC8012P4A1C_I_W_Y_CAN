@@ -1,0 +1,659 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "b1000000-0000-0000-0000-000000000001")
+	(paper "A4")
+	(title_block
+		(title "JC8012P4A1C — System-Architektur")
+		(date "2026-11-11")
+		(rev "1.0")
+		(company "Meisterschulen am Ostbahnhof München")
+		(comment 1 "Blatt 2 / 4: System-Blockschaltbild & Technische Daten")
+		(comment 2 "Fachschule für Mechatronik- & Elektrotechnik")
+	)
+	(lib_symbols
+	)
+
+	(rectangle
+		(start 17.78 17.78)
+		(end 281.94 195.00)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "c5223d44-d37a-4748-84ad-d5dc3ee43b3c")
+	)
+	(rectangle
+		(start 21.59 21.59)
+		(end 278.13 38.00)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "e900272a-95cd-46fe-9fbf-8e6419af292b")
+	)
+	(text "SYSTEM-BLOCKSCHALTBILD (SIGNAL- & ENERGIEFLUSS)"
+		(exclude_from_sim no)
+		(at 25.40 27.50 0)
+		(effects
+			(font
+				(size 2.4 2.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "eb6f1d41-470e-49e4-b374-cf7eab7129c4")
+	)
+	(text "Didaktische Architekturübersicht der Funktionsblöcke nach DIN EN 61082 — JC8012P4A1C"
+		(exclude_from_sim no)
+		(at 25.40 33.50 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left)
+		)
+		(uuid "58befd95-a9fb-44fe-832c-418bb9f52c7c")
+	)
+	(rectangle
+		(start 21.59 42.00)
+		(end 278.13 126.00)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "3b1d6c2f-8b87-4ebb-a9ed-95f68325e20b")
+	)
+	(text "1. ENERGIEFLUSS: SPANNUNGSVERSORGUNG (Kfz-Bordnetz 12V/24V  ->  5V Systemspannung):"
+		(exclude_from_sim no)
+		(at 25.40 48.00 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "6de51922-6a5e-4ea5-a3e7-673c2c3d7013")
+	)
+	(rectangle
+		(start 25.40 52.00)
+		(end 66.04 72.00)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "bbc94605-4f8d-4744-9b1c-ab18d8d67a6b")
+	)
+	(text "1. Einspeisung"
+		(exclude_from_sim no)
+		(at 27.94 57.00 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "012ef428-a1d9-4cc4-ae84-6ff84f9292be")
+	)
+	(text "ECU_PWR_IN (12V/24V)\nF1 1A  |  TVS 30V D2"
+		(exclude_from_sim no)
+		(at 27.94 62.00 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "d8cad290-4d90-4429-8cca-6e314dac0b74")
+	)
+	(polyline
+		(pts
+			(xy 66.04 62.00) (xy 73.66 62.00)
+		)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(uuid "5e4ca911-9c3b-4cc9-85fd-61b75067cd68")
+	)
+	(text ">"
+		(exclude_from_sim no)
+		(at 72.39 62.00 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				(bold yes)
+			)
+		)
+		(uuid "763e5ee2-cefc-4a16-8527-f012cd2edb92")
+	)
+	(rectangle
+		(start 73.66 52.00)
+		(end 119.38 72.00)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "aff8a22e-296f-4e24-928b-25ad94873feb")
+	)
+	(text "2. Verpolungsschutz"
+		(exclude_from_sim no)
+		(at 76.20 57.00 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "b0719806-07df-4c83-8a5f-5b25968e4816")
+	)
+	(text "Dual P-FET Q1 (Si4948)\nZener D3  |  TBC-Zweig"
+		(exclude_from_sim no)
+		(at 76.20 62.00 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "4ec39975-8524-4f68-a2d7-fa5541d0cd9b")
+	)
+	(polyline
+		(pts
+			(xy 119.38 62.00) (xy 127.00 62.00)
+		)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(uuid "5a5e39cf-f4a8-4c46-867f-a986ddfa8e16")
+	)
+	(text ">"
+		(exclude_from_sim no)
+		(at 125.73 62.00 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				(bold yes)
+			)
+		)
+		(uuid "280c45ab-9c4d-4ac2-adc3-75c6c468ad5d")
+	)
+	(rectangle
+		(start 127.00 52.00)
+		(end 167.64 72.00)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "f1339e93-8415-48ef-a9b3-c72a59c6ee79")
+	)
+	(text "3. LC-Filterung"
+		(exclude_from_sim no)
+		(at 129.54 57.00 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "9628dd42-7981-43c5-ac7e-e28b0efea3b8")
+	)
+	(text "Drossel L2 (10µH, 1.6A)\nPufferung C4, C12"
+		(exclude_from_sim no)
+		(at 129.54 62.00 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "34bfed3a-be23-4d1d-8672-3c168184c8e1")
+	)
+	(polyline
+		(pts
+			(xy 167.64 62.00) (xy 175.26 62.00)
+		)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(uuid "360e8faa-263a-4d1b-88d2-221589ca2e38")
+	)
+	(text ">"
+		(exclude_from_sim no)
+		(at 173.99 62.00 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				(bold yes)
+			)
+		)
+		(uuid "40c64a51-3cc4-4076-a1d6-563111fa2271")
+	)
+	(rectangle
+		(start 175.26 52.00)
+		(end 226.06 72.00)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "d15fa2fd-94ff-426f-9fe3-d84ab1df8d80")
+	)
+	(text "4. MagI3C Buck-Regler"
+		(exclude_from_sim no)
+		(at 177.80 57.00 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "73cb4c88-f4de-455c-8d18-e5c9ad5415f4")
+	)
+	(text "Würth 171030601 (5V/1A)\nSternmasse BUCK_AGND"
+		(exclude_from_sim no)
+		(at 177.80 62.00 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "27a0ea06-7d6a-4c00-b8c4-e3e5937c0335")
+	)
+	(polyline
+		(pts
+			(xy 226.06 62.00) (xy 233.68 62.00)
+		)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(uuid "2c672681-06e2-4040-91d7-e29da23d60c9")
+	)
+	(text ">"
+		(exclude_from_sim no)
+		(at 232.41 62.00 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				(bold yes)
+			)
+		)
+		(uuid "c80565c5-49b6-46db-917f-52cf5157852f")
+	)
+	(rectangle
+		(start 233.68 52.00)
+		(end 274.32 72.00)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "80841806-b581-490f-a52c-92f2f79589d3")
+	)
+	(text "5. +5V Ausgangs-Rail"
+		(exclude_from_sim no)
+		(at 236.22 57.00 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "03a50c29-b739-43f4-b1e1-4dfa561f1c99")
+	)
+	(text "C10 220µF  |  C5, C11 47µF\nSpeisung Transceiver & J2"
+		(exclude_from_sim no)
+		(at 236.22 62.00 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "982e8964-f3ea-474d-a224-93b0ffb81625")
+	)
+	(text "2. SIGNALFLUSS: KOMMUNIKATION & DISPLAY-SCHNITTSTELLE (CAN FD  <->  UART Display):"
+		(exclude_from_sim no)
+		(at 25.40 80.00 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "8d067bd2-f6ae-4cf6-aceb-17299cabf842")
+	)
+	(rectangle
+		(start 25.40 84.00)
+		(end 86.36 120.00)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "c2c04521-09c9-49e1-bcc6-126a55412284")
+	)
+	(text "CAN-Bus Interface (J1)"
+		(exclude_from_sim no)
+		(at 27.94 89.00 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "c2deab55-c64a-4f50-b989-0d1bf3841dec")
+	)
+	(text "10-Pol Pin-Header J1\nESD-Schutzdiode D1 (WE-TVS)\nSplit-Termination R1/R2/C1 (120 Ohm)\nVersorgungs-Steckverbinder J3 (4-Pol)"
+		(exclude_from_sim no)
+		(at 27.94 95.00 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "ddcb64ef-e26d-4a91-b4b0-a7cf9a1f272a")
+	)
+	(polyline
+		(pts
+			(xy 86.36 102.00) (xy 104.14 102.00)
+		)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(uuid "1a4a981a-4964-477f-8a90-0b480004c693")
+	)
+	(text "CAN_H / CAN_L"
+		(exclude_from_sim no)
+		(at 95.25 98.00 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+				(bold yes)
+			)
+		)
+		(uuid "1f6c51a3-8e80-40de-b765-931271fcb7aa")
+	)
+	(text "<>"
+		(exclude_from_sim no)
+		(at 95.25 102.00 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+				(bold yes)
+			)
+		)
+		(uuid "f33dc42c-7cbf-4245-ab34-5b8887d37e12")
+	)
+	(rectangle
+		(start 104.14 84.00)
+		(end 187.96 120.00)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "2f997172-92d9-4e35-9ba0-b424191e9084")
+	)
+	(text "CAN-Transceiver U1 (TLE9250VSJ)"
+		(exclude_from_sim no)
+		(at 106.68 89.00 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "48935c0e-46cc-4251-8f4b-1993d60b6690")
+	)
+	(text "Infineon CAN FD ready Transceiver (bis 5 Mbit/s)\nVCC = 5.0V Speisung   |   VIO = 3.3V Logikreferenz\nTestpunkte TP1 (+5V), TP2 (GND), TP3/TP4 (Bus)\nStandby-Steuerung NEN über Pull-down R3 (10k)"
+		(exclude_from_sim no)
+		(at 106.68 95.00 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "470c6b14-7094-4948-9a34-24293b431650")
+	)
+	(polyline
+		(pts
+			(xy 187.96 102.00) (xy 205.74 102.00)
+		)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(uuid "800c0130-231d-4f27-8d7b-bd565f64609b")
+	)
+	(text "TXD / RXD / NEN"
+		(exclude_from_sim no)
+		(at 196.85 98.00 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+				(bold yes)
+			)
+		)
+		(uuid "87d0233d-a3d1-412d-ad3c-4100890f530e")
+	)
+	(text "<>"
+		(exclude_from_sim no)
+		(at 196.85 102.00 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+				(bold yes)
+			)
+		)
+		(uuid "247d6e37-68e4-4c06-a6b7-aec60e37414d")
+	)
+	(rectangle
+		(start 205.74 84.00)
+		(end 274.32 120.00)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "e524d6ee-f32d-4d1e-ac16-d7d8bdea21c8")
+	)
+	(text "Display-Interface J2"
+		(exclude_from_sim no)
+		(at 208.28 89.00 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "afb03adf-3be0-4293-a455-cd9050de4a54")
+	)
+	(text "14-Pol ZIF-FPC Flachbandkabel (0.5mm)\nVerbindung zum JC8012 Controller\nSignale: TXD, RXD, NEN, +3.3V, GND\nDirekte Einspeisung der VIO-Referenz"
+		(exclude_from_sim no)
+		(at 208.28 95.00 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "7598077a-52b7-403f-a907-9b88bcbdbfac")
+	)
+	(rectangle
+		(start 21.59 131.00)
+		(end 175.00 191.00)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "6ae68af0-2834-42ef-abc1-50e229caf5b1")
+	)
+	(text "TECHNISCHE DATEN & BETRIEBSPARAMETER:"
+		(exclude_from_sim no)
+		(at 25.40 137.00 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "1ad81bfe-6d20-4c55-8bc1-0f13efbce71f")
+	)
+	(text "• Eingangsspannung U_IN: 6.0 V ... 36.0 V DC (Kfz-Bordnetz 12V / 24V)"
+		(exclude_from_sim no)
+		(at 25.40 143.00 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "e42f27b5-4d4a-4e91-b33a-640ef092f1ea")
+	)
+	(text "• Ausgangsspannung U_OUT: 5.0 V DC ±1.5% (Würth MagI3C 171030601, max. 1.0 A)"
+		(exclude_from_sim no)
+		(at 25.40 148.00 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "d5777107-401d-4b5b-a7b5-67a15746012b")
+	)
+	(text "• CAN-Transceiver: Infineon TLE9250VSJ (ISO 11898-2:2016, bis 5 Mbit/s CAN FD)"
+		(exclude_from_sim no)
+		(at 25.40 153.00 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "311210a1-8974-41be-bfe2-2e26db027f98")
+	)
+	(text "• Logikpegel: 3.3 V LVCMOS (VIO direkt über Display-Interface J2 gespeist)"
+		(exclude_from_sim no)
+		(at 25.40 158.00 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "a9feba22-8f3b-4121-a992-af319d1abb65")
+	)
+	(text "• Schutzbeschaltung: TVS 30V D2, Dual P-FET Q1 (Si4948), 1A Sicherung F1"
+		(exclude_from_sim no)
+		(at 25.40 163.00 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "0f888390-7d38-4798-90c1-725a1b286566")
+	)
+	(text "• TBC-Zweig: PTC 0.14A (F2), Schottky-Diode D4 (B160) für Notbetrieb"
+		(exclude_from_sim no)
+		(at 25.40 168.00 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "9ae7bfaa-de6d-45e1-972a-146350c6dc4d")
+	)
+	(text "• EMV / Filterung: Würth WE-TVS D1 (0.4 pF), Split-Termination R1/R2/C1"
+		(exclude_from_sim no)
+		(at 25.40 173.00 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "2abb7fd4-056d-4a3d-8c47-5cd3554865a1")
+	)
+	(text "• Layout-Vorgabe: Separate analoge Sternmasse BUCK_AGND (R7, R10, C6)"
+		(exclude_from_sim no)
+		(at 25.40 178.00 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "2ed5cde7-6b73-41f0-aacc-7ae0d9637ec0")
+	)
+	(text "• Dokumentations-Norm: DIN EN 61082 / DIN EN 60617 (100% Netzlisten-Identität)"
+		(exclude_from_sim no)
+		(at 25.40 183.00 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "a4a6f009-9494-443a-bd92-ad08a55426f1")
+	)
+	(sheet_instances
+		(path "/3d717ebe-2c48-4d74-a932-f01128cae071/b1000000-0000-0000-0000-000000000001"
+			(page "2")
+		)
+	)
+	(embedded_fonts no)
+)

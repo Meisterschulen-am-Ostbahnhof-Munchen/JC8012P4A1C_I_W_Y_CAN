@@ -9,7 +9,7 @@
 		(date "2026-11-11")
 		(rev "1.0")
 		(company "Meisterschulen am Ostbahnhof München")
-		(comment 1 "Blatt 2: CAN-Transceiver & Steckverbinder")
+		(comment 1 "Blatt 3 / 4: CAN-Transceiver & Steckverbinder")
 		(comment 2 "Fachschule für Mechatronik- & Elektrotechnik")
 	)
 	(lib_symbols
@@ -5398,7 +5398,7 @@
 		)
 		(uuid "9d395494-6217-4614-8549-462aeff2140d")
 	)
-	(text "JC8012P4A1C - Blatt 2: CAN-Transceiver, Bus-Filterung und Display-Interface"
+	(text "JC8012P4A1C - Blatt 3 / 4: CAN-Transceiver, Bus-Filterung und Display-Interface"
 		(exclude_from_sim no)
 		(at 20.32 22.86 0)
 		(effects
@@ -9346,7 +9346,7 @@
 	)
 	(sheet_instances
 		(path "/3d717ebe-2c48-4d74-a932-f01128cae071/c0000000-0000-0000-0000-000000000001"
-			(page "2")
+			(page "3")
 		)
 	)
 	(embedded_fonts no)

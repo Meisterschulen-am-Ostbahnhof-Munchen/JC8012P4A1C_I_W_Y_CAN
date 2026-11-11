@@ -9,7 +9,7 @@
 		(date "2026-11-11")
 		(rev "1.0")
 		(company "Meisterschulen am Ostbahnhof München")
-		(comment 1 "Blatt 3: Verpolungsschutz, LC-Filter, 5V Buck")
+		(comment 1 "Blatt 4 / 4: Spannungsversorgung & 5V Buck")
 		(comment 2 "Fachschule für Mechatronik- & Elektrotechnik")
 	)
 	(lib_symbols
@@ -5398,7 +5398,7 @@
 		)
 		(uuid "f892a5c5-627c-499a-9c65-76738c04442e")
 	)
-	(text "JC8012P4A1C - Blatt 3: Verpolungsschutz, Eingangsfilterung und 5V MagI3C Buck-Regler"
+	(text "JC8012P4A1C - Blatt 4 / 4: Verpolungsschutz, Eingangsfilterung und 5V MagI3C Buck-Regler"
 		(exclude_from_sim no)
 		(at 20.32 22.86 0)
 		(effects
@@ -9698,7 +9698,7 @@
 	)
 	(sheet_instances
 		(path "/3d717ebe-2c48-4d74-a932-f01128cae071/a2dcd761-dc69-4ab3-8065-aad2540c49d1"
-			(page "3")
+			(page "4")
 		)
 	)
 	(embedded_fonts no)
