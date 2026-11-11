@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JC8012P4A1C Enclosure &amp; CAN Addon</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1f2328; --muted: #59636e; --line: #d1d9e0;
+    --card: #f6f8fa; --link: #0969da;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1117; --fg: #e6edf3; --muted: #9198a1; --line: #3d444d;
+      --card: #151b23; --link: #4493f8;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 960px; margin: 0 auto; padding: 32px 16px 48px; }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; }
+  h2 { font-size: 1.25rem; margin: 40px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+  p.lead { color: var(--muted); margin: 0 0 24px; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  img.hero { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
+  .card h3 { margin: 0 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0 0 10px; color: var(--muted); font-size: 0.9rem; }
+  .card ul { margin: 0; padding-left: 18px; }
+  .card li { margin: 2px 0; }
+  .tag { font-size: 0.75rem; color: var(--muted); }
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>JC8012P4A1C Enclosure &amp; CAN Addon</h1>
+  <p class="lead">Enclosure, mounting and CAN/power addon board for the Guition JC8012P4A1C
+    (ESP32-P4, 10.1") display, used by
+    <a href="https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/espVT">espVT</a>.
+    Interactive BOMs, schematics and drawings open directly in the browser.
+    Source: <a href="https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/JC8012P4A1C_I_W_Y_CAN">GitHub repository</a>.</p>
+
+  <img class="hero" src="assembly/img/variant2_exploded_back.png" alt="Variant 2 with keypad, exploded view from behind">
+
+  <h2>PCBs</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>CAN &amp; power board</h3>
+      <p>CAN transceiver TLE9250VSJ, 12 V input, 5 V buck. Both variants.</p>
+      <ul>
+        <li><a href="pcbs/can_power/production/JC8012P4A1C_I_W_Y_CAN_ibom.html">Interactive BOM</a></li>
+        <li><a href="pcbs/can_power/docs/JC8012P4A1C_I_W_Y_CAN_schematic.pdf">Schematic (PDF)</a></li>
+        <li><a href="pcbs/can_power/production/JC8012P4A1C_I_W_Y_CAN_bom.csv">BOM (CSV)</a> ·
+            <a href="pcbs/can_power/production/JC8012P4A1C_I_W_Y_CAN_gerber.zip">Gerber</a></li>
+        <li><a href="https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/JC8012P4A1C_I_W_Y_CAN/tree/main/pcbs/can_power">README</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Keypad</h3>
+      <p>12 keys F1–F12 in a 3 × 4 matrix with diodes. Variant 2.</p>
+      <ul>
+        <li><a href="pcbs/keypad/production/JC8012P4A1C_keypad_ibom.html">Interactive BOM</a></li>
+        <li><a href="pcbs/keypad/docs/JC8012P4A1C_keypad_schematic.pdf">Schematic (PDF)</a></li>
+        <li><a href="pcbs/keypad/production/JC8012P4A1C_keypad_bom.csv">BOM (CSV)</a> ·
+            <a href="pcbs/keypad/production/JC8012P4A1C_keypad_gerber.zip">Gerber</a></li>
+        <li><a href="pcbs/keypad/docs/folika_keypad_12.pdf">Foil cutting drawing (Folika)</a></li>
+        <li><a href="https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/JC8012P4A1C_I_W_Y_CAN/tree/main/pcbs/keypad">README</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Back plate</h3>
+      <p>FR4 back plate with VESA 100 mount and speaker. Variant 1.</p>
+      <ul>
+        <li><a href="pcbs/backplate/production/JC8012P4A1C_backplate_ibom.html">Interactive BOM</a></li>
+        <li><a href="pcbs/backplate/docs/JC8012P4A1C_backplate_schematic.pdf">Schematic (PDF)</a></li>
+        <li><a href="pcbs/backplate/production/JC8012P4A1C_backplate_bom.csv">BOM (CSV)</a> ·
+            <a href="pcbs/backplate/production/JC8012P4A1C_backplate_gerber.zip">Gerber</a></li>
+        <li><a href="https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/JC8012P4A1C_I_W_Y_CAN/tree/main/pcbs/backplate">README</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Back plate with keypad</h3>
+      <p>Wide FR4 back plate (296.9 mm). Variant 2.</p>
+      <ul>
+        <li><a href="pcbs/backplate_keypad/production/JC8012P4A1C_backplate_keypad_ibom.html">Interactive BOM</a></li>
+        <li><a href="pcbs/backplate_keypad/docs/JC8012P4A1C_backplate_keypad_schematic.pdf">Schematic (PDF)</a></li>
+        <li><a href="pcbs/backplate_keypad/production/JC8012P4A1C_backplate_keypad_bom.csv">BOM (CSV)</a> ·
+            <a href="pcbs/backplate_keypad/production/JC8012P4A1C_backplate_keypad_gerber.zip">Gerber</a></li>
+        <li><a href="https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/JC8012P4A1C_I_W_Y_CAN/tree/main/pcbs/backplate_keypad">README</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Assembly &amp; mechanics</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Assembly drawings (A3)</h3>
+      <p>Exploded view, parts list, order of assembly.</p>
+      <ul>
+        <li><a href="assembly/JC8012P4A1C_assembly_variant1.pdf">Variant 1 (without keypad)</a></li>
+        <li><a href="assembly/JC8012P4A1C_assembly_variant2_keypad.pdf">Variant 2 (with keypad)</a></li>
+        <li><a href="assembly_bom.csv">Mechanical parts, screws, cables (CSV)</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>3D printed frame</h3>
+      <p>For thread forming screws WÜPLAST 3 × 10, e.g. MJF PA12.</p>
+      <ul>
+        <li>Variant 1: <a href="mechanics/frame.stl">STL</a> · <a href="mechanics/frame.step">STEP</a></li>
+        <li>Variant 2: <a href="mechanics/frame_keypad.stl">STL</a> · <a href="mechanics/frame_keypad.step">STEP</a></li>
+        <li><a href="https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/JC8012P4A1C_I_W_Y_CAN/tree/main/mechanics">README</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>Meisterschulen am Ostbahnhof München · Files on this page come from the <code>main</code> branch.</footer>
+</main>
+</body>
+</html>

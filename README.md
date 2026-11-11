@@ -7,6 +7,9 @@ The system integrates an ISOBUS/CAN interface, 12 V power supply, a 3D-printed e
 and an FR4 backplate with VESA 100 mount and speaker. An optional second variant extends the unit
 with a 12-key tactile keypad next to the display.
 
+**Online:** interactive BOMs, schematics and drawings at
+<https://meisterschulen-am-ostbahnhof-munchen.github.io/JC8012P4A1C_I_W_Y_CAN/>
+
 ![variant 2, exploded view](assembly/img/variant2_exploded_back.png)
 
 ## Repository Structure
