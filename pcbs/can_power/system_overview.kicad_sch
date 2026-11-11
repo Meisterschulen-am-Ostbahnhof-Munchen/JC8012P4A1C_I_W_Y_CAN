@@ -181,7 +181,7 @@
 		)
 		(uuid "03a50c29-b739-43f4-b1e1-4dfa561f1c99")
 	)
-	(text "• Schutzbeschaltung: TVS 30V D2, Dual P-FET Q1 (Si4948), 1A Sicherung F1"
+	(text "• Schutzbeschaltung: TVS 24V D2 (SMDJ24CA, Klemmung max. 38.9 V), Dual P-FET Q1 (Si4948), 1A Sicherung F1"
 		(exclude_from_sim no)
 		(at 25.4 163 0)
 		(effects
@@ -226,7 +226,7 @@
 		)
 		(uuid "247d6e37-68e4-4c06-a6b7-aec60e37414d")
 	)
-	(text "Würth 171030601 (5V/1A)\nSternmasse BUCK_AGND"
+	(text "Würth 171030601 (5V, max. 3A)\nSternmasse BUCK_AGND"
 		(exclude_from_sim no)
 		(at 177.8 62 0)
 		(effects
@@ -248,7 +248,7 @@
 		)
 		(uuid "280c45ab-9c4d-4ac2-adc3-75c6c468ad5d")
 	)
-	(text "• EMV / Filterung: Würth WE-TVS D1 (0.4 pF), Split-Termination R1/R2/C1"
+	(text "• EMV / Filterung: Würth WE-TVS D1 (38 pF), Split-Termination R1/R2/C1"
 		(exclude_from_sim no)
 		(at 25.4 173 0)
 		(effects
@@ -281,7 +281,7 @@
 		)
 		(uuid "311210a1-8974-41be-bfe2-2e26db027f98")
 	)
-	(text "Drossel L2 (10µH, 1.6A)\nPufferung C4, C12"
+	(text "Drossel L2 (10µH, 2.2A)\nPufferung C4, C12"
 		(exclude_from_sim no)
 		(at 129.54 62 0)
 		(effects
@@ -348,7 +348,7 @@
 		)
 		(uuid "58befd95-a9fb-44fe-832c-418bb9f52c7c")
 	)
-	(text "1. ENERGIEFLUSS: SPANNUNGSVERSORGUNG (Kfz-Bordnetz 12V/24V  ->  5V Systemspannung):"
+	(text "1. ENERGIEFLUSS: SPANNUNGSVERSORGUNG (Kfz-Bordnetz 12V  ->  5V Systemspannung):"
 		(exclude_from_sim no)
 		(at 25.4 48 0)
 		(effects
@@ -405,7 +405,7 @@
 		)
 		(uuid "87d0233d-a3d1-412d-ad3c-4100890f530e")
 	)
-	(text "2. SIGNALFLUSS: KOMMUNIKATION & DISPLAY-SCHNITTSTELLE (CAN FD  <->  UART Display):"
+	(text "2. SIGNALFLUSS: KOMMUNIKATION & DISPLAY-SCHNITTSTELLE (CAN-Bus  <->  CAN-Controller TWAI des Displays):"
 		(exclude_from_sim no)
 		(at 25.4 80 0)
 		(effects
@@ -429,7 +429,7 @@
 		)
 		(uuid "9628dd42-7981-43c5-ac7e-e28b0efea3b8")
 	)
-	(text "C10 220µF  |  C5, C11 47µF\nSpeisung Transceiver & J2"
+	(text "C10 220µF  |  C5, C11 47µF\nSpeisung Transceiver & J3 (5V Display)"
 		(exclude_from_sim no)
 		(at 236.22 62 0)
 		(effects
@@ -440,7 +440,7 @@
 		)
 		(uuid "982e8964-f3ea-474d-a224-93b0ffb81625")
 	)
-	(text "• TBC-Zweig: PTC 0.14A (F2), Schottky-Diode D4 (B160) für Notbetrieb"
+	(text "• TBC-Ausgang: D-Sub Pin 8 (TBC_PWR_OUT) über Schottky-Diode D4 (B160) und PTC F2 (0.14A)"
 		(exclude_from_sim no)
 		(at 25.4 168 0)
 		(effects
@@ -521,7 +521,7 @@
 		)
 		(uuid "c80565c5-49b6-46db-917f-52cf5157852f")
 	)
-	(text "• Ausgangsspannung U_OUT: 5.0 V DC ±1.5% (Würth MagI3C 171030601, max. 1.0 A)"
+	(text "• Ausgangsspannung U_OUT: 5.0 V DC (Würth MagI3C 171030601, Modul max. 3 A)"
 		(exclude_from_sim no)
 		(at 25.4 148 0)
 		(effects
@@ -532,7 +532,7 @@
 		)
 		(uuid "d5777107-401d-4b5b-a7b5-67a15746012b")
 	)
-	(text "ECU_PWR_IN (12V/24V)\nF1 1A  |  TVS 30V D2"
+	(text "ECU_PWR_IN (12V)\nF1 1A  |  TVS 24V D2"
 		(exclude_from_sim no)
 		(at 27.94 62 0)
 		(effects
@@ -543,7 +543,7 @@
 		)
 		(uuid "d8cad290-4d90-4429-8cca-6e314dac0b74")
 	)
-	(text "10-Pol Pin-Header J1\nESD-Schutzdiode D1 (WE-TVS)\nSplit-Termination R1/R2/C1 (120 Ohm)\nVersorgungs-Steckverbinder J3 (4-Pol)"
+	(text "10-Pol Pin-Header J1\nESD-Schutzdiode D1 (WE-TVS)\nSplit-Termination R1/R2 je 750 Ohm, C1 47nF\nTBC-Ausgang über D4/F2 (D-Sub Pin 8)"
 		(exclude_from_sim no)
 		(at 27.94 95 0)
 		(effects
@@ -554,7 +554,7 @@
 		)
 		(uuid "ddcb64ef-e26d-4a91-b4b0-a7cf9a1f272a")
 	)
-	(text "• Eingangsspannung U_IN: 6.0 V ... 36.0 V DC (Kfz-Bordnetz 12V / 24V)"
+	(text "• Eingangsspannung: 12 V Kfz-Bordnetz (ECU_PWR), Buck-Modul selbst 6 ... 42 V"
 		(exclude_from_sim no)
 		(at 25.4 143 0)
 		(effects

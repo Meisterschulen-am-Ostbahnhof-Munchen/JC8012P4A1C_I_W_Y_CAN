@@ -5572,7 +5572,7 @@
 		)
 		(uuid "c63011c9-14a6-4f74-80ea-eed5065c737d")
 	)
-	(text "Pegelwandlung CAN-Bus <-> UART/Display (TXD/RXD) | VIO=3.3V, VCC=5V"
+	(text "Pegelwandlung CAN-Bus <-> CAN-Controller (TWAI) des Displays | VIO=3.3V, VCC=5V"
 		(exclude_from_sim no)
 		(at 123.19 37 0)
 		(effects

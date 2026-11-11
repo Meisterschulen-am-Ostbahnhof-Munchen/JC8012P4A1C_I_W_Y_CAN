@@ -72,7 +72,7 @@
 		)
 		(uuid "02d9a3b8-b01d-4848-a80a-6b178c883aa7")
 	)
-	(text "  12V/24V Kfz-Einspeisung, P-FET Verpolungsschutz, Würth MagI3C Buck (171030601)"
+	(text "  12V Kfz-Bordnetz, P-FET Verpolungsschutz, Würth MagI3C Buck (171030601)"
 		(exclude_from_sim no)
 		(at 28 124 0)
 		(effects

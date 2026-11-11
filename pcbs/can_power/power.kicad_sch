@@ -5433,7 +5433,7 @@
 		)
 		(uuid "96dc1b76-30a8-4738-a006-1092d9b9f84a")
 	)
-	(text "Würth Elektronik MagI3C Power Module | U_IN: 6-36V -> U_OUT: 5.0V"
+	(text "Würth Elektronik MagI3C Power Module | U_IN: 6-42V -> U_OUT: 5.0V"
 		(exclude_from_sim no)
 		(at 156.21 37 0)
 		(effects
@@ -5513,7 +5513,7 @@
 		)
 		(uuid "a8208143-0300-4419-a420-56dcf921f3e5")
 	)
-	(text "F1: 1A Sicherung | D2: TVS 30V | Q1: Dual P-FET Verpolungsschutz | D4+F2: TBC-Speisung"
+	(text "F1: 1A Sicherung | D2: TVS 24V | Q1: Dual P-FET Verpolungsschutz | D4+F2: TBC-Speisung"
 		(exclude_from_sim no)
 		(at 20.32 37 0)
 		(effects
