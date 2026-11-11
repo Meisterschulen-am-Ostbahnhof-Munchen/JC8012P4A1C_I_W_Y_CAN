@@ -57,6 +57,9 @@ Same principle as the 4 key board `ISOBUS_Hardware/XL-accessories/Board_4_Button
 
 ## Electrics
 
+Schematic: 3 sheets (cover sheet, overview with key table, matrix with J1),
+PDF: [docs/JC8012P4A1C_keypad_schematic.pdf](docs/JC8012P4A1C_keypad_schematic.pdf).
+
 3 x 4 key matrix with one diode per key (no ghost keys, any number of keys at
 the same time), read by the component
 [keyboard_button](https://docs.espressif.com/projects/esp-iot-solution/en/latest/input_device/keyboard_button.html)
@@ -127,7 +130,7 @@ interactive BOM [production/JC8012P4A1C_keypad_ibom.html](production/JC8012P4A1C
 | Ref | Part |
 |---|---|
 | S1-S12 | Wurth WS-TASV 430162043826, SMT tact switch 12 x 12 mm, H 4.3 mm, 260 g |
-| D1-D12 | small signal switching diode, >= 30 V, >= 100 mA, SOD-123 (MPN TBD) |
+| D1-D12 | Panjit BAT43W_R1_00001, Schottky diode 30 V 200 mA, SOD-123 (Mouser 241-BAT43W_R1_00001) |
 | H1-H4 | Wurth WA-SMSI 9774030151R, M2.5, L 3 mm |
 | J1 | Wurth WR-FPC 68711414522 |
 
@@ -141,7 +144,6 @@ the back plate (see `../backplate/README.md`), with the project name
 
 ## Open points
 
-- Diode MPN (SOD-123).
 - FFC: 14 pin, 0.5 mm, about 250 mm. The cable runs from FPC4 through the slot
   in the display cover, along the top of the frame, through the slot in the
   side wall into the chamber and enters J1 from the top edge. Check length and

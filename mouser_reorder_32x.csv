@@ -1,0 +1,8 @@
+"Mouser Part Number","Mfr Part Number","Manufacturer","Quantity","Description","Used for"
+"863-MMSZ5245BT1G","MMSZ5245BT1G","onsemi","12","Zener diode 15 V SOD-123","CAN board D3"
+"621-B160-F","B160-13-F","Diodes Incorporated","12","Schottky diode 60 V 1 A SMA","CAN board D4"
+"576-0452001.MRL","0452001.MRL","Littelfuse","12","Fuse 1 A slow NANO2","CAN board F1"
+"652-MF-MSMF014-2","MF-MSMF014-2","Bourns","12","PTC fuse 0.14 A 60 V 1812","CAN board F2"
+"781-SI4948BEY-T1-E3","SI4948BEY-T1-E3","Vishay","12","Dual P-MOSFET SO-8","CAN board Q1"
+"726-TLE9250VSJXUMA1","TLE9250VSJXUMA1","Infineon","12","CAN transceiver SO-8","CAN board U1"
+"241-BAT43W_R1_00001","BAT43W_R1_00001","Panjit","400","Schottky diode 30 V 0.2 A SOD-123","Keypad D1-D12 (30 keypads: 360 + 40 spare)"

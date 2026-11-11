@@ -163,9 +163,9 @@
 				)
 			)
 		)
-		(path "/97961769-c981-4157-be59-41fc32b29b38")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/97961769-c981-4157-be59-41fc32b29b38")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -316,7 +316,7 @@
 			(at -7 -2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/K12")
+			(net "Net-(D12-K)")
 			(uuid "e881beb7-8721-4f53-b254-04dc08648be6")
 		)
 		(pad "2" smd rect
@@ -330,7 +330,7 @@
 			(at -7 2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/IN2")
+			(net "/Tastenmatrix/IN2")
 			(uuid "bc8c9715-b8c0-4afb-b2d5-731ab94d146c")
 		)
 		(pad "4" smd rect
@@ -429,9 +429,9 @@
 				)
 			)
 		)
-		(path "/bb0aed5d-55d7-4af9-9687-47e1dc95fd8a")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/bb0aed5d-55d7-4af9-9687-47e1dc95fd8a")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -589,7 +589,7 @@
 			(at 7 -2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/K3")
+			(net "Net-(D3-K)")
 			(uuid "14040f44-26ae-4eb6-a0a1-ce16b3af1562")
 		)
 		(pad "3" smd rect
@@ -603,7 +603,7 @@
 			(at 7 2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/IN1")
+			(net "/Tastenmatrix/IN1")
 			(uuid "f3edca77-3cdb-4fbc-99fd-0b987ec0adf9")
 		)
 		(embedded_fonts no)
@@ -695,9 +695,9 @@
 				)
 			)
 		)
-		(path "/62ac9c8d-58f7-4081-997b-d951fb284542")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/62ac9c8d-58f7-4081-997b-d951fb284542")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -848,7 +848,7 @@
 			(at -7 -2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/IN0")
+			(net "/Tastenmatrix/IN0")
 			(uuid "e48e76e3-e22a-4243-a909-79eb3e7b641c")
 		)
 		(pad "2" smd rect
@@ -862,7 +862,7 @@
 			(at -7 2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/K7")
+			(net "Net-(D7-K)")
 			(uuid "035e7b80-017f-4463-958f-419b68eca3bb")
 		)
 		(pad "4" smd rect
@@ -961,9 +961,9 @@
 				)
 			)
 		)
-		(path "/9175ee4c-b41f-480f-a1f7-fe22b4a5c56c")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/9175ee4c-b41f-480f-a1f7-fe22b4a5c56c")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1121,7 +1121,7 @@
 			(at 7 -2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/K4")
+			(net "Net-(D4-K)")
 			(uuid "f6873794-5ce5-4673-90af-4b1875da1965")
 		)
 		(pad "3" smd rect
@@ -1135,7 +1135,7 @@
 			(at 7 2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/IN3")
+			(net "/Tastenmatrix/IN3")
 			(uuid "cfd45f7d-4a57-4346-857b-fba41ad21ced")
 		)
 		(embedded_fonts no)
@@ -1169,7 +1169,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "BAT43W"
 			(at 0 2.1 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -1194,7 +1194,7 @@
 				)
 			)
 		)
-		(property "Description" "small signal switching diode, >= 30 V, >= 100 mA, SOD-123"
+		(property "Description" "Schottky diode 30 V 200 mA, SOD-123"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1207,7 +1207,18 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "Manufacturer" "Panjit"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "39ed4fd1-da4a-4807-a113-33583957e0a2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "BAT43W_R1_00001"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1218,9 +1229,9 @@
 				)
 			)
 		)
-		(path "/d5c45a78-7076-40b6-ab6c-918a3ca038b9")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/d5c45a78-7076-40b6-ab6c-918a3ca038b9")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1419,7 +1430,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/K4")
+			(net "Net-(D4-K)")
 			(uuid "543550c1-3a16-432e-97c3-7a552ce7b9da")
 		)
 		(pad "2" smd roundrect
@@ -1427,7 +1438,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/OUT1")
+			(net "/Tastenmatrix/OUT1")
 			(uuid "53d94876-b0d7-4440-8fa9-f75c56d6f925")
 		)
 		(embedded_fonts no)
@@ -1519,9 +1530,9 @@
 				)
 			)
 		)
-		(path "/26c40413-cb92-428b-92ea-83e4a7761f11")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/26c40413-cb92-428b-92ea-83e4a7761f11")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1679,7 +1690,7 @@
 			(at 7 -2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/IN1")
+			(net "/Tastenmatrix/IN1")
 			(uuid "44a3e25b-6250-41b9-af0e-cd44df2af352")
 		)
 		(pad "3" smd rect
@@ -1693,7 +1704,7 @@
 			(at 7 2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/K1")
+			(net "Net-(D1-K)")
 			(uuid "10d19d8c-cf25-4dd8-b1c8-4ac5a6e711fb")
 		)
 		(embedded_fonts no)
@@ -1785,9 +1796,9 @@
 				)
 			)
 		)
-		(path "/dc1c4836-a539-4947-bffc-ee3655f1634a")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/dc1c4836-a539-4947-bffc-ee3655f1634a")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
@@ -2014,7 +2025,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "BAT43W"
 			(at 0 2.1 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2039,7 +2050,7 @@
 				)
 			)
 		)
-		(property "Description" "small signal switching diode, >= 30 V, >= 100 mA, SOD-123"
+		(property "Description" "Schottky diode 30 V 200 mA, SOD-123"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2052,7 +2063,18 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "Manufacturer" "Panjit"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b49e32b1-8827-4379-8071-c6eca823747f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "BAT43W_R1_00001"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2063,9 +2085,9 @@
 				)
 			)
 		)
-		(path "/51654fe3-d193-4346-9aea-b1987687727f")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/51654fe3-d193-4346-9aea-b1987687727f")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2264,7 +2286,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/K10")
+			(net "Net-(D10-K)")
 			(uuid "90ace1b3-54f8-4aac-b503-d97da3a98400")
 		)
 		(pad "2" smd roundrect
@@ -2272,7 +2294,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/OUT1")
+			(net "/Tastenmatrix/OUT1")
 			(uuid "9a50ccba-dd44-41a3-adc5-e78eb432c556")
 		)
 		(embedded_fonts no)
@@ -2364,9 +2386,9 @@
 				)
 			)
 		)
-		(path "/80b98dae-b342-4914-9a84-97f2cb5548a0")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/80b98dae-b342-4914-9a84-97f2cb5548a0")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2524,7 +2546,7 @@
 			(at 7 -2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/K2")
+			(net "Net-(D2-K)")
 			(uuid "6e9945d0-f006-44e7-be84-9e4c3be169b1")
 		)
 		(pad "3" smd rect
@@ -2538,7 +2560,7 @@
 			(at 7 2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/IN3")
+			(net "/Tastenmatrix/IN3")
 			(uuid "6b676be4-0a11-4d39-aceb-237245747f86")
 		)
 		(embedded_fonts no)
@@ -2572,7 +2594,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "BAT43W"
 			(at 0 2.1 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -2597,7 +2619,7 @@
 				)
 			)
 		)
-		(property "Description" "small signal switching diode, >= 30 V, >= 100 mA, SOD-123"
+		(property "Description" "Schottky diode 30 V 200 mA, SOD-123"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2610,7 +2632,18 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "Manufacturer" "Panjit"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2bc9284a-8440-4dcf-a563-76192733ff87")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "BAT43W_R1_00001"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2621,9 +2654,9 @@
 				)
 			)
 		)
-		(path "/79e9327a-b787-4c39-a4f2-1fba2685f6f0")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/79e9327a-b787-4c39-a4f2-1fba2685f6f0")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2822,7 +2855,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/K2")
+			(net "Net-(D2-K)")
 			(uuid "0ab893da-147c-46e9-81a5-e13f928d3e8a")
 		)
 		(pad "2" smd roundrect
@@ -2830,7 +2863,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/OUT0")
+			(net "/Tastenmatrix/OUT0")
 			(uuid "643555c3-e4ec-4d30-927b-131e4e074831")
 		)
 		(embedded_fonts no)
@@ -2922,9 +2955,9 @@
 				)
 			)
 		)
-		(path "/ef384c0d-25d6-45e8-b396-12fedb3f237a")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/ef384c0d-25d6-45e8-b396-12fedb3f237a")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3075,7 +3108,7 @@
 			(at -7 -2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/K8")
+			(net "Net-(D8-K)")
 			(uuid "ad106d43-7f61-4850-881a-b306f158baaf")
 		)
 		(pad "2" smd rect
@@ -3089,7 +3122,7 @@
 			(at -7 2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/IN2")
+			(net "/Tastenmatrix/IN2")
 			(uuid "cf61cc12-cb0c-49bb-932f-8be0b4373b1a")
 		)
 		(pad "4" smd rect
@@ -3130,7 +3163,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "BAT43W"
 			(at 0 2.1 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -3155,7 +3188,7 @@
 				)
 			)
 		)
-		(property "Description" "small signal switching diode, >= 30 V, >= 100 mA, SOD-123"
+		(property "Description" "Schottky diode 30 V 200 mA, SOD-123"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3168,7 +3201,18 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "Manufacturer" "Panjit"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3c0cbc7f-d562-482d-9228-99b1b3184def")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "BAT43W_R1_00001"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3179,9 +3223,9 @@
 				)
 			)
 		)
-		(path "/386b1f91-b5e9-468d-a377-0ff48b59217e")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/386b1f91-b5e9-468d-a377-0ff48b59217e")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3380,7 +3424,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/K1")
+			(net "Net-(D1-K)")
 			(uuid "6ae41212-3ca9-43d3-81fb-3d97bb988f28")
 		)
 		(pad "2" smd roundrect
@@ -3388,7 +3432,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/OUT0")
+			(net "/Tastenmatrix/OUT0")
 			(uuid "d0cd496d-aecd-4a2b-9dfa-95c943e69175")
 		)
 		(embedded_fonts no)
@@ -3422,7 +3466,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "BAT43W"
 			(at 0 2.1 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3447,7 +3491,7 @@
 				)
 			)
 		)
-		(property "Description" "small signal switching diode, >= 30 V, >= 100 mA, SOD-123"
+		(property "Description" "Schottky diode 30 V 200 mA, SOD-123"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3460,7 +3504,18 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "Manufacturer" "Panjit"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "43c34914-a41b-4823-9362-0c9a74a93747")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "BAT43W_R1_00001"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3471,9 +3526,9 @@
 				)
 			)
 		)
-		(path "/285682a4-f663-4e2d-b8a4-9316d3be7ecc")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/285682a4-f663-4e2d-b8a4-9316d3be7ecc")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3672,7 +3727,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/K12")
+			(net "Net-(D12-K)")
 			(uuid "3ac5331e-dc10-4b20-8ec0-54cd0e620921")
 		)
 		(pad "2" smd roundrect
@@ -3680,7 +3735,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/OUT2")
+			(net "/Tastenmatrix/OUT2")
 			(uuid "ad43dbe8-3d50-4553-a8d5-dcaf27c37033")
 		)
 		(embedded_fonts no)
@@ -3714,7 +3769,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "BAT43W"
 			(at 0 2.1 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -3739,7 +3794,7 @@
 				)
 			)
 		)
-		(property "Description" "small signal switching diode, >= 30 V, >= 100 mA, SOD-123"
+		(property "Description" "Schottky diode 30 V 200 mA, SOD-123"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3752,7 +3807,18 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "Manufacturer" "Panjit"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a6848e71-56c5-4a51-b0d9-90b8eb41b2d2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "BAT43W_R1_00001"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3763,9 +3829,9 @@
 				)
 			)
 		)
-		(path "/4b094be6-535f-4593-a5d0-4a78c8b25286")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/4b094be6-535f-4593-a5d0-4a78c8b25286")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3964,7 +4030,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/K6")
+			(net "Net-(D6-K)")
 			(uuid "7c83e795-ca70-4b4b-a6a1-49f990ef4ad4")
 		)
 		(pad "2" smd roundrect
@@ -3972,7 +4038,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/OUT2")
+			(net "/Tastenmatrix/OUT2")
 			(uuid "6a008a32-5c5f-4db0-8016-c7a04f695ed9")
 		)
 		(embedded_fonts no)
@@ -4064,9 +4130,9 @@
 				)
 			)
 		)
-		(path "/08949c5d-e840-48ea-84d0-56ada2ab52ea")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/08949c5d-e840-48ea-84d0-56ada2ab52ea")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4224,7 +4290,7 @@
 			(at 7 -2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/K6")
+			(net "Net-(D6-K)")
 			(uuid "a65bf62b-c168-40f2-9b4f-76159f06368d")
 		)
 		(pad "3" smd rect
@@ -4238,7 +4304,7 @@
 			(at 7 2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/IN3")
+			(net "/Tastenmatrix/IN3")
 			(uuid "4f686e33-1dbd-464d-a5fd-0355d86e0504")
 		)
 		(embedded_fonts no)
@@ -4272,7 +4338,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "BAT43W"
 			(at 0 2.1 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4297,7 +4363,7 @@
 				)
 			)
 		)
-		(property "Description" "small signal switching diode, >= 30 V, >= 100 mA, SOD-123"
+		(property "Description" "Schottky diode 30 V 200 mA, SOD-123"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4310,7 +4376,18 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "Manufacturer" "Panjit"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f66f94cf-8aba-41b3-bbd5-aa7cebb58023")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "BAT43W_R1_00001"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4321,9 +4398,9 @@
 				)
 			)
 		)
-		(path "/e13cc438-1b2c-47e5-a769-6d3fb9689970")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/e13cc438-1b2c-47e5-a769-6d3fb9689970")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4522,7 +4599,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/K8")
+			(net "Net-(D8-K)")
 			(uuid "a847b2d8-c081-40c5-9c39-99b418335ffb")
 		)
 		(pad "2" smd roundrect
@@ -4530,7 +4607,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/OUT0")
+			(net "/Tastenmatrix/OUT0")
 			(uuid "9f2c372c-8fa6-4e26-9faa-66b8d8ed3b08")
 		)
 		(embedded_fonts no)
@@ -4564,7 +4641,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "BAT43W"
 			(at 0 2.1 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -4589,7 +4666,7 @@
 				)
 			)
 		)
-		(property "Description" "small signal switching diode, >= 30 V, >= 100 mA, SOD-123"
+		(property "Description" "Schottky diode 30 V 200 mA, SOD-123"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4602,7 +4679,18 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "Manufacturer" "Panjit"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aaee1fa0-7329-46ed-9b02-cd6d7aefb233")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "BAT43W_R1_00001"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4613,9 +4701,9 @@
 				)
 			)
 		)
-		(path "/fc743acb-67c5-484b-8021-3f72efc0bd5a")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/fc743acb-67c5-484b-8021-3f72efc0bd5a")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4814,7 +4902,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/K3")
+			(net "Net-(D3-K)")
 			(uuid "46065560-ba56-4abb-991d-6af133ef95ff")
 		)
 		(pad "2" smd roundrect
@@ -4822,7 +4910,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/OUT1")
+			(net "/Tastenmatrix/OUT1")
 			(uuid "6f6d1906-6df4-4d98-add1-c3afbae368b3")
 		)
 		(embedded_fonts no)
@@ -4914,9 +5002,9 @@
 				)
 			)
 		)
-		(path "/4c1298da-ea06-4e2d-910c-760b82e073a6")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/4c1298da-ea06-4e2d-910c-760b82e073a6")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5067,7 +5155,7 @@
 			(at -7 -2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/K9")
+			(net "Net-(D9-K)")
 			(uuid "43209853-4361-42d4-a90c-0f8057f58c87")
 		)
 		(pad "2" smd rect
@@ -5081,7 +5169,7 @@
 			(at -7 2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/IN0")
+			(net "/Tastenmatrix/IN0")
 			(uuid "c8f663bf-5d69-46ed-bacb-9ec031077690")
 		)
 		(pad "4" smd rect
@@ -5180,9 +5268,9 @@
 				)
 			)
 		)
-		(path "/4d9e259d-0fb4-43b6-bb08-e32dd5878442")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/4d9e259d-0fb4-43b6-bb08-e32dd5878442")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
@@ -5467,9 +5555,9 @@
 				)
 			)
 		)
-		(path "/c2ef87f2-520c-4463-a6e4-328f9ae7d24e")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/c2ef87f2-520c-4463-a6e4-328f9ae7d24e")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
@@ -5696,7 +5784,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "BAT43W"
 			(at 0 2.1 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5721,7 +5809,7 @@
 				)
 			)
 		)
-		(property "Description" "small signal switching diode, >= 30 V, >= 100 mA, SOD-123"
+		(property "Description" "Schottky diode 30 V 200 mA, SOD-123"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5734,7 +5822,18 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "Manufacturer" "Panjit"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f257e31f-e542-4ccd-916e-b7b798fc3a78")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "BAT43W_R1_00001"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5745,9 +5844,9 @@
 				)
 			)
 		)
-		(path "/eefa54bb-1659-4455-8915-c7d51bc09937")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/eefa54bb-1659-4455-8915-c7d51bc09937")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5946,7 +6045,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/K11")
+			(net "Net-(D11-K)")
 			(uuid "b2a19ba2-4aa0-4b52-93b8-03a804856338")
 		)
 		(pad "2" smd roundrect
@@ -5954,7 +6053,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/OUT2")
+			(net "/Tastenmatrix/OUT2")
 			(uuid "d3b71079-8ce9-4d8b-9d67-5862bfea904d")
 		)
 		(embedded_fonts no)
@@ -6046,9 +6145,9 @@
 				)
 			)
 		)
-		(path "/f81fd47e-0952-41e7-90b9-e67cbf3e9826")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/f81fd47e-0952-41e7-90b9-e67cbf3e9826")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6199,7 +6298,7 @@
 			(at -7 -2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/K11")
+			(net "Net-(D11-K)")
 			(uuid "82b37ddd-ff91-4528-8142-7bd4781f9537")
 		)
 		(pad "2" smd rect
@@ -6213,7 +6312,7 @@
 			(at -7 2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/IN0")
+			(net "/Tastenmatrix/IN0")
 			(uuid "f44a66c8-b66a-4db4-a784-db19b900a4ec")
 		)
 		(pad "4" smd rect
@@ -6254,7 +6353,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "BAT43W"
 			(at 0 2.1 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6279,7 +6378,7 @@
 				)
 			)
 		)
-		(property "Description" "small signal switching diode, >= 30 V, >= 100 mA, SOD-123"
+		(property "Description" "Schottky diode 30 V 200 mA, SOD-123"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6292,7 +6391,18 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "Manufacturer" "Panjit"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ff6c245a-e923-43d7-823a-c072bad29106")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "BAT43W_R1_00001"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6303,9 +6413,9 @@
 				)
 			)
 		)
-		(path "/36bb1863-8e4b-425a-8304-a355c80df922")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/36bb1863-8e4b-425a-8304-a355c80df922")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6504,7 +6614,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/K7")
+			(net "Net-(D7-K)")
 			(uuid "802a9d9f-29a5-43e0-bac6-b7817106509a")
 		)
 		(pad "2" smd roundrect
@@ -6512,7 +6622,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/OUT0")
+			(net "/Tastenmatrix/OUT0")
 			(uuid "c166d041-bdf7-441b-b810-1c11788b7adc")
 		)
 		(embedded_fonts no)
@@ -6546,7 +6656,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "BAT43W"
 			(at 0 2.1 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6571,7 +6681,7 @@
 				)
 			)
 		)
-		(property "Description" "small signal switching diode, >= 30 V, >= 100 mA, SOD-123"
+		(property "Description" "Schottky diode 30 V 200 mA, SOD-123"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6584,7 +6694,18 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "Manufacturer" "Panjit"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6fbdb068-1780-4409-bbe3-b8a977a26b0e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "BAT43W_R1_00001"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6595,9 +6716,9 @@
 				)
 			)
 		)
-		(path "/15b2e3bd-9f6a-46e6-8831-fd9736634f99")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/15b2e3bd-9f6a-46e6-8831-fd9736634f99")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6796,7 +6917,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/K9")
+			(net "Net-(D9-K)")
 			(uuid "7ab8f0e1-b02c-4764-b93b-fe79881fe781")
 		)
 		(pad "2" smd roundrect
@@ -6804,7 +6925,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/OUT1")
+			(net "/Tastenmatrix/OUT1")
 			(uuid "8b97a413-10ee-40f2-8cfb-28e80709e341")
 		)
 		(embedded_fonts no)
@@ -6896,9 +7017,9 @@
 				)
 			)
 		)
-		(path "/3ee3dbb4-b4e9-46b1-8527-d75dd512eb25")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/3ee3dbb4-b4e9-46b1-8527-d75dd512eb25")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
@@ -7183,9 +7304,9 @@
 				)
 			)
 		)
-		(path "/2e1ffa61-4c83-4d3c-8ca7-0c3dbdc01867")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/2e1ffa61-4c83-4d3c-8ca7-0c3dbdc01867")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7343,7 +7464,7 @@
 			(at 7 -2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/K5")
+			(net "Net-(D5-K)")
 			(uuid "fb88a72f-d964-488f-8662-2254aa9bce68")
 		)
 		(pad "3" smd rect
@@ -7357,7 +7478,7 @@
 			(at 7 2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/IN1")
+			(net "/Tastenmatrix/IN1")
 			(uuid "77174167-ab6b-4e18-a117-6772f0206f45")
 		)
 		(embedded_fonts no)
@@ -7449,9 +7570,9 @@
 				)
 			)
 		)
-		(path "/eb18c526-adcf-462b-90da-bb4e68a3ce2f")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/eb18c526-adcf-462b-90da-bb4e68a3ce2f")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7602,7 +7723,7 @@
 			(at -7 -2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/K10")
+			(net "Net-(D10-K)")
 			(uuid "b06e971a-4b8b-4877-bd50-9917a31775ab")
 		)
 		(pad "2" smd rect
@@ -7616,7 +7737,7 @@
 			(at -7 2.5)
 			(size 2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/IN2")
+			(net "/Tastenmatrix/IN2")
 			(uuid "862f1d1f-e5b4-4c45-982f-f4083ffe206b")
 		)
 		(pad "4" smd rect
@@ -7657,7 +7778,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "BAT43W"
 			(at 0 2.1 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -7682,7 +7803,7 @@
 				)
 			)
 		)
-		(property "Description" "small signal switching diode, >= 30 V, >= 100 mA, SOD-123"
+		(property "Description" "Schottky diode 30 V 200 mA, SOD-123"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7695,7 +7816,18 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "Manufacturer" "Panjit"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8e30129d-3f06-4e5c-beb7-10654bc4f69a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "BAT43W_R1_00001"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7706,9 +7838,9 @@
 				)
 			)
 		)
-		(path "/b68bccfc-bb9b-441c-80d5-dcad6d07787b")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/b68bccfc-bb9b-441c-80d5-dcad6d07787b")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7907,7 +8039,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/K5")
+			(net "Net-(D5-K)")
 			(uuid "97a021dd-2576-43b9-92bd-0fd8a021c82e")
 		)
 		(pad "2" smd roundrect
@@ -7915,7 +8047,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/OUT2")
+			(net "/Tastenmatrix/OUT2")
 			(uuid "2206bfbb-6f85-44a5-b566-84a5dc8f8b25")
 		)
 		(embedded_fonts no)
@@ -8010,9 +8142,9 @@
 				)
 			)
 		)
-		(path "/8c5c51de-ced5-419c-a090-8d921e6a16ac")
-		(sheetname "/")
-		(sheetfile "JC8012P4A1C_keypad.kicad_sch")
+		(path "/e2000000-0000-0000-0000-000000000002/8c5c51de-ced5-419c-a090-8d921e6a16ac")
+		(sheetname "/Tastenmatrix/")
+		(sheetfile "keypad_matrix.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8278,49 +8410,49 @@
 			(at -0.75 2.35)
 			(size 0.3 1.2)
 			(layers "B.Cu" "B.Mask" "B.Paste")
-			(net "/IN0")
+			(net "/Tastenmatrix/IN0")
 			(uuid "b9fa9a77-a187-4de5-a310-141904652683")
 		)
 		(pad "7" smd rect
 			(at -0.25 2.35)
 			(size 0.3 1.2)
 			(layers "B.Cu" "B.Mask" "B.Paste")
-			(net "/IN2")
+			(net "/Tastenmatrix/IN2")
 			(uuid "f71a2ba9-0f9c-4b29-90c1-c48d4af92615")
 		)
 		(pad "8" smd rect
 			(at 0.25 2.35)
 			(size 0.3 1.2)
 			(layers "B.Cu" "B.Mask" "B.Paste")
-			(net "/OUT1")
+			(net "/Tastenmatrix/OUT1")
 			(uuid "7e0a757f-069e-4483-82ac-a00ea3c3f283")
 		)
 		(pad "9" smd rect
 			(at 0.75 2.35)
 			(size 0.3 1.2)
 			(layers "B.Cu" "B.Mask" "B.Paste")
-			(net "/OUT0")
+			(net "/Tastenmatrix/OUT0")
 			(uuid "adb625b9-f510-4a56-bf2d-3e1bcd8aa3af")
 		)
 		(pad "10" smd rect
 			(at 1.25 2.35)
 			(size 0.3 1.2)
 			(layers "B.Cu" "B.Mask" "B.Paste")
-			(net "/OUT2")
+			(net "/Tastenmatrix/OUT2")
 			(uuid "7735a6ad-4985-46f7-be07-42252f37c815")
 		)
 		(pad "11" smd rect
 			(at 1.75 2.35)
 			(size 0.3 1.2)
 			(layers "B.Cu" "B.Mask" "B.Paste")
-			(net "/IN3")
+			(net "/Tastenmatrix/IN3")
 			(uuid "aaac13ac-57d1-4ff1-9325-76617df33638")
 		)
 		(pad "12" smd rect
 			(at 2.25 2.35)
 			(size 0.3 1.2)
 			(layers "B.Cu" "B.Mask" "B.Paste")
-			(net "/IN1")
+			(net "/Tastenmatrix/IN1")
 			(uuid "47960ec4-0e0a-4820-bf38-16fd495945fc")
 		)
 		(pad "13" smd rect
@@ -8645,7 +8777,7 @@
 		(end 169 38.6)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN1")
+		(net "/Tastenmatrix/IN1")
 		(uuid "1540dd9e-0a99-46c6-9776-3d3aefc90198")
 	)
 	(segment
@@ -8653,7 +8785,7 @@
 		(end 169 93.72)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN1")
+		(net "/Tastenmatrix/IN1")
 		(uuid "20c748d7-8b02-435f-8d6a-fb04fe36f826")
 	)
 	(segment
@@ -8661,7 +8793,7 @@
 		(end 169 138.84)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN1")
+		(net "/Tastenmatrix/IN1")
 		(uuid "53d6856d-df13-4869-9f09-eaf9d4225888")
 	)
 	(via
@@ -8669,7 +8801,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "/IN1")
+		(net "/Tastenmatrix/IN1")
 		(uuid "d06e1e05-73bb-4fcb-9a63-3351d2408161")
 	)
 	(via
@@ -8677,7 +8809,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "/IN1")
+		(net "/Tastenmatrix/IN1")
 		(uuid "e509ec34-9dfc-486d-84af-0112332fd98f")
 	)
 	(via
@@ -8685,7 +8817,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "/IN1")
+		(net "/Tastenmatrix/IN1")
 		(uuid "f1f38611-5992-41aa-bf1b-28e79b21d909")
 	)
 	(segment
@@ -8693,7 +8825,7 @@
 		(end 168.78 33.78)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN1")
+		(net "/Tastenmatrix/IN1")
 		(uuid "09f0efee-eab6-42f3-a71a-a173929382d6")
 	)
 	(segment
@@ -8701,7 +8833,7 @@
 		(end 152.43 33.38)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN1")
+		(net "/Tastenmatrix/IN1")
 		(uuid "0b71ab1b-e71b-4e3e-b8d0-f3bc16823079")
 	)
 	(segment
@@ -8709,7 +8841,7 @@
 		(end 152.25 32.945441)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN1")
+		(net "/Tastenmatrix/IN1")
 		(uuid "8d9e5402-c143-4342-9fc4-6a540b1f627d")
 	)
 	(segment
@@ -8717,7 +8849,7 @@
 		(end 152.904558 33.6)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN1")
+		(net "/Tastenmatrix/IN1")
 		(uuid "9a179082-cbee-424a-b43f-b0d8364938c0")
 	)
 	(segment
@@ -8725,7 +8857,7 @@
 		(end 152.25 32.35)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN1")
+		(net "/Tastenmatrix/IN1")
 		(uuid "b1318630-5710-46ab-b2a5-5bf812baffeb")
 	)
 	(segment
@@ -8733,7 +8865,7 @@
 		(end 168.345441 33.6)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN1")
+		(net "/Tastenmatrix/IN1")
 		(uuid "c9551d3f-68f8-48fa-aaa4-1fd6cf420212")
 	)
 	(segment
@@ -8741,7 +8873,7 @@
 		(end 152.47 33.42)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN1")
+		(net "/Tastenmatrix/IN1")
 		(uuid "f2ed784b-f7d8-40a0-ad8e-a34662bccc31")
 	)
 	(segment
@@ -8749,7 +8881,7 @@
 		(end 169 34)
 		(width 0.25)
 		(layer "B.Cu")
-		(net "/IN1")
+		(net "/Tastenmatrix/IN1")
 		(uuid "fffcc767-b578-4f32-9443-eb3ee1bc06bf")
 	)
 	(segment
@@ -8757,7 +8889,7 @@
 		(end 168.1675 51.35)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K1")
+		(net "Net-(D1-K)")
 		(uuid "1ba6c0f1-1e4c-46bb-aea0-3e5809c6f01f")
 	)
 	(segment
@@ -8765,7 +8897,7 @@
 		(end 169 46.1)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K1")
+		(net "Net-(D1-K)")
 		(uuid "73295ba0-136e-4ef5-a98a-001e7a54406a")
 	)
 	(segment
@@ -8773,7 +8905,7 @@
 		(end 169 50.5175)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K1")
+		(net "Net-(D1-K)")
 		(uuid "c7f3a8fb-9a8b-4636-aa5a-10f99e1013df")
 	)
 	(segment
@@ -8781,7 +8913,7 @@
 		(end 150 58.41)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/OUT0")
+		(net "/Tastenmatrix/OUT0")
 		(uuid "5de98c7f-0476-496e-997e-2b0128709369")
 	)
 	(segment
@@ -8789,7 +8921,7 @@
 		(end 150 51.35)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/OUT0")
+		(net "/Tastenmatrix/OUT0")
 		(uuid "6192e292-07a9-481f-bcf9-cdbb7ef79df9")
 	)
 	(segment
@@ -8797,7 +8929,7 @@
 		(end 150 51.35)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/OUT0")
+		(net "/Tastenmatrix/OUT0")
 		(uuid "97f5a794-0a0e-4c23-b0ad-feff73d28756")
 	)
 	(segment
@@ -8805,7 +8937,7 @@
 		(end 150 58.41)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/OUT0")
+		(net "/Tastenmatrix/OUT0")
 		(uuid "ea49f0e1-af7c-4951-ae9d-67f708c7885b")
 	)
 	(via
@@ -8813,7 +8945,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "/OUT0")
+		(net "/Tastenmatrix/OUT0")
 		(uuid "6ec83cb8-8a02-4c7a-977f-062974fafb20")
 	)
 	(via
@@ -8821,7 +8953,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "/OUT0")
+		(net "/Tastenmatrix/OUT0")
 		(uuid "8400bae0-0a04-4930-9f8f-3166e7cc2729")
 	)
 	(segment
@@ -8829,7 +8961,7 @@
 		(end 150.313635 35.423864)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/OUT0")
+		(net "/Tastenmatrix/OUT0")
 		(uuid "60987910-41d8-4ba7-824b-95c65ac0a12a")
 	)
 	(segment
@@ -8837,7 +8969,7 @@
 		(end 150.598125 35.214375)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/OUT0")
+		(net "/Tastenmatrix/OUT0")
 		(uuid "6c35eff8-557f-4cdc-87cb-b8053a53480e")
 	)
 	(segment
@@ -8845,7 +8977,7 @@
 		(end 150 35.7375)
 		(width 0.25)
 		(layer "B.Cu")
-		(net "/OUT0")
+		(net "/Tastenmatrix/OUT0")
 		(uuid "7d4b378c-a928-4562-b199-2555c2ebbabc")
 	)
 	(segment
@@ -8853,7 +8985,7 @@
 		(end 150.436364 35.376135)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/OUT0")
+		(net "/Tastenmatrix/OUT0")
 		(uuid "a1abc769-bb12-4867-b5b3-9381b1c6a706")
 	)
 	(segment
@@ -8861,7 +8993,7 @@
 		(end 150.75 34.847716)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/OUT0")
+		(net "/Tastenmatrix/OUT0")
 		(uuid "c67c3dc7-a7aa-47ef-9b90-d85001e2f789")
 	)
 	(segment
@@ -8869,7 +9001,7 @@
 		(end 150.37875 35.4)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/OUT0")
+		(net "/Tastenmatrix/OUT0")
 		(uuid "ce947745-d957-4d11-852c-11436bffca70")
 	)
 	(segment
@@ -8877,7 +9009,7 @@
 		(end 150.37125 35.4)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/OUT0")
+		(net "/Tastenmatrix/OUT0")
 		(uuid "e0d0a36f-ad69-48f6-a6c3-698b09ac3936")
 	)
 	(segment
@@ -8885,7 +9017,7 @@
 		(end 150.75 32.35)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/OUT0")
+		(net "/Tastenmatrix/OUT0")
 		(uuid "eb9bfce3-5c89-4db8-9b60-609bc2820384")
 	)
 	(segment
@@ -8893,7 +9025,7 @@
 		(end 169 59.242499)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K2")
+		(net "Net-(D2-K)")
 		(uuid "1d90decc-495f-415f-bee3-caeb9f0f223f")
 	)
 	(segment
@@ -8901,7 +9033,7 @@
 		(end 169 63.66)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K2")
+		(net "Net-(D2-K)")
 		(uuid "493e9089-8c70-44e7-bbb4-00bffdee9ffd")
 	)
 	(segment
@@ -8909,7 +9041,7 @@
 		(end 168.1675 58.41)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K2")
+		(net "Net-(D2-K)")
 		(uuid "ba7a69c5-2059-4bfc-babc-2f0e10fb1f59")
 	)
 	(segment
@@ -8917,7 +9049,7 @@
 		(end 169 162.6)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN3")
+		(net "/Tastenmatrix/IN3")
 		(uuid "23deb3c9-ed0b-46d3-b339-68297b93c0d6")
 	)
 	(segment
@@ -8925,7 +9057,7 @@
 		(end 168 73.36)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN3")
+		(net "/Tastenmatrix/IN3")
 		(uuid "2ce42274-94bb-4e81-a2c0-227f09edba76")
 	)
 	(segment
@@ -8933,7 +9065,7 @@
 		(end 166 163.6)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN3")
+		(net "/Tastenmatrix/IN3")
 		(uuid "7c520a57-5857-4829-8637-2a843f2038d7")
 	)
 	(segment
@@ -8941,7 +9073,7 @@
 		(end 169 117.48)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN3")
+		(net "/Tastenmatrix/IN3")
 		(uuid "89e50abd-2484-486b-9041-ae08f19d44c3")
 	)
 	(segment
@@ -8949,7 +9081,7 @@
 		(end 168 118.48)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN3")
+		(net "/Tastenmatrix/IN3")
 		(uuid "9651eda2-36bb-4da4-b86f-e097f8aa7676")
 	)
 	(segment
@@ -8957,7 +9089,7 @@
 		(end 166 73.36)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN3")
+		(net "/Tastenmatrix/IN3")
 		(uuid "c18f0a0c-3704-4453-9903-85fe2a560954")
 	)
 	(segment
@@ -8965,7 +9097,7 @@
 		(end 168 163.6)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN3")
+		(net "/Tastenmatrix/IN3")
 		(uuid "d1da3439-bbb1-4b02-aeaf-6b145753e8e8")
 	)
 	(segment
@@ -8973,7 +9105,7 @@
 		(end 166 118.48)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN3")
+		(net "/Tastenmatrix/IN3")
 		(uuid "da42d590-8a99-470d-b73a-bc93a15a9d72")
 	)
 	(segment
@@ -8981,7 +9113,7 @@
 		(end 169 72.36)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN3")
+		(net "/Tastenmatrix/IN3")
 		(uuid "e47372ec-b0ed-4ad1-bc1c-26ab5e3e002b")
 	)
 	(via
@@ -8989,7 +9121,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "/IN3")
+		(net "/Tastenmatrix/IN3")
 		(uuid "3fa43c6c-e24c-4277-9e52-a18e9dad5ce0")
 	)
 	(via
@@ -8997,7 +9129,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "/IN3")
+		(net "/Tastenmatrix/IN3")
 		(uuid "949f7349-6e2c-487a-b4fb-ac390f822aed")
 	)
 	(via
@@ -9005,7 +9137,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "/IN3")
+		(net "/Tastenmatrix/IN3")
 		(uuid "c5fd72dc-361e-40a1-8eeb-4ec7dc0f2211")
 	)
 	(segment
@@ -9013,7 +9145,7 @@
 		(end 151.97 34.02)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN3")
+		(net "/Tastenmatrix/IN3")
 		(uuid "0429a486-a30d-460e-be10-eec69f609fe6")
 	)
 	(segment
@@ -9021,7 +9153,7 @@
 		(end 166 34.6)
 		(width 0.25)
 		(layer "B.Cu")
-		(net "/IN3")
+		(net "/Tastenmatrix/IN3")
 		(uuid "2e72cc85-b349-4093-9684-30a16b0c45a6")
 	)
 	(segment
@@ -9029,7 +9161,7 @@
 		(end 151.75 32.35)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN3")
+		(net "/Tastenmatrix/IN3")
 		(uuid "302de158-e5d8-4103-bb12-79c46104c0b7")
 	)
 	(segment
@@ -9037,7 +9169,7 @@
 		(end 165.345441 34.2)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN3")
+		(net "/Tastenmatrix/IN3")
 		(uuid "58e6c621-c412-45e6-8f88-3f51dba3be8b")
 	)
 	(segment
@@ -9045,7 +9177,7 @@
 		(end 165.78 34.38)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN3")
+		(net "/Tastenmatrix/IN3")
 		(uuid "598d441c-dc47-43f0-9175-50352d4f60ec")
 	)
 	(segment
@@ -9053,7 +9185,7 @@
 		(end 152.404558 34.2)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN3")
+		(net "/Tastenmatrix/IN3")
 		(uuid "69fb97c0-c856-4885-9f8b-0c2be29c0c08")
 	)
 	(segment
@@ -9061,7 +9193,7 @@
 		(end 151.93 33.98)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN3")
+		(net "/Tastenmatrix/IN3")
 		(uuid "731764f4-be2a-4b68-ab87-f2778105d7b4")
 	)
 	(segment
@@ -9069,7 +9201,7 @@
 		(end 151.75 33.545441)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN3")
+		(net "/Tastenmatrix/IN3")
 		(uuid "f00f0da7-1c49-4908-8db7-604e38e5f129")
 	)
 	(segment
@@ -9077,7 +9209,7 @@
 		(end 169 81.8025)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K3")
+		(net "Net-(D3-K)")
 		(uuid "1df42c55-13db-459c-8574-0c3ad39cf17e")
 	)
 	(segment
@@ -9085,7 +9217,7 @@
 		(end 168.1675 80.97)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K3")
+		(net "Net-(D3-K)")
 		(uuid "5cadd6eb-6da3-4a1b-bced-1ceb30f8f88e")
 	)
 	(segment
@@ -9093,7 +9225,7 @@
 		(end 169 86.22)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K3")
+		(net "Net-(D3-K)")
 		(uuid "b031b627-1938-476c-90a5-dbe8cfd33411")
 	)
 	(segment
@@ -9101,7 +9233,7 @@
 		(end 148 103.53)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/OUT1")
+		(net "/Tastenmatrix/OUT1")
 		(uuid "389a7824-88b9-46d2-8407-f6e1b7a9af97")
 	)
 	(segment
@@ -9109,7 +9241,7 @@
 		(end 148 103.53)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/OUT1")
+		(net "/Tastenmatrix/OUT1")
 		(uuid "4e403750-3b34-497c-8e1b-f6331b47617c")
 	)
 	(segment
@@ -9117,7 +9249,7 @@
 		(end 148 80.97)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/OUT1")
+		(net "/Tastenmatrix/OUT1")
 		(uuid "5e189046-6e27-4a3c-9ed7-fa10068ea39a")
 	)
 	(segment
@@ -9125,7 +9257,7 @@
 		(end 148 80.97)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/OUT1")
+		(net "/Tastenmatrix/OUT1")
 		(uuid "b82332b9-eda7-46a4-a1aa-1b3e0682ee5c")
 	)
 	(via
@@ -9133,7 +9265,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "/OUT1")
+		(net "/Tastenmatrix/OUT1")
 		(uuid "451457b2-7e75-4f84-8376-b85eed3b9077")
 	)
 	(via
@@ -9141,7 +9273,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "/OUT1")
+		(net "/Tastenmatrix/OUT1")
 		(uuid "caf831cb-6278-47e5-9123-787441daea05")
 	)
 	(segment
@@ -9149,7 +9281,7 @@
 		(end 150.25 32.35)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/OUT1")
+		(net "/Tastenmatrix/OUT1")
 		(uuid "25cd12ef-b26b-43ee-af4e-5c91000f66f8")
 	)
 	(segment
@@ -9157,7 +9289,7 @@
 		(end 148 35.199999)
 		(width 0.25)
 		(layer "B.Cu")
-		(net "/OUT1")
+		(net "/Tastenmatrix/OUT1")
 		(uuid "65a8d3c4-aae4-4977-a5e3-ed700f5c8851")
 	)
 	(segment
@@ -9165,7 +9297,7 @@
 		(end 150.03 34.62)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/OUT1")
+		(net "/Tastenmatrix/OUT1")
 		(uuid "88df0392-2514-4d84-97d5-baa5c2c2013f")
 	)
 	(segment
@@ -9173,7 +9305,7 @@
 		(end 148.654558 34.8)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/OUT1")
+		(net "/Tastenmatrix/OUT1")
 		(uuid "8f1d6088-d802-4a1a-b86a-caed55664dd0")
 	)
 	(segment
@@ -9181,7 +9313,7 @@
 		(end 148.22 34.98)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/OUT1")
+		(net "/Tastenmatrix/OUT1")
 		(uuid "b6a65359-3637-4440-9075-ee3104b73be0")
 	)
 	(segment
@@ -9189,7 +9321,7 @@
 		(end 150.25 34.145441)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/OUT1")
+		(net "/Tastenmatrix/OUT1")
 		(uuid "cfcead87-8249-48ac-85e3-b54d9b31c503")
 	)
 	(segment
@@ -9197,7 +9329,7 @@
 		(end 149.595441 34.8)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/OUT1")
+		(net "/Tastenmatrix/OUT1")
 		(uuid "e22c35e6-1e30-4e34-9e7f-9fcc713699b6")
 	)
 	(segment
@@ -9205,7 +9337,7 @@
 		(end 150.07 34.58)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/OUT1")
+		(net "/Tastenmatrix/OUT1")
 		(uuid "fa7c8fce-b218-4ce3-9ebf-d9829a1a53e3")
 	)
 	(segment
@@ -9213,7 +9345,7 @@
 		(end 169 104.3625)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K4")
+		(net "Net-(D4-K)")
 		(uuid "0943da9b-9296-4570-8f66-32d321b61901")
 	)
 	(segment
@@ -9221,7 +9353,7 @@
 		(end 168.1675 103.53)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K4")
+		(net "Net-(D4-K)")
 		(uuid "0a0f2094-3b14-4ab5-8135-cbdf4228e073")
 	)
 	(segment
@@ -9229,7 +9361,7 @@
 		(end 169 108.78)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K4")
+		(net "Net-(D4-K)")
 		(uuid "fbbcf6ac-6e9d-4b4c-8105-eccf9a2f6d04")
 	)
 	(segment
@@ -9237,7 +9369,7 @@
 		(end 169 131.34)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K5")
+		(net "Net-(D5-K)")
 		(uuid "2ecf2479-9117-4a7c-a6d3-d3aa281b307f")
 	)
 	(segment
@@ -9245,7 +9377,7 @@
 		(end 168.1675 126.09)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K5")
+		(net "Net-(D5-K)")
 		(uuid "4e36d8c8-f917-4809-93cf-fade17a33f38")
 	)
 	(segment
@@ -9253,7 +9385,7 @@
 		(end 169 126.9225)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K5")
+		(net "Net-(D5-K)")
 		(uuid "6edba832-ac0f-41c4-b2df-bcd31329a9c6")
 	)
 	(segment
@@ -9261,7 +9393,7 @@
 		(end 152 148.65)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/OUT2")
+		(net "/Tastenmatrix/OUT2")
 		(uuid "0a2a0dd7-7b54-4802-a2c1-8f69fa08341b")
 	)
 	(segment
@@ -9269,7 +9401,7 @@
 		(end 152 126.09)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/OUT2")
+		(net "/Tastenmatrix/OUT2")
 		(uuid "1922f6e9-6fae-474f-a488-6e6dc8c55e39")
 	)
 	(segment
@@ -9277,7 +9409,7 @@
 		(end 152 148.65)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/OUT2")
+		(net "/Tastenmatrix/OUT2")
 		(uuid "1f7c3b76-8af6-4473-89bb-2f8761599a72")
 	)
 	(segment
@@ -9285,7 +9417,7 @@
 		(end 152 126.09)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/OUT2")
+		(net "/Tastenmatrix/OUT2")
 		(uuid "6499fba8-b408-4c64-80e9-b850f7ea0635")
 	)
 	(via
@@ -9293,7 +9425,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "/OUT2")
+		(net "/Tastenmatrix/OUT2")
 		(uuid "2cdd80dd-4a83-4615-a845-4788cf746a60")
 	)
 	(via
@@ -9301,7 +9433,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "/OUT2")
+		(net "/Tastenmatrix/OUT2")
 		(uuid "d043aa67-71fd-4912-9559-aeb87990b49b")
 	)
 	(segment
@@ -9309,7 +9441,7 @@
 		(end 151.25 34.247716)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/OUT2")
+		(net "/Tastenmatrix/OUT2")
 		(uuid "07153550-5086-49f9-88bc-8105241862ac")
 	)
 	(segment
@@ -9317,7 +9449,7 @@
 		(end 152 35.137499)
 		(width 0.25)
 		(layer "B.Cu")
-		(net "/OUT2")
+		(net "/Tastenmatrix/OUT2")
 		(uuid "3f294015-a26d-4f03-8316-d0d9fa048780")
 	)
 	(segment
@@ -9325,7 +9457,7 @@
 		(end 151.25 32.35)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/OUT2")
+		(net "/Tastenmatrix/OUT2")
 		(uuid "716095f5-4b2e-43d6-945d-5e5e6e3c4583")
 	)
 	(segment
@@ -9333,7 +9465,7 @@
 		(end 151.563635 34.776135)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/OUT2")
+		(net "/Tastenmatrix/OUT2")
 		(uuid "9a04accd-da8c-45a9-8d48-e85adbd00946")
 	)
 	(segment
@@ -9341,7 +9473,7 @@
 		(end 151.62125 34.8)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/OUT2")
+		(net "/Tastenmatrix/OUT2")
 		(uuid "b0971eeb-1f4a-4838-b72a-eda1e0335ca8")
 	)
 	(segment
@@ -9349,7 +9481,7 @@
 		(end 151.686364 34.823864)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/OUT2")
+		(net "/Tastenmatrix/OUT2")
 		(uuid "bc3ec78e-10f5-4a3b-9bbd-c09fd5bf3db7")
 	)
 	(segment
@@ -9357,7 +9489,7 @@
 		(end 151.401875 34.614374)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/OUT2")
+		(net "/Tastenmatrix/OUT2")
 		(uuid "bf17331e-58e9-404e-981a-ee7d22ae02a7")
 	)
 	(segment
@@ -9365,7 +9497,7 @@
 		(end 151.62875 34.8)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/OUT2")
+		(net "/Tastenmatrix/OUT2")
 		(uuid "f62eb332-86c5-42d2-bb5f-ac149f55cb41")
 	)
 	(segment
@@ -9373,7 +9505,7 @@
 		(end 169 153.9)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K6")
+		(net "Net-(D6-K)")
 		(uuid "69707d8a-741c-4f97-b26a-91e9a3208455")
 	)
 	(segment
@@ -9381,7 +9513,7 @@
 		(end 168.1675 148.65)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K6")
+		(net "Net-(D6-K)")
 		(uuid "839fe4b7-669a-4e3a-8aab-07658fddf2d3")
 	)
 	(segment
@@ -9389,7 +9521,7 @@
 		(end 169 149.4825)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K6")
+		(net "Net-(D6-K)")
 		(uuid "c6146f6d-e9dd-4427-bca3-7d82dee0c45c")
 	)
 	(segment
@@ -9397,7 +9529,7 @@
 		(end 131 38.6)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN0")
+		(net "/Tastenmatrix/IN0")
 		(uuid "1a4e5f68-aaf3-40ce-b921-0474ddd29226")
 	)
 	(segment
@@ -9405,7 +9537,7 @@
 		(end 131 138.84)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN0")
+		(net "/Tastenmatrix/IN0")
 		(uuid "420fc0d6-61a9-4fd5-90f4-aaad94cd7e73")
 	)
 	(segment
@@ -9413,7 +9545,7 @@
 		(end 131 93.72)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN0")
+		(net "/Tastenmatrix/IN0")
 		(uuid "86ec0afd-ee3b-4bf7-89a9-1bd7c3f5c69c")
 	)
 	(via
@@ -9421,7 +9553,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "/IN0")
+		(net "/Tastenmatrix/IN0")
 		(uuid "31bd6564-bb38-4949-87c6-11c9bf281ef7")
 	)
 	(via
@@ -9429,7 +9561,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "/IN0")
+		(net "/Tastenmatrix/IN0")
 		(uuid "4d99abe9-73f6-409b-90ab-792e207a5c90")
 	)
 	(via
@@ -9437,7 +9569,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "/IN0")
+		(net "/Tastenmatrix/IN0")
 		(uuid "67f30f3d-15cd-485d-88a9-278929f24af2")
 	)
 	(segment
@@ -9445,7 +9577,7 @@
 		(end 148.595441 33.6)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN0")
+		(net "/Tastenmatrix/IN0")
 		(uuid "1a308f10-ff14-4bb3-8aa3-744865ac1419")
 	)
 	(segment
@@ -9453,7 +9585,7 @@
 		(end 131.654558 33.6)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN0")
+		(net "/Tastenmatrix/IN0")
 		(uuid "5baf0d3b-f879-408c-8404-8b58fa9ddbbc")
 	)
 	(segment
@@ -9461,7 +9593,7 @@
 		(end 149.25 32.945441)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN0")
+		(net "/Tastenmatrix/IN0")
 		(uuid "764f9fee-2781-40d4-b9be-15bb97e692d5")
 	)
 	(segment
@@ -9469,7 +9601,7 @@
 		(end 149.25 32.35)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN0")
+		(net "/Tastenmatrix/IN0")
 		(uuid "a4cfe8c4-f45b-43b1-8429-62824820b2a6")
 	)
 	(segment
@@ -9477,7 +9609,7 @@
 		(end 149.07 33.38)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN0")
+		(net "/Tastenmatrix/IN0")
 		(uuid "b78fcd52-2d76-419b-aeea-743b4f1d38bf")
 	)
 	(segment
@@ -9485,7 +9617,7 @@
 		(end 149.03 33.42)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN0")
+		(net "/Tastenmatrix/IN0")
 		(uuid "b97fcae1-37d5-411c-a1c2-1c2f32a6fa6a")
 	)
 	(segment
@@ -9493,7 +9625,7 @@
 		(end 131.22 33.78)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN0")
+		(net "/Tastenmatrix/IN0")
 		(uuid "e01606a5-b54d-4558-a41e-06afed5105a9")
 	)
 	(segment
@@ -9501,7 +9633,7 @@
 		(end 131 34)
 		(width 0.25)
 		(layer "B.Cu")
-		(net "/IN0")
+		(net "/Tastenmatrix/IN0")
 		(uuid "e99dfc49-43f2-4eac-aea5-b5401ac0b899")
 	)
 	(segment
@@ -9509,7 +9641,7 @@
 		(end 131 50.5175)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K7")
+		(net "Net-(D7-K)")
 		(uuid "08539399-ae8e-4d37-b8ad-7351fa572878")
 	)
 	(segment
@@ -9517,7 +9649,7 @@
 		(end 131.8325 51.35)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K7")
+		(net "Net-(D7-K)")
 		(uuid "163db6c4-a367-4958-b922-7abaf19059b3")
 	)
 	(segment
@@ -9525,7 +9657,7 @@
 		(end 131 46.1)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K7")
+		(net "Net-(D7-K)")
 		(uuid "56caac32-3108-49d0-a747-e803943a614f")
 	)
 	(segment
@@ -9533,7 +9665,7 @@
 		(end 131 59.242499)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K8")
+		(net "Net-(D8-K)")
 		(uuid "02415770-7d3e-4994-b10c-cfe95d5bd6c6")
 	)
 	(segment
@@ -9541,7 +9673,7 @@
 		(end 131 63.66)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K8")
+		(net "Net-(D8-K)")
 		(uuid "5d5a622a-b482-4b70-9409-c057594d47c9")
 	)
 	(segment
@@ -9549,7 +9681,7 @@
 		(end 131.8325 58.41)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K8")
+		(net "Net-(D8-K)")
 		(uuid "c5c68a81-bd6c-4a32-812d-dffa2febbcde")
 	)
 	(segment
@@ -9557,7 +9689,7 @@
 		(end 132 118.48)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN2")
+		(net "/Tastenmatrix/IN2")
 		(uuid "37332f00-a4d6-4de4-8e13-f5f548a5bf5a")
 	)
 	(segment
@@ -9565,7 +9697,7 @@
 		(end 131 72.36)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN2")
+		(net "/Tastenmatrix/IN2")
 		(uuid "3f61cf8e-35cc-438d-9e56-b8caf3d10c6f")
 	)
 	(segment
@@ -9573,7 +9705,7 @@
 		(end 134 118.48)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN2")
+		(net "/Tastenmatrix/IN2")
 		(uuid "5d3803ab-9f27-49e6-a253-6b945cf34a1f")
 	)
 	(segment
@@ -9581,7 +9713,7 @@
 		(end 132 73.36)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN2")
+		(net "/Tastenmatrix/IN2")
 		(uuid "5fe25b7e-17c4-479f-b57c-c53af6a458e9")
 	)
 	(segment
@@ -9589,7 +9721,7 @@
 		(end 131 162.6)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN2")
+		(net "/Tastenmatrix/IN2")
 		(uuid "880d9c65-2d1b-440a-9ae5-e77be3c7255c")
 	)
 	(segment
@@ -9597,7 +9729,7 @@
 		(end 134 163.6)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN2")
+		(net "/Tastenmatrix/IN2")
 		(uuid "9aeae8d6-7484-4b55-ab37-43ae8c2f9321")
 	)
 	(segment
@@ -9605,7 +9737,7 @@
 		(end 134 73.36)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN2")
+		(net "/Tastenmatrix/IN2")
 		(uuid "be4b6c66-c662-456c-9844-f9fc1550fe17")
 	)
 	(segment
@@ -9613,7 +9745,7 @@
 		(end 131 117.48)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN2")
+		(net "/Tastenmatrix/IN2")
 		(uuid "d4061e72-f08b-4b24-bbc7-cae5a823411e")
 	)
 	(segment
@@ -9621,7 +9753,7 @@
 		(end 132 163.6)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/IN2")
+		(net "/Tastenmatrix/IN2")
 		(uuid "f792a98a-f056-4a05-a511-3f586e90a080")
 	)
 	(via
@@ -9629,7 +9761,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "/IN2")
+		(net "/Tastenmatrix/IN2")
 		(uuid "13f7e12e-e138-4d20-b13b-20f6bce1aba0")
 	)
 	(via
@@ -9637,7 +9769,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "/IN2")
+		(net "/Tastenmatrix/IN2")
 		(uuid "4b13844c-08d2-419b-8ee7-3678384d5567")
 	)
 	(via
@@ -9645,7 +9777,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "/IN2")
+		(net "/Tastenmatrix/IN2")
 		(uuid "8dd4d5fd-04d4-42bc-ae45-e9ab61e731cf")
 	)
 	(segment
@@ -9653,7 +9785,7 @@
 		(end 134.22 34.38)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN2")
+		(net "/Tastenmatrix/IN2")
 		(uuid "1f9864cf-a62f-40a1-83ae-043e98206eea")
 	)
 	(segment
@@ -9661,7 +9793,7 @@
 		(end 149.095441 34.2)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN2")
+		(net "/Tastenmatrix/IN2")
 		(uuid "220c0780-12fc-4f3a-a349-6c8f4358c5b0")
 	)
 	(segment
@@ -9669,7 +9801,7 @@
 		(end 149.75 32.35)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN2")
+		(net "/Tastenmatrix/IN2")
 		(uuid "36729dc4-a4ee-4c48-978a-71c06502abc6")
 	)
 	(segment
@@ -9677,7 +9809,7 @@
 		(end 134.654558 34.2)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN2")
+		(net "/Tastenmatrix/IN2")
 		(uuid "3c6c49cd-e05a-492e-9e83-46f00497e969")
 	)
 	(segment
@@ -9685,7 +9817,7 @@
 		(end 149.53 34.02)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN2")
+		(net "/Tastenmatrix/IN2")
 		(uuid "639fa864-051c-40e3-bc0e-11642bd4576c")
 	)
 	(segment
@@ -9693,7 +9825,7 @@
 		(end 134 34.6)
 		(width 0.25)
 		(layer "B.Cu")
-		(net "/IN2")
+		(net "/Tastenmatrix/IN2")
 		(uuid "775c7320-6a87-44a3-b1e9-a5a320099e84")
 	)
 	(segment
@@ -9701,7 +9833,7 @@
 		(end 149.75 33.545441)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN2")
+		(net "/Tastenmatrix/IN2")
 		(uuid "d5872155-e3e5-4ed9-81f5-d6a1bd9c1d12")
 	)
 	(segment
@@ -9709,7 +9841,7 @@
 		(end 149.57 33.98)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "/IN2")
+		(net "/Tastenmatrix/IN2")
 		(uuid "e032d097-52b9-450a-a304-efca87ae5e09")
 	)
 	(segment
@@ -9717,7 +9849,7 @@
 		(end 131.8325 80.97)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K9")
+		(net "Net-(D9-K)")
 		(uuid "748fce63-cf59-4aa2-826c-4b428b2eb008")
 	)
 	(segment
@@ -9725,7 +9857,7 @@
 		(end 131 86.22)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K9")
+		(net "Net-(D9-K)")
 		(uuid "99758253-65d6-41d1-ab22-53da811ccafa")
 	)
 	(segment
@@ -9733,7 +9865,7 @@
 		(end 131 81.8025)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K9")
+		(net "Net-(D9-K)")
 		(uuid "ceb7cb19-f373-43b4-85d0-b38f56c0d9dd")
 	)
 	(segment
@@ -9741,7 +9873,7 @@
 		(end 131 104.3625)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K10")
+		(net "Net-(D10-K)")
 		(uuid "0efb44d0-758a-4783-9be3-adace7e69a96")
 	)
 	(segment
@@ -9749,7 +9881,7 @@
 		(end 131.8325 103.53)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K10")
+		(net "Net-(D10-K)")
 		(uuid "68cfe71f-0eb5-4688-8924-5cf4805b67c2")
 	)
 	(segment
@@ -9757,7 +9889,7 @@
 		(end 131 108.78)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K10")
+		(net "Net-(D10-K)")
 		(uuid "71f65607-ef73-43b6-9796-e4b3a6ce0dd4")
 	)
 	(segment
@@ -9765,7 +9897,7 @@
 		(end 131 126.9225)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K11")
+		(net "Net-(D11-K)")
 		(uuid "b04a5d46-eb32-4411-83f8-d09e1c601c51")
 	)
 	(segment
@@ -9773,7 +9905,7 @@
 		(end 131 131.34)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K11")
+		(net "Net-(D11-K)")
 		(uuid "ea68a795-d4ce-4142-afa8-581da6af5c84")
 	)
 	(segment
@@ -9781,7 +9913,7 @@
 		(end 131.8325 126.09)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K11")
+		(net "Net-(D11-K)")
 		(uuid "fa075649-7f37-4ae7-9cc1-804ef14e6541")
 	)
 	(segment
@@ -9789,7 +9921,7 @@
 		(end 131.8325 148.65)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K12")
+		(net "Net-(D12-K)")
 		(uuid "0925711f-6f9f-4865-8e80-7173933bf68d")
 	)
 	(segment
@@ -9797,7 +9929,7 @@
 		(end 131 149.4825)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K12")
+		(net "Net-(D12-K)")
 		(uuid "c91f71e6-8721-4da2-866e-b2e51556e51d")
 	)
 	(segment
@@ -9805,7 +9937,7 @@
 		(end 131 153.9)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/K12")
+		(net "Net-(D12-K)")
 		(uuid "de021fb9-5308-4492-a5d7-c1021eaa8613")
 	)
 	(embedded_fonts no)
