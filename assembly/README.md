@@ -36,8 +36,11 @@ main parts: A display, B CAN board, C frame, D back plate, E keypad PCB.
   Würth Elektronik models (see `Wurth_Disclaimer_READ_ME.txt`).
 - Screws, nuts, speaker, plexiglass and foil are simple models made in the script.
   The WÜPLAST 3 × 10 (pos. 8, 17) use the original Würth model
-  `models/WUEPLAST_Wuerth_4234_3_10.step`. TODO: Würth models for the other screws,
-  see [render/README.md](render/README.md).
+  `models/WUEPLAST_Wuerth_4234_3_10.step` if it is there. It is not in the repository
+  (Würth gives no licence to pass the CAD data on): download it yourself from
+  [cad.wuerth.com](https://cad.wuerth.com/) (article 4234 3 10, STEP) and save it under
+  this name. Without the file the script uses a simple screw model.
+  TODO: Würth models for the other screws, see [render/README.md](render/README.md).
 
 ## Simplifications
 

@@ -55,3 +55,6 @@ pcbs/*/production/gerber/
 # PCB STEP exports for the assembly drawings
 assembly/cache/
 assembly/render/cache/
+
+# Wurth CAD data (cad.wuerth.com), no licence to redistribute, download it yourself
+assembly/models/WUEPLAST_Wuerth_4234_3_10.step

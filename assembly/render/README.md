@@ -39,5 +39,6 @@ Blender 5.3, FreeCAD 1.1, Python with PyMuPDF and Pillow.
 
 - Screws: the WÜPLAST WN 1451 3 × 10 (Würth 4234 3 10, black zinc plated, pos. 8 and 17) use
   the original Würth model `../models/WUEPLAST_Wuerth_4234_3_10.step` (simple model if the
-  file is missing). Still simple models: M2 × 6 (pos. 1), M2.5 (pos. 9, 14, 16), M4 × 12
+  file is missing). The file is not in the repository, because Würth gives no licence to pass
+  the CAD data on: download article 4234 3 10 as STEP from [cad.wuerth.com](https://cad.wuerth.com/). Still simple models: M2 × 6 (pos. 1), M2.5 (pos. 9, 14, 16), M4 × 12
   (pos. 10) and the M2.5 nuts (pos. 15); replace them with Würth models as well.
