@@ -11,7 +11,7 @@ overall size.
 
 ![variant 2, exploded view from behind](img/variant2_exploded_back.png)
 
-Positions 1-19 are those of [../assembly_bom.csv](../assembly_bom.csv)
+Positions 1-20 are those of [../assembly_bom.csv](../assembly_bom.csv)
 (the notes there give lengths, torques and cable details). Letters are the
 main parts: A display, B CAN board, C frame, D back plate, E keypad PCB.
 
@@ -32,8 +32,8 @@ main parts: A display, B CAN board, C frame, D back plate, E keypad PCB.
 - `models/JC8012P4A1_envelope.step`: envelope model of the display made from
   the dimensions of `JC8012P4A1.dwg` (Guition structure diagram): frame, cover
   glass, 6 brass posts, display cover, connector block. No inner parts.
-- `models/D-Sub_Wurth_618009227221.step`, `models/Jackpost_Wurth_94510000.step`:
-  Würth Elektronik models (see `Wurth_Disclaimer_READ_ME.txt`).
+- `models/D-Sub_Wurth_618009221923.step`, `models/Jackpost_Wurth_94513200.step`,
+  `models/HexNut_Wurth_94505009.step`: Würth Elektronik models (see `Wurth_Disclaimer_READ_ME.txt`).
 - Screws, nuts, speaker, plexiglass and foil are simple models made in the script.
   The WÜPLAST 3 × 10 (pos. 8, 17) use the original Würth model
   `models/WUEPLAST_Wuerth_4234_3_10.step` if it is there. It is not in the repository

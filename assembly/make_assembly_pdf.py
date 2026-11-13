@@ -2,7 +2,7 @@
 # make_assembly.py, with position balloons and parts list.
 # Run:  python make_assembly_pdf.py        (needs PyMuPDF and Pillow)
 # Output: JC8012P4A1C_assembly_variant1.pdf, JC8012P4A1C_assembly_variant2_keypad.pdf
-# Position numbers 1-19 are those of ../assembly_bom.csv, letters A-E are the main parts.
+# Position numbers 1-20 are those of ../assembly_bom.csv, letters A-E are the main parts.
 import os, csv, json, math, datetime
 import pymupdf
 from PIL import Image, ImageFilter
@@ -150,7 +150,7 @@ class Sheet:
             for i, ln in enumerate(lines):
                 self.text(x0 + cols[2] + 1, y + 3.3 + i * rh * 0.8, ln, 6.5, col)
             y += hh
-        self.text(x0, y + 4, "Grey: not shown in the views. Pos. 1-19 as in assembly_bom.csv (notes there).", 6.5, GRY)
+        self.text(x0, y + 4, "Grey: not shown in the views. Pos. 1-20 as in assembly_bom.csv (notes there).", 6.5, GRY)
         return y
 
 
@@ -199,7 +199,7 @@ def make(vn):
     steps = ["Order of assembly:",
              "1  B onto the display board (cover off), screws 1; FFC 2 to FPC3, cable 11/12 to CN2.",
              "2  Cover back on. C onto A, screws 9 (6x)." + (" E with 19 into the pocket of C, screws 16." if kp else ""),
-             "3  D-Sub 3 into C, jackposts 7 from outside." + (" FFC 18 from FPC4 to J1 of E." if kp else ""),
+             "3  Jackposts 7 from outside into C, D-Sub 3 from inside over them, nuts 20 (SW 4.5)." + (" FFC 18 from FPC4 to J1 of E." if kp else ""),
              "4  Speaker 13 onto D (screws 14, nuts 15), plug into CN3.",
              "5  D onto C, screws 8" + (" and 17." if kp else "."), "6  VESA bracket onto the spacers of D, screws 10."]
     for i, t in enumerate(steps):
