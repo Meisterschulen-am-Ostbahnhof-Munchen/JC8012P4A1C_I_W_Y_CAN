@@ -19,13 +19,14 @@ as well (see [LICENSE.md](LICENSE.md)), not GPL like the rest of the repository.
 
 | File | Content |
 |---|---|
-| `frame.step`, `frame.stl` | frame, variant 1 (STL for the slicer) |
+| `frame.f3d`, `frame_keypad.f3d` | Fusion source files of both frames |
+| `frame.step`, `frame.stl` | frame, variant 1 (STL for the slicer), exported from Fusion |
 | `frame_keypad.step`, `frame_keypad.stl` | variant 2 with the keypad chamber (see below) |
 | `source/` | original landscape frame (STEP), licence and readme of the original |
 | `docs/` | renderings (FreeCAD), with the back plate from `../pcbs/backplate` |
 | `../assembly/` | assembly drawings of both variants (PDF) and their scripts, see [../assembly/README.md](../assembly/README.md) |
 
-The STEP files are the source of the frame now. They were reworked in Fusion in November 2026
+The Fusion files (`*.f3d`) are the source of the frame now. The frames were reworked in Fusion in November 2026
 to make the frame stiffer, with the new D-Sub mounting (see 1. below). The earlier FreeCAD
 script `make_frame.py` is removed (it is in the git history); the numbers in 2.–4. and in the
 keypad section are from that version.
