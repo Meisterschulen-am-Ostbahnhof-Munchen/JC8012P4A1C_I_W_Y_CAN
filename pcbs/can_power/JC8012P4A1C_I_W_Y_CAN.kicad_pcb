@@ -9729,7 +9729,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "onsemi"
+		(property "Manufacturer" "Panjit"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9742,7 +9742,7 @@
 				)
 			)
 		)
-		(property "MPN" "MMSZ5245BT1G"
+		(property "MPN" "MMSZ5245B_R1_00001"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")

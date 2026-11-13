@@ -9,7 +9,7 @@
 "C10","1","220u/10V","Wurth Elektronik","875105244013","JC8012P4A1C_CAN:CP_Wurth_WCAP-PSLP-D6.3L5.8",""
 "D1","1","824094024","Wurth Elektronik","824094024","JC8012P4A1C_CAN:D_Wurth_WE-TVS-SOT23-3L",""
 "D2","1","824551241","Wurth Elektronik","824551241","JC8012P4A1C_CAN:D_Wurth_WE-TVSP-DO214-AB-3000W_BI",""
-"D3","1","15V","onsemi","MMSZ5245BT1G","Diode_SMD:D_SOD-123",""
+"D3","1","15V","Panjit","MMSZ5245B_R1_00001","Diode_SMD:D_SOD-123",""
 "D4","1","B160","Diodes Incorporated","B160-13-F","Diode_SMD:D_SMA",""
 "F1","1","1A slow 125V","Littelfuse","0452001.MRL","Fuse:Fuse_Littelfuse-NANO2-451_453",""
 "F2","1","PTC 0.14A/60V","Bourns","MF-MSMF014-2","Fuse:Fuse_1812_4532Metric",""
