@@ -199,7 +199,8 @@ def make(vn):
     steps = ["Order of assembly:",
              "1  B onto the display board (cover off), screws 1; FFC 2 to FPC3, cable 11/12 to CN2.",
              "2  Cover back on. C onto A, screws 9 (6x)." + (" E with 19 into the pocket of C, screws 16." if kp else ""),
-             "3  Jackposts 7 from outside into C, D-Sub 3 from inside over them, nuts 20 (SW 4.5)." + (" FFC 18 from FPC4 to J1 of E." if kp else ""),
+             "3  Jackposts 7 from outside into C, D-Sub 3 from inside over them, nuts 20 (SW 4.5,",
+             "    only about 0.1 Nm, secure with locking lacquer)." + (" FFC 18 from FPC4 to J1 of E." if kp else ""),
              "4  Speaker 13 onto D (screws 14, nuts 15), plug into CN3.",
              "5  D onto C, screws 8" + (" and 17." if kp else "."), "6  VESA bracket onto the spacers of D, screws 10."]
     for i, t in enumerate(steps):
