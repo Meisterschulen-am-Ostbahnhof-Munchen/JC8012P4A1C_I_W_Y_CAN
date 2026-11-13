@@ -45,6 +45,11 @@ keypad section are from that version.
    - Nuts Würth **94505009** (WA-HEX, SW 4.5, 5 mm) from inside. Clamped length 4.76 mm
      (wall 1.0, flange 0.4, body 3.0, rivet collar 0.36), so 3.4 mm of the thread are in
      the nut (5.4 turns, more than 1 × d); the thread ends inside the nut.
+   - Glue the jackposts in first (2K epoxy, e.g. UHU plus endfest, on the side walls of the
+     pocket only; keep the bottom free so the hex stays flush, and keep the female thread clean
+     with a 4-40 screw as a plug). Let it cure before the nuts go on: the bond (about 78 mm²
+     on the hex sides) then carries most of the preload instead of the 1.0 mm wall (about
+     15 mm² shear area).
    - Tighten the nuts only lightly (about 0.1 Nm): the 1.0 mm wall under the hex takes the
      whole preload (0.3 Nm, usual for 4-40 in metal, would give about 500 N and press the hex
      into the plastic). Secure them with locking lacquer (e.g. Loctite 7400) over nut and

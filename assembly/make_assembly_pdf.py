@@ -197,10 +197,12 @@ def make(vn):
     s1.view(views["exploded_back"], (15, 13, 268, 284), "Exploded view, seen from behind")
     yl = s1.parts_list(PW - 150, 20, rows_for(vn, b))
     steps = ["Order of assembly:",
+             "0  First: glue jackposts 7 into the hex pockets of C from outside (2K epoxy on the side walls",
+             "    only, female thread kept clean with a screw), let it cure (up to 24 h).",
              "1  B onto the display board (cover off), screws 1; FFC 2 to FPC3, cable 11/12 to CN2.",
              "2  Cover back on. C onto A, screws 9 (6x)." + (" E with 19 into the pocket of C, screws 16." if kp else ""),
-             "3  Jackposts 7 from outside into C, D-Sub 3 from inside over them, nuts 20 (SW 4.5,",
-             "    only about 0.1 Nm, secure with locking lacquer)." + (" FFC 18 from FPC4 to J1 of E." if kp else ""),
+             "3  D-Sub 3 from inside over the jackposts 7, nuts 20 (SW 4.5, only about 0.1 Nm,",
+             "    secure with locking lacquer)." + (" FFC 18 from FPC4 to J1 of E." if kp else ""),
              "4  Speaker 13 onto D (screws 14, nuts 15), plug into CN3.",
              "5  D onto C, screws 8" + (" and 17." if kp else "."), "6  VESA bracket onto the spacers of D, screws 10."]
     for i, t in enumerate(steps):
