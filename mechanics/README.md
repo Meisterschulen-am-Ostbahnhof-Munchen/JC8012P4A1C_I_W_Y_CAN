@@ -19,17 +19,16 @@ as well (see [LICENSE.md](LICENSE.md)), not GPL like the rest of the repository.
 
 | File | Content |
 |---|---|
-| `make_frame.py` | FreeCAD script, all dimensions as parameters at the top |
-| `frame.step`, `frame.stl` | result (STL for the slicer) |
-| `make_frame_keypad.py`, `frame_keypad.step`, `frame_keypad.stl` | variant 2 with the keypad chamber (see below) |
+| `frame.step`, `frame.stl` | frame, variant 1 (STL for the slicer) |
+| `frame_keypad.step`, `frame_keypad.stl` | variant 2 with the keypad chamber (see below) |
 | `source/` | original landscape frame (STEP), licence and readme of the original |
 | `docs/` | renderings (FreeCAD), with the back plate from `../pcbs/backplate` |
 | `../assembly/` | assembly drawings of both variants (PDF) and their scripts, see [../assembly/README.md](../assembly/README.md) |
 
-`frame.step` / `frame_keypad.step` (and the STL) were reworked in CAD in November 2026 to make
-the frame stiffer, with the new D-Sub mounting (see 1. below). `make_frame.py` and
-`make_frame_keypad.py` (`freecadcmd make_frame.py`, FreeCAD 1.1) still make the earlier version
-and do not give these files any more; the numbers in 2.–4. and in the keypad section come from them.
+The STEP files are the source of the frame now. They were reworked in Fusion in November 2026
+to make the frame stiffer, with the new D-Sub mounting (see 1. below). The earlier FreeCAD
+script `make_frame.py` is removed (it is in the git history); the numbers in 2.–4. and in the
+keypad section are from that version.
 
 ## Changes to the original
 
@@ -54,7 +53,7 @@ and do not give these files any more; the numbers in 2.–4. and in the keypad s
    thermoplastics. Designed to the EJOT PT rules (same thread form): pilot
    hole 2.4 mm through the whole boss, relief bore 3.2 × 1.2 mm at the entry,
    7.2 mm thread engagement (≥ 2 × d). If the screws go in too hard in the
-   printed frame, increase `SCREW_PILOT_D` to 2.5. The positions match the holes H5–H12 of the back plate.
+   printed frame, make the pilot holes 2.5 mm. The positions match the holes H5–H12 of the back plate.
 3. **Keyhole tabs** for wall mounting removed: the back plate carries a
    VESA 100 mount.
 4. **Cable notch** at the bottom closed: power and CAN come through the
@@ -73,10 +72,8 @@ on the left seen from behind.
 
 ## Variant 2: frame with keypad chamber
 
-`make_frame_keypad.py` (FreeCAD 1.1) makes `frame_keypad.step` and
-`frame_keypad.stl`: the same frame with a chamber on +x for the keypad
+`frame_keypad.step` and `frame_keypad.stl`: the same frame with a chamber on +x for the keypad
 `../keypad` (12 keys). Close it with the wide back plate `../backplate_keypad`.
-All dimensions are parameters `KP_*` in `make_frame.py`.
 
 | front (foil hidden) | from behind, keypad mounted |
 |---|---|

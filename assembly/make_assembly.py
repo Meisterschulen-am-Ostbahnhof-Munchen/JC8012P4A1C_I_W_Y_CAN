@@ -23,7 +23,7 @@ VARIANTS = [v.strip() for v in os.environ.get("ASSY_VARIANTS", "1,2").split(",")
 # render/cache/variant<n>/ for the Blender rendering (render/render_blender.py)
 EXPORT = os.environ.get("ASSY_EXPORT", "") == "1"
 
-XK = 148.2          # keypad centre x (frame), see make_frame.py KP_*
+XK = 148.2          # keypad centre x (frame)
 ZPCB_KP = 17.5      # back of the keypad PCB
 CAN_POS = (133.75, 140.0, 13.49)  # CAN board: frame x = 133.75 - pcb x, y = 140 - pcb y, B side at z 13.49
 # (position of the CAN board under the display cover is schematic: J2 below FPC3, on S1-S4)

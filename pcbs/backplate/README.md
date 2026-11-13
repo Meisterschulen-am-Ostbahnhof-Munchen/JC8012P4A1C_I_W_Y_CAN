@@ -19,7 +19,7 @@ bare PCB.
 - H5–H12: 3.2 mm holes for the screws to the frame (Würth WÜPLAST WN 1451
   3 × 10, thread forming, into the plastic bosses of `../mechanics`): 4 in
   the corners, 2 at the top and 2 at the bottom at ±60 mm. Positions =
-  `SCREWS` in `make_frame.py`.
+  the screw bosses of the frame.
 - The M4 spacers stand next to the display cover (the cover is 93.5 mm wide,
   the spacers are at ±50 mm), with about 8 mm clearance to the display back.
 - LS1: mount for the speaker XHXDZ-2828 (4 Ω, 3 W, 27.5 × 27.5 × 13 mm,

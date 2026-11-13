@@ -1,6 +1,6 @@
 # Licence of the files in this folder
 
-The frame in this folder (`make_frame.py`, `frame.step`, `frame.stl`,
+The frame in this folder (`frame.step`, `frame.stl`, `frame_keypad.step`, `frame_keypad.stl`,
 `docs/`) is a derivative of
 
 > "Guition 10.1" ESP32P4 / JC8012P4A1C wall mount" by 8bitmcu,
