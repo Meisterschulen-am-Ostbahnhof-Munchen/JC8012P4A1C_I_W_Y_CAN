@@ -19,37 +19,51 @@ as well (see [LICENSE.md](LICENSE.md)), not GPL like the rest of the repository.
 
 | File | Content |
 |---|---|
-| `make_frame.py` | FreeCAD script, all dimensions as parameters at the top |
-| `frame.step`, `frame.stl` | result (STL for the slicer) |
-| `make_frame_keypad.py`, `frame_keypad.step`, `frame_keypad.stl` | variant 2 with the keypad chamber (see below) |
+| `frame.f3d`, `frame_keypad.f3d` | Fusion source files of both frames |
+| `frame.step`, `frame.stl` | frame, variant 1 (STL for the slicer), exported from Fusion |
+| `frame_keypad.step`, `frame_keypad.stl` | variant 2 with the keypad chamber (see below) |
 | `source/` | original landscape frame (STEP), licence and readme of the original |
 | `docs/` | renderings (FreeCAD), with the back plate from `../pcbs/backplate` |
 | `../assembly/` | assembly drawings of both variants (PDF) and their scripts, see [../assembly/README.md](../assembly/README.md) |
 
-Make the frame again: `freecadcmd make_frame.py` (FreeCAD 1.1).
+The Fusion files (`*.f3d`) are the source of the frame now. The frames were reworked in Fusion in November 2026
+to make the frame stiffer, with the new D-Sub mounting (see 1. below). The earlier FreeCAD
+script `make_frame.py` is removed (it is in the git history); the numbers in 2.–4. and in the
+keypad section are from that version.
 
 ## Changes to the original
 
-1. **D-Sub 9** (Würth 618009227221) in the bottom wall, centre 7 mm off the
-   middle, on the side away from the middle display boss (x = -7, the boss is
-   at x = +16.4), so that the flange clears the web of the boss. Cutout 20 × 11 mm for the mating plug,
-   jackpost holes 3.2 mm with 25 mm pitch. The flange (12.5 mm) sits in a
-   pocket on the inside between the back rim (z 0–3) and the display (z 18),
-   and the wall there is 2.0 mm. The mating plug rests on the jackpost hex,
-   so every mm of wall under the hex costs mating depth: the hexes sit in
-   **Ø 6.0 × 1.0 mm counterbores**, 1.0 mm wall under them (1 mm less mating
-   depth than a D-Sub without a panel). The
-   threaded bushes of the 618009227221 stand 0.3 mm in front of the flange and
-   get a 5.8 × 0.4 mm recess (0.6 mm wall left under the hex). Jackposts:
-   Würth 94510000 (UNC 4-40, hex 5.0, thread 5.0), 4.2 mm thread in the
-   4.6 mm bush. Checked against the Würth STEP models of 618009227221,
-   618009221923 and 94510000: no collision.
+1. **D-Sub 9** (Würth 618009221923, IDC, without nuts) in the bottom wall, centre
+   x = -7, z = 9.0 (away from the middle display boss at x = +16.4). The wall is
+   **6.0 mm** thick there, with a D cutout about 17.5 × 9 mm for the shell and jackpost
+   holes 3.2 mm with 25 mm pitch.
+   - Jackposts Würth **94513200** (WA-HEX, UNC 4-40, hex 5.0 SW 4.5, thread 8.2) go from
+     outside into **5.0 mm deep hex pockets**, 1.0 mm wall under the hex.
+   - The D-Sub goes from inside over the threads, its flange lies on the inside of the
+     wall. Outside, wall, jackpost hexes and D-Sub shell (6.0 mm in front of the flange)
+     are flush.
+   - Nuts Würth **94505009** (WA-HEX, SW 4.5, 5 mm) from inside. Clamped length 4.76 mm
+     (wall 1.0, flange 0.4, body 3.0, rivet collar 0.36), so 3.4 mm of the thread are in
+     the nut (5.4 turns, more than 1 × d); the thread ends inside the nut.
+   - Glue the jackposts in first (2K epoxy, e.g. UHU plus endfest, on the side walls of the
+     pocket only; keep the bottom free so the hex stays flush, and keep the female thread clean
+     with a 4-40 screw as a plug). Let it cure before the nuts go on: the bond (about 78 mm²
+     on the hex sides) then carries most of the preload instead of the 1.0 mm wall (about
+     15 mm² shear area).
+   - Tighten the nuts only lightly (about 0.1 Nm): the 1.0 mm wall under the hex takes the
+     whole preload (0.3 Nm, usual for 4-40 in metal, would give about 500 N and press the hex
+     into the plastic). Secure them with locking lacquer (e.g. Loctite 7400) over nut and
+     thread end; no liquid threadlocker (Loctite 2xx), it attacks ABS.
+   - A socket SW 4.5 hits the IDC cover and the strain relief: tighten the nuts before
+     they are on, afterwards only an open-end wrench fits.
+   - Checked in FreeCAD with the Würth STEP models: no collision with the frame
+     or the display.
 2. **8 bosses** (Ø 8 mm, 9 mm high) for the screws of the back plate:
    Würth WÜPLAST WN 1451 3 × 10 (art. 4234 3 10), thread forming screws for
    thermoplastics. Designed to the EJOT PT rules (same thread form): pilot
    hole 2.4 mm through the whole boss, relief bore 3.2 × 1.2 mm at the entry,
    7.2 mm thread engagement (≥ 2 × d). If the screws go in too hard in the
-   printed frame, increase `SCREW_PILOT_D` to 2.5. The positions match the holes H5–H12 of the back plate.
+   printed frame, make the pilot holes 2.5 mm. The positions match the holes H5–H12 of the back plate.
 3. **Keyhole tabs** for wall mounting removed: the back plate carries a
    VESA 100 mount.
 4. **Cable notch** at the bottom closed: power and CAN come through the
@@ -68,10 +82,8 @@ on the left seen from behind.
 
 ## Variant 2: frame with keypad chamber
 
-`make_frame_keypad.py` (FreeCAD 1.1) makes `frame_keypad.step` and
-`frame_keypad.stl`: the same frame with a chamber on +x for the keypad
+`frame_keypad.step` and `frame_keypad.stl`: the same frame with a chamber on +x for the keypad
 `../keypad` (12 keys). Close it with the wide back plate `../backplate_keypad`.
-All dimensions are parameters `KP_*` in `make_frame.py`.
 
 | front (foil hidden) | from behind, keypad mounted |
 |---|---|
@@ -103,8 +115,6 @@ All dimensions are parameters `KP_*` in `make_frame.py`.
 
 ## Open points
 
-- Jackpost length for the D-Sub (Würth WE-HEX, UNC 4-40): wall 2 mm +
-  flange, check the thread length in the datasheet.
 - Speaker and its opening.
 - Keypad variant: test print, check the FFC path through the cable slot and
   the fit of the sandwich in the pocket.

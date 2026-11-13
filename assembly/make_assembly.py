@@ -23,7 +23,7 @@ VARIANTS = [v.strip() for v in os.environ.get("ASSY_VARIANTS", "1,2").split(",")
 # render/cache/variant<n>/ for the Blender rendering (render/render_blender.py)
 EXPORT = os.environ.get("ASSY_EXPORT", "") == "1"
 
-XK = 148.2          # keypad centre x (frame), see make_frame.py KP_*
+XK = 148.2          # keypad centre x (frame)
 ZPCB_KP = 17.5      # back of the keypad PCB
 CAN_POS = (133.75, 140.0, 13.49)  # CAN board: frame x = 133.75 - pcb x, y = 140 - pcb y, B side at z 13.49
 # (position of the CAN board under the display cover is schematic: J2 below FPC3, on S1-S4)
@@ -105,11 +105,22 @@ try:
     # ------------------------------------------------------------ geometry common to both variants
     disp = read(os.path.join(MODELS, "JC8012P4A1_envelope.step"))
     disp.translate(V(-121.4, -79.35, 0)); disp.rotate(V(0, 0, 0), V(0, 0, 1), 180); disp.translate(V(0, 0, 25))
-    dsub = read(os.path.join(MODELS, "D-Sub_Wurth_618009227221.step")); dsub.translate(V(-7.0, -77.35 + 0.4, 10.5))
-    jps = []
-    for x in (-7.0 - 12.5, -7.0 + 12.5):
-        j = read(os.path.join(MODELS, "Jackpost_Wurth_94510000.step")); j.translate(V(x, -79.35 + 1.0 - 5.0, 10.5)); jps.append(j)
+    # D-Sub in the bottom wall (6.0 mm thick at the D-Sub, outside y = -79.35, inside y = -73.35), centre x -7, z 9.0.
+    # Jackposts 94513200 (hex 5.0, thread 8.2) from outside into the 5 mm hex pockets, flush with the wall;
+    # D-Sub 618009221923 (without nuts) from inside over the threads, its shell is flush with the wall outside;
+    # nuts 94505009 (SW 4.5, 5 mm) from inside. Clamped: 1.0 wall + 0.4 flange + 3.0 body + 0.36 rivet collar
+    # = 4.76 mm, so 3.4 mm of the 8.2 mm thread are in the nut.
+    DSUB_X, DSUB_Z, WALL_IN = -7.0, 9.0, -79.35 + 6.0
+    dsub = read(os.path.join(MODELS, "D-Sub_Wurth_618009221923.step")); dsub.translate(V(DSUB_X, WALL_IN + 0.4, DSUB_Z))
+    jp_step = read(os.path.join(MODELS, "Jackpost_Wurth_94513200.step"))      # axis +y, hex y 0..5
+    nut_step = read(os.path.join(MODELS, "HexNut_Wurth_94505009.step"))        # axis +z, z 0..5
+    nut_step.rotate(V(0, 0, 0), V(1, 0, 0), -90)                              # +z -> +y
+    jps, nts = [], []
+    for x in (DSUB_X - 12.5, DSUB_X + 12.5):
+        j = jp_step.copy(); j.translate(V(x, -79.35, DSUB_Z)); jps.append(j)
+        n = nut_step.copy(); n.translate(V(x, WALL_IN + 0.4 + 3.36, DSUB_Z)); nts.append(n)
     jack = Part.makeCompound(jps)
+    dnuts = Part.makeCompound(nts)
     # speaker XHXDZ-2828 on the inside of the back plate (LS1 at PCB 237 / 70), lugs with 4 holes
     sx, sy = fx(237.0), fy(70.0)
     spk = box(sx - 13.75, sx + 13.75, sy - 13.75, sy + 13.75, 0, 1.5)
@@ -141,7 +152,8 @@ try:
         add("A", disp, (0.16, 0.16, 0.18), (0, 0, EXD), "A")
         add("C", frame, (0.55, 0.57, 0.60), (0, 0, EXF), "C")
         add("3", dsub, (0.20, 0.35, 0.75), (0, 25, EXF), "3")
-        add("7", jack, (0.80, 0.80, 0.82), (0, -18, EXF), "7")
+        add("7", jack, (0.80, 0.80, 0.82), (0, -22, EXF), "7")
+        add("20", dnuts, (0.80, 0.80, 0.82), (0, 75, EXF), "20")
         # 6 screws M2.5 x 6 frame -> display posts (pos. 9), head on the back of the frame lugs
         s9 = []
         for x in (-106.4, 16.4, 106.4):
@@ -263,7 +275,8 @@ try:
         # anchors (frame coordinates before the explode offset is added)
         def A_back():
             a = {"A": V(60, -40, 2.49), "B": V(0, 20, CAN_POS[2] - 1.6 - 7.0),
-                 "C": V(-45, -79.0, 14), "3": V(-7, -70, 4), "7": V(-19.5, -81, 10.5),
+                 "C": V(-45, -79.0, 14), "3": V(-7, -70, 3.5), "7": V(-19.5, -79.35, 11.4),
+                 "20": V(-19.5, -66.5, 11.5),
                  "9": V(-106.4, -64.35, 11.0), "D": V(-100, -50, -1.6), "13": V(fx(237), fy(70) - 12, 6),
                  "14": V(spk_holes[2][0], spk_holes[2][1], -3.3), "15": V(spk_holes[0][0], spk_holes[0][1], 3.5),
                  "8": V(fx(34.3), fy(173.6), -3.8), "10": V(fx(100), fy(150), -4.2),
@@ -285,7 +298,7 @@ try:
             # keypad from the front, sandwich pulled out of the pocket
             extra = {"E": V(0, 0, 45), "19": V(0, 0, 80), "19f": V(0, 0, 115)}
             place(False, extra)
-            hide = ("B", "1", "D", "13", "14", "15", "8", "10", "17", "9", "3", "7")
+            hide = ("B", "1", "D", "13", "14", "15", "8", "10", "17", "9", "3", "7", "20")
             an = {"E": V(XK - 24, -20, ZPCB_KP + 1.6 + 45), "19": V(XK - 24, 20, ZPCB_KP + 5.0 + 80),
                   "19f": V(XK + 24, -50, ZPCB_KP + 5.5 + 115),
                   "C": V(XK + 27.3, -40, 25), "A": V(-60, 30, 25)}
