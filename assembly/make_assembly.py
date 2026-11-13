@@ -22,6 +22,10 @@ VARIANTS = [v.strip() for v in os.environ.get("ASSY_VARIANTS", "1,2").split(",")
 # ASSY_EXPORT=1: instead of the drawings, export every part as STL (mm, frame coordinates) into
 # render/cache/variant<n>/ for the Blender rendering (render/render_blender.py)
 EXPORT = os.environ.get("ASSY_EXPORT", "") == "1"
+# ASSY_STEP=1: instead of the drawings, write the whole assembly as one STEP file per variant
+# (JC8012P4A1C_assembly_variant<n>*.step, one named and coloured solid per part, not exploded).
+# The WUEPLAST screws are always the simple model there: the Wurth CAD data may not be passed on.
+STEP_OUT = os.environ.get("ASSY_STEP", "") == "1"
 
 XK = 148.2          # keypad centre x (frame)
 ZPCB_KP = 17.5      # back of the keypad PCB
@@ -70,7 +74,7 @@ try:
     def wueplast(x, y, zh):
         """WUEPLAST WN 1451 3 x 10 (Wurth 4234 3 10), head on the -z side, bearing face at z = zh.
         Original Wurth model (axis along +x, bearing face at x = 0); simple model if the file is missing."""
-        if not os.path.exists(WUEPLAST_STEP):
+        if STEP_OUT or not os.path.exists(WUEPLAST_STEP):
             return screw(x, y, zh, 3.0, 10, 6.0, 2.2)
         if not _wp:
             _wp.append(read(WUEPLAST_STEP))
@@ -319,8 +323,38 @@ try:
             log("mesh", vn, key, m.CountFacets)
         json.dump(meta, open(os.path.join(out, "parts.json"), "w"), indent=1)
 
+    def export_step(vn, items):
+        import csv, ImportGui
+        bom = {r["Pos"]: r for r in csv.DictReader(open(os.path.join(REPO, "assembly_bom.csv"), encoding="utf-8"))}
+        main = {"A": "Display Guition JC8012P4A1C (envelope)", "B": "CAN addon board",
+                "C": "Frame with keypad chamber" if vn == "2" else "Frame", "D": "Back plate PCB",
+                "E": "Keypad PCB", "19f": "PU foil, printed (Folika)"}
+        name = "variant%s" % vn
+        doc = App.newDocument(name)
+        objs = []
+        for key, it in items.items():
+            if key in bom:
+                r = bom[key]
+                lab = "%s %s" % (key, r["Part"].split(",")[0].split("(")[0].strip())
+                if r["MPN"]:
+                    lab += " (%s)" % r["MPN"]       # in brackets: FreeCAD counts up trailing digits of labels
+            else:
+                lab = "%s %s" % (key.rstrip("f"), main.get(key, key))
+            o = doc.addObject("Part::Feature", "P_" + key.replace(" ", "_"))
+            o.Shape = it["shape"]; o.Label = lab.strip()
+            objs.append((o, it["col"]))
+        doc.recompute(); Gui.updateGui()
+        for o, col in objs:
+            o.ViewObject.ShapeColor = col
+        out = os.path.join(HERE, "JC8012P4A1C_assembly_variant1.step" if vn == "1" else "JC8012P4A1C_assembly_variant2_keypad.step")
+        ImportGui.export([o for o, c in objs], out)
+        log("step", out, os.path.getsize(out))
+        App.closeDocument(name)
+
     for vn in VARIANTS:
-        if EXPORT:
+        if STEP_OUT:
+            export_step(vn, variant(vn))
+        elif EXPORT:
             export_meshes(vn, variant(vn))
         else:
             render(vn, variant(vn))
