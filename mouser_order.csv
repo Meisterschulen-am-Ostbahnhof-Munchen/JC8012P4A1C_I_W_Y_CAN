@@ -1,5 +1,5 @@
 "Mfr Part Number","Manufacturer","Qty per device","Order qty (5 devices + spares)","Description","Used for"
-"MMSZ5245BT1G","onsemi","1","6","Zener diode 15 V SOD-123","CAN board D3"
+"MMSZ5245B_R1_00001","Panjit","1","6","Zener diode 15 V SOD-123","CAN board D3"
 "B160-13-F","Diodes Incorporated","1","6","Schottky diode 60 V 1 A SMA","CAN board D4"
 "0452001.MRL","Littelfuse","1","6","Fuse 1 A slow NANO2","CAN board F1"
 "MF-MSMF014-2","Bourns","1","6","PTC fuse 0.14 A 60 V 1812","CAN board F2"

@@ -8336,7 +8336,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "onsemi"
+		(property "Manufacturer" "Panjit"
 			(at 91.44 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -8347,7 +8347,7 @@
 				)
 			)
 		)
-		(property "MPN" "MMSZ5245BT1G"
+		(property "MPN" "MMSZ5245B_R1_00001"
 			(at 91.44 107.95 0)
 			(hide yes)
 			(show_name no)
