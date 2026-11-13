@@ -4,10 +4,14 @@ Assembly drawings for both variants, A3 landscape, 2 sheets each: exploded view
 with position balloons, parts list, order of assembly, assembled views and
 overall size.
 
-| Variant | Drawing |
-|---|---|
-| 1: without keypad | [JC8012P4A1C_assembly_variant1.pdf](JC8012P4A1C_assembly_variant1.pdf) |
-| 2: with keypad (F1-F12) | [JC8012P4A1C_assembly_variant2_keypad.pdf](JC8012P4A1C_assembly_variant2_keypad.pdf) |
+| Variant | Drawing | 3D model (STEP) |
+|---|---|---|
+| 1: without keypad | [JC8012P4A1C_assembly_variant1.pdf](JC8012P4A1C_assembly_variant1.pdf) | [JC8012P4A1C_assembly_variant1.step](JC8012P4A1C_assembly_variant1.step) (9 MB) |
+| 2: with keypad (F1-F12) | [JC8012P4A1C_assembly_variant2_keypad.pdf](JC8012P4A1C_assembly_variant2_keypad.pdf) | [JC8012P4A1C_assembly_variant2_keypad.step](JC8012P4A1C_assembly_variant2_keypad.step) (15 MB) |
+
+The STEP files hold the whole assembly, not exploded, in frame coordinates (mm), one named and
+coloured solid per part ("3 D-Sub 9 female (618009221923)", ...). The WÜPLAST screws (pos. 8, 17)
+are simple models there, because the Würth CAD data may not be passed on.
 
 ![variant 2, exploded view from behind](img/variant2_exploded_back.png)
 
@@ -26,6 +30,7 @@ main parts: A display, B CAN board, C frame, D back plate, E keypad PCB.
    `ASSY_VARIANTS=1` or `2` renders one variant only.
 2. `python make_assembly_pdf.py` (PyMuPDF, Pillow) makes the two PDFs from
    `img/`. Balloons are placed automatically next to their anchor points.
+3. `ASSY_STEP=1 freecad.exe make_assembly.py` writes the two assembly STEP files.
 
 ## Models
 
