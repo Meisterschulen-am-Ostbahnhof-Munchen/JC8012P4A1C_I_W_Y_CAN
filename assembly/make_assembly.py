@@ -19,6 +19,9 @@ os.makedirs(CACHE, exist_ok=True)
 LOG = open(os.path.join(CACHE, "make_assembly.log"), "w")
 KICAD_CLI = os.environ.get("KICAD_CLI", r"C:\Program Files\KiCad\10.0\bin\kicad-cli.exe")
 VARIANTS = [v.strip() for v in os.environ.get("ASSY_VARIANTS", "1,2").split(",")]
+# ASSY_EXPORT=1: instead of the drawings, export every part as STL (mm, frame coordinates) into
+# render/cache/variant<n>/ for the Blender rendering (render/render_blender.py)
+EXPORT = os.environ.get("ASSY_EXPORT", "") == "1"
 
 XK = 148.2          # keypad centre x (frame), see make_frame.py KP_*
 ZPCB_KP = 17.5      # back of the keypad PCB
@@ -60,6 +63,21 @@ try:
         h = Part.makeCylinder(dk / 2, k, V(x, y, zh - k))
         h = h.cut(Part.makeBox(d * 0.9, d * 0.25, 0.6 * k, V(x - d * 0.45, y - d * 0.125, zh - k)))
         return h.fuse(Part.makeCylinder(d / 2 * 0.95, L, V(x, y, zh)))
+
+    WUEPLAST_STEP = os.path.join(MODELS, "WUEPLAST_Wuerth_4234_3_10.step")
+    _wp = []
+
+    def wueplast(x, y, zh):
+        """WUEPLAST WN 1451 3 x 10 (Wurth 4234 3 10), head on the -z side, bearing face at z = zh.
+        Original Wurth model (axis along +x, bearing face at x = 0); simple model if the file is missing."""
+        if not os.path.exists(WUEPLAST_STEP):
+            return screw(x, y, zh, 3.0, 10, 6.0, 2.2)
+        if not _wp:
+            _wp.append(read(WUEPLAST_STEP))
+        w = _wp[0].copy()
+        w.rotate(V(0, 0, 0), V(0, 1, 0), -90)      # +x (towards the tip) -> +z
+        w.translate(V(x, y, zh))
+        return w
 
     def nut(x, y, z0, s, m, d):
         pts = []
@@ -138,7 +156,7 @@ try:
         add("15", Part.makeCompound([nut(hx, hy, 1.5, 5, 2, 2.5) for hx, hy in spk_holes]), (0.80, 0.80, 0.82), (0, 0, EXP + 105), "15")
         add("14", Part.makeCompound([screw(hx, hy, -1.6, 2.5, 8, 4.5, 1.7) for hx, hy in spk_holes]), (0.80, 0.80, 0.82), (0, 0, EXP - 25), "14")
         bp_holes = [(34.3, 26.4), (265.7, 26.4), (34.3, 173.6), (265.7, 173.6), (90, 23.65), (210, 23.65), (90, 176.35), (210, 176.35)]
-        add("8", Part.makeCompound([screw(fx(a), fy(b), -1.6, 3.0, 10, 6.0, 2.2) for a, b in bp_holes]), (0.80, 0.80, 0.82), (0, 0, EXP - 32), "8")
+        add("8", Part.makeCompound([wueplast(fx(a), fy(b), -1.6) for a, b in bp_holes]), (0.80, 0.80, 0.82), (0, 0, EXP - 32), "8")
         vesa = [(100, 50), (200, 50), (100, 150), (200, 150)]
         add("10", Part.makeCompound([screw(fx(a), fy(b), -1.6, 4.0, 12, 7.0, 2.6) for a, b in vesa]), (0.80, 0.80, 0.82), (0, 0, EXP - 40), "10")
         # CAN board under the display cover, M2 x 6 into the standoffs S1-S4
@@ -167,7 +185,7 @@ try:
             add("16", Part.makeCompound([screw(XK + dx, dy_, ZPCB_KP - 4.0, 2.5, 8, 4.5, 1.7) for dx in (-12, 12) for dy_ in (-70, 70)]),
                 (0.80, 0.80, 0.82), (0, 0, EXF - 45), "16")
             hb = [(319.8, 26.4), (319.8, 173.6)]
-            add("17", Part.makeCompound([screw(fx(a), fy(b), -1.6, 3.0, 10, 6.0, 2.2) for a, b in hb]), (0.80, 0.80, 0.82), (0, 0, EXP - 32), "17")
+            add("17", Part.makeCompound([wueplast(fx(a), fy(b), -1.6) for a, b in hb]), (0.80, 0.80, 0.82), (0, 0, EXP - 32), "17")
         return items
 
     # ------------------------------------------------------------ rendering
@@ -276,8 +294,23 @@ try:
         json.dump(views, open(os.path.join(IMG, "%s_views.json" % name), "w"), indent=1)
         App.closeDocument(name)
 
+    def export_meshes(vn, items):
+        import MeshPart
+        out = os.path.join(HERE, "render", "cache", "variant%s" % vn)
+        os.makedirs(out, exist_ok=True)
+        meta = {}
+        for key, it in items.items():
+            m = MeshPart.meshFromShape(Shape=it["shape"], LinearDeflection=0.02, AngularDeflection=0.12, Relative=False)
+            m.write(os.path.join(out, key + ".stl"))
+            meta[key] = dict(col=list(it["col"]), ex=[it["ex"].x, it["ex"].y, it["ex"].z], label=it["label"])
+            log("mesh", vn, key, m.CountFacets)
+        json.dump(meta, open(os.path.join(out, "parts.json"), "w"), indent=1)
+
     for vn in VARIANTS:
-        render(vn, variant(vn))
+        if EXPORT:
+            export_meshes(vn, variant(vn))
+        else:
+            render(vn, variant(vn))
 except Exception:
     log(traceback.format_exc())
 finally:

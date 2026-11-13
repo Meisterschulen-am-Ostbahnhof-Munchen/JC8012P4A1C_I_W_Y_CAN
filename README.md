@@ -10,7 +10,11 @@ with a 12-key tactile keypad next to the display.
 **Online:** interactive BOMs, schematics and drawings at
 <https://meisterschulen-am-ostbahnhof-munchen.github.io/JC8012P4A1C_I_W_Y_CAN/>
 
+![variant 2 with keypad, rendering](assembly/img/render_variant2_front.png)
+
 ![variant 2, exploded view](assembly/img/variant2_exploded_back.png)
+
+More renderings and how they are made: [assembly/render/](assembly/render/README.md).
 
 ## Repository Structure
 
