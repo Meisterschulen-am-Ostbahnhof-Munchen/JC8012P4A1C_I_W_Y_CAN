@@ -1,0 +1,544 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "d38a0bdf-d690-477f-8005-02db3942b268")
+	(paper "A4")
+	(title_block
+		(title "JC8012P4A1C — Tastatur 2 × 6")
+		(date "2026-11-11")
+		(rev "A")
+		(company "Meisterschulen am Ostbahnhof München")
+		(comment 1 "Blatt 1 / 4: Deckblatt & Dokumentenübersicht")
+		(comment 2 "Fachschule für Mechatronik- & Elektrotechnik")
+	)
+	(lib_symbols)
+	(rectangle
+		(start 21.59 21.59)
+		(end 278.13 62)
+		(stroke
+			(width 0.35)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "2ff78bdb-d6fb-4caa-9647-a1f28d574603")
+	)
+	(rectangle
+		(start 180 66)
+		(end 278.13 142)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "33423fea-6b2b-4738-80cd-994825e06a62")
+	)
+	(rectangle
+		(start 17.78 17.78)
+		(end 281.94 195)
+		(stroke
+			(width 0.6)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "a1dca5c3-2cdf-498a-af5a-9b82497579aa")
+	)
+	(rectangle
+		(start 21.59 66)
+		(end 175 190)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "d47b416e-2ac8-40ac-94d5-b066a0306d90")
+	)
+	(text "SCHALTPLAN-DOKUMENTATIONSMAPPE NACH DIN EN 61082"
+		(exclude_from_sim no)
+		(at 25.4 53 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left)
+		)
+		(uuid "047f3144-a867-4bad-8ebd-c51af76f9ac7")
+	)
+	(text "  Projektübersicht, Metadaten und Normbezug"
+		(exclude_from_sim no)
+		(at 28 85 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "1d70ee97-09bc-48f8-ba2c-fef9cdfc9088")
+	)
+	(text "• Norm: DIN EN 61082 / DIN EN 60617"
+		(exclude_from_sim no)
+		(at 183 103 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "20cd433e-1f3a-4a49-a1fa-e48e8ac9cb99")
+	)
+	(text "Didaktischer Hinweis: Jeder Plan ist modular isoliert und vollständig beschriftet."
+		(exclude_from_sim no)
+		(at 25.4 180 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "29b9a275-114a-4fa3-adb8-a2076ea35de4")
+	)
+	(text "• Blatt 3 / 3: Tastenmatrix & FFC-Anschluss"
+		(exclude_from_sim no)
+		(at 25.4 106 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "4084793a-939b-4d25-8904-b255a17973ee")
+	)
+	(text "• Netzlisten-Parität: 100% zum bisherigen Plan"
+		(exclude_from_sim no)
+		(at 183 108 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "455c1405-0b47-4928-8976-63393fab5e17")
+	)
+	(text "• Datum: 2026-11-11"
+		(exclude_from_sim no)
+		(at 183 88 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "45813739-b6c4-471b-a8fa-ee78e531b291")
+	)
+	(text "Blatt 2: Übersicht"
+		(exclude_from_sim no)
+		(at 25.4 164 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "61a0bc5b-b620-4eec-a09b-83ed411d44a9")
+	)
+	(text "  Blockschaltbild (Signalfluss), Tastenbelegung F1–F12, technische Daten"
+		(exclude_from_sim no)
+		(at 28 98 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "65322bd4-7234-4dd6-99ac-0ee4bb8be14d")
+	)
+	(text "JC8012P4A1C  —  TASTATUR 2 × 6 (F1–F12)"
+		(exclude_from_sim no)
+		(at 25.4 29 0)
+		(effects
+			(font
+				(size 3.5 3.5)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "6ac64cd9-2d75-4fb0-abc3-3bbb8b3923d0")
+	)
+	(text "• Revision: A"
+		(exclude_from_sim no)
+		(at 183 83 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "77208314-c502-4dd4-ab44-b13df90981db")
+	)
+	(text "Blockschaltbild & Belegung"
+		(exclude_from_sim no)
+		(at 25.4 168.5 0)
+		(effects
+			(font
+				(size 0.95 0.95)
+			)
+			(justify left)
+		)
+		(uuid "794a640d-f665-44a8-89ac-ce1fc2898f09")
+	)
+	(text "• Vertraulichkeit: Schulprojekt / Didaktik"
+		(exclude_from_sim no)
+		(at 183 123 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "7e6f5049-484f-449b-9aa8-7c6fa46474bb")
+	)
+	(text "• CAD-System: KiCad 10.0 (Eeschema)"
+		(exclude_from_sim no)
+		(at 183 98 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "80ee47e4-e4bf-4d20-a329-aeafd684d0b3")
+	)
+	(text "PROJEKT-METADATEN:"
+		(exclude_from_sim no)
+		(at 183 72 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "853ce0ec-a229-449e-baf0-92013358ef07")
+	)
+	(text "• ERC-Status: 0 Fehler, 0 Warnungen"
+		(exclude_from_sim no)
+		(at 183 113 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "8742e7ce-cc2f-428c-877b-7c0fd0b62315")
+	)
+	(text "• Dokument-Typ: 3-Blatt-Schaltplanmappe"
+		(exclude_from_sim no)
+		(at 183 118 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "922bed4d-e27b-4f94-a719-6a19764717b3")
+	)
+	(text "Tastenfeld rechts neben dem JC8012 Display (Variante 2)"
+		(exclude_from_sim no)
+		(at 25.4 37 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "9ad1f8f9-1c4e-4981-915b-5194182934fa")
+	)
+	(text "• Projekt: JC8012P4A1C Tastatur (Variante 2)"
+		(exclude_from_sim no)
+		(at 183 78 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "adcc3980-7cca-43e4-ae32-73a501d1cca7")
+	)
+	(text "• Autor: Franz (Meisterschulen München)"
+		(exclude_from_sim no)
+		(at 183 93 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left)
+		)
+		(uuid "ae4a40bf-9869-48ff-9f29-bd2adf8995f2")
+	)
+	(text "• Blatt 1 / 3: Deckblatt & Dokumenten-Information"
+		(exclude_from_sim no)
+		(at 25.4 80 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "b06ce81b-6e11-46d3-9278-b84414a47192")
+	)
+	(text "Die Bauteilbezeichner entsprechen 1:1 dem gerouteten PCB-Layout."
+		(exclude_from_sim no)
+		(at 25.4 184.5 0)
+		(effects
+			(font
+				(size 1 1)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "b4131bb3-0ac8-464e-bb8c-1b65b354f731")
+	)
+	(text "• Blatt 2 / 3: System-Übersicht & Tastenbelegung"
+		(exclude_from_sim no)
+		(at 25.4 93 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "dce6c0d5-42d3-4485-a2f1-66ecc4279992")
+	)
+	(text "Blatt 3: Tastenmatrix"
+		(exclude_from_sim no)
+		(at 74 164 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "e0a3ddca-344f-46fe-8ebf-ec650a40f5e0")
+	)
+	(text "Meisterschulen am Ostbahnhof München  |  Fachschule für Mechatronik- & Elektrotechnik"
+		(exclude_from_sim no)
+		(at 25.4 45 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "edeb2db6-5a24-40fb-a675-d0c27f644357")
+	)
+	(text "HIERARCHISCHE UNTERSCHALTPLÄNE (ZUM ÖFFNEN DOPPELKLICKEN):"
+		(exclude_from_sim no)
+		(at 25.4 134 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "f0a9398f-77a5-4b75-9e23-79d1f727b904")
+	)
+	(text "INHALTSVERZEICHNIS & MAPPEN-STRUKTUR:"
+		(exclude_from_sim no)
+		(at 25.4 72 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "f252362a-8afa-4ce7-ae88-218dfaa90806")
+	)
+	(text "  3 × 4 Matrix mit 12 Tastern und Dioden, J1 (FFC zum Display-Board), Befestigung H1–H4"
+		(exclude_from_sim no)
+		(at 28 111 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "fa2710a9-e315-406f-a935-06a902be690e")
+	)
+	(text "Taster, Dioden & J1"
+		(exclude_from_sim no)
+		(at 74 168.5 0)
+		(effects
+			(font
+				(size 0.95 0.95)
+			)
+			(justify left)
+		)
+		(uuid "fdc03b94-7531-4ae5-86ce-2cba2cdde1d3")
+	)
+	(sheet
+		(at 25.4 138)
+		(size 44 22)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e1000000-0000-0000-0000-000000000001")
+		(property "Sheetname" "System_Overview"
+			(at 27.94 143.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "keypad_overview.kicad_sch"
+			(at 27.94 150.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "JC8012P4A1C_keypad_2b"
+				(path "/3d717ebe-2c48-4d74-a932-f01128cae071"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 74 138)
+		(size 44 22)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e2000000-0000-0000-0000-000000000002")
+		(property "Sheetname" "Tastenmatrix"
+			(at 76.54 143.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "keypad_matrix.kicad_sch"
+			(at 76.54 150.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "JC8012P4A1C_keypad_2b"
+				(path "/3d717ebe-2c48-4d74-a932-f01128cae071"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 122.6 138)
+		(size 44 22)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e3000000-0000-0000-0000-000000000003")
+		(property "Sheetname" "Beleuchtung"
+			(at 125.14 143.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "keypad_backlight.kicad_sch"
+			(at 125.14 150.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "JC8012P4A1C_keypad_2b"
+				(path "/3d717ebe-2c48-4d74-a932-f01128cae071"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
