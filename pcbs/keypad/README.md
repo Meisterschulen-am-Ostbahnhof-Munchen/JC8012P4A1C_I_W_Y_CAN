@@ -46,7 +46,8 @@ Same principle as the 4 key board `ISOBUS_Hardware/XL-accessories/Board_4_Button
   is pressed when the unit lies on its front. The frame edge protects the edge
   of the foil.
 - The back of the PCB rests on a ledge of the frame (z = 17.5).
-- H1-H4: Wurth WA-SMSI 9774030151R, SMD steel spacers M2.5, L 3 mm, soldered on
+- H1-H4: Wurth WA-SMSI 9774030151R, SMD steel spacers M2.5, L 3 mm (pad as copper
+  ring 4.2-6.0 mm, 0.25 mm free around the 3.7 mm non-plated hole), soldered on
   the front side in the same reflow run as the keys. They sit in the holes of
   the plexiglass, 0.1 mm or more below the foil.
 - Screws **M2.5 x 8** from behind through the 4 mm lugs of the frame and the PCB

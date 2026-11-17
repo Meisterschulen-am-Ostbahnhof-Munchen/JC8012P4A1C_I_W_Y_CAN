@@ -13,9 +13,11 @@ bare PCB.
   shell and of the frame).
 - H1–H4: Würth WA-SMSI 9774100482R SMD steel spacers, M4 internal thread,
   L 10 mm, soldered on the **inside** (F side) on the VESA 100 × 100 grid.
-  The land pattern is the one from the datasheet (pad right up to the
-  5.4 mm non-plated hole), so `JC8012P4A1C_backplate.kicad_dru` allows the
-  pad-to-hole clearance for these footprints.
+  Land pattern from the datasheet, but the copper is a ring 5.9-9.4 mm: 0.25 mm
+  without copper around the 5.4 mm **non-plated** hole, so the JLC order shows
+  the hole as unplated (with the full 9.4 mm pad the copper went right up to the
+  hole edge). Solder paste in four quarter rings on the copper.
+  `JC8012P4A1C_backplate.kicad_dru` still allows pad to own hole.
 - H5–H12: 3.2 mm holes for the screws to the frame (Würth WÜPLAST WN 1451
   3 × 10, thread forming, into the plastic bosses of `../mechanics`): 4 in
   the corners, 2 at the top and 2 at the bottom at ±60 mm. Positions =
