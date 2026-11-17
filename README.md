@@ -26,7 +26,9 @@ JC8012P4A1C_I_W_Y_CAN/
 │   ├── can_power/        # CAN-Bus & 12V/5V power supply addon board
 │   ├── backplate/        # FR4 backplate with VESA 100 mount & speaker grille (variant 1)
 │   ├── backplate_keypad/ # Widened FR4 backplate for variant 2 (with keypad)
-│   └── keypad/           # 12-key tactile keypad PCB (variant 2)
+│   ├── keypad/           # 12-key tactile keypad PCB (variant 2)
+│   ├── keypad_2b/        # keypad with dimmable WL-ICLED backlight (variant 2b)
+│   └── can_power_2b/     # CAN board with J4 for the keypad LEDs (variant 2b)
 ├── mechanics/            # 3D printed frame designs (FreeCAD scripts, STL & STEP files)
 ├── assembly/             # Assembly drawings (A3 PDF), 3D render models & assembly scripts
 ├── assembly_bom.csv      # Complete mechanical parts, fasteners & cables BOM
@@ -36,14 +38,14 @@ JC8012P4A1C_I_W_Y_CAN/
 
 ## Variants
 
-| Component | Variant 1 (Standard) | Variant 2 (with Keypad) |
-|---|---|---|
-| Display | Guition JC8012P4A1C (10.1" ESP32-P4) | Guition JC8012P4A1C (10.1" ESP32-P4) |
-| CAN / Power Board | [`pcbs/can_power/`](pcbs/can_power/README.md) | [`pcbs/can_power/`](pcbs/can_power/README.md) |
-| Frame | `mechanics/frame.stl` | `mechanics/frame_keypad.stl` |
-| Backplate | [`pcbs/backplate/`](pcbs/backplate/README.md) | [`pcbs/backplate_keypad/`](pcbs/backplate_keypad/README.md) (296.9 mm wide) |
-| Keypad | — | [`pcbs/keypad/`](pcbs/keypad/README.md) (12 tactile keys F1–F12) |
-| Assembly Drawing | [assembly/JC8012P4A1C_assembly_variant1.pdf](assembly/JC8012P4A1C_assembly_variant1.pdf) | [assembly/JC8012P4A1C_assembly_variant2_keypad.pdf](assembly/JC8012P4A1C_assembly_variant2_keypad.pdf) |
+| Component | Variant 1 (Standard) | Variant 2 (with Keypad) | Variant 2b (backlit keypad) |
+|---|---|---|---|
+| Display | Guition JC8012P4A1C (10.1" ESP32-P4) | Guition JC8012P4A1C (10.1" ESP32-P4) | as variant 2 |
+| CAN / Power Board | [`pcbs/can_power/`](pcbs/can_power/README.md) | [`pcbs/can_power/`](pcbs/can_power/README.md) | [`pcbs/can_power_2b/`](pcbs/can_power_2b/README.md) (with J4 for the LEDs) |
+| Frame | `mechanics/frame.stl` | `mechanics/frame_keypad.stl` | as variant 2 |
+| Backplate | [`pcbs/backplate/`](pcbs/backplate/README.md) | [`pcbs/backplate_keypad/`](pcbs/backplate_keypad/README.md) (296.9 mm wide) | as variant 2 |
+| Keypad | — | [`pcbs/keypad/`](pcbs/keypad/README.md) (12 tactile keys F1–F12) | [`pcbs/keypad_2b/`](pcbs/keypad_2b/README.md) (WL-ICLED windows + background, dimmable) |
+| Assembly Drawing | [assembly/JC8012P4A1C_assembly_variant1.pdf](assembly/JC8012P4A1C_assembly_variant1.pdf) | [assembly/JC8012P4A1C_assembly_variant2_keypad.pdf](assembly/JC8012P4A1C_assembly_variant2_keypad.pdf) | as variant 2, plus the 3 wire LED cable |
 
 Details on mechanics: [mechanics/README.md](mechanics/README.md).  
 Details on assembly: [assembly/README.md](assembly/README.md).
@@ -56,6 +58,8 @@ Details on assembly: [assembly/README.md](assembly/README.md).
 | Back plate (variant 1) | [pcbs/backplate/production/JC8012P4A1C_backplate_bom.csv](pcbs/backplate/production/JC8012P4A1C_backplate_bom.csv) |
 | Back plate (variant 2, keypad) | [pcbs/backplate_keypad/production/JC8012P4A1C_backplate_keypad_bom.csv](pcbs/backplate_keypad/production/JC8012P4A1C_backplate_keypad_bom.csv) |
 | Keypad (variant 2) | [pcbs/keypad/production/JC8012P4A1C_keypad_bom.csv](pcbs/keypad/production/JC8012P4A1C_keypad_bom.csv) |
+| Keypad (variant 2b, backlit) | [pcbs/keypad_2b/production/JC8012P4A1C_keypad_2b_bom.csv](pcbs/keypad_2b/production/JC8012P4A1C_keypad_2b_bom.csv) |
+| CAN & Power board (variant 2b) | [pcbs/can_power_2b/production/JC8012P4A1C_I_W_Y_CAN_2b_bom.csv](pcbs/can_power_2b/production/JC8012P4A1C_I_W_Y_CAN_2b_bom.csv) |
 | Final assembly (mechanical fasteners, cables) | [assembly_bom.csv](assembly_bom.csv) |
 | Parts to order at Mouser (all non-Würth parts) | [mouser_order.csv](mouser_order.csv) |
 
@@ -69,6 +73,8 @@ For manual assembly, interactive HTML BOMs (with checkboxes for soldering and in
 | Back plate | [pcbs/backplate/production/JC8012P4A1C_backplate_ibom.html](pcbs/backplate/production/JC8012P4A1C_backplate_ibom.html) |
 | Back plate (keypad variant) | [pcbs/backplate_keypad/production/JC8012P4A1C_backplate_keypad_ibom.html](pcbs/backplate_keypad/production/JC8012P4A1C_backplate_keypad_ibom.html) |
 | Keypad | [pcbs/keypad/production/JC8012P4A1C_keypad_ibom.html](pcbs/keypad/production/JC8012P4A1C_keypad_ibom.html) |
+| Keypad 2b | [pcbs/keypad_2b/production/JC8012P4A1C_keypad_2b_ibom.html](pcbs/keypad_2b/production/JC8012P4A1C_keypad_2b_ibom.html) |
+| CAN & Power board 2b | [pcbs/can_power_2b/production/JC8012P4A1C_I_W_Y_CAN_2b_ibom.html](pcbs/can_power_2b/production/JC8012P4A1C_I_W_Y_CAN_2b_ibom.html) |
 
 ## Manufacturing
 

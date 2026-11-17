@@ -1,4 +1,8 @@
-# JC8012P4A1C CAN & Power Board
+# JC8012P4A1C CAN & Power Board, variant 2b
+
+The CAN board of `../can_power` with one addition for the backlit keypad
+`../keypad_2b`: **J4** brings 5 V, GND and the LED data (GPIO2) to the keypad.
+Everything else is unchanged.
 
 ISOBUS / CAN interface (250 kbit/s) for the Guition JC8012P4A1C (ESP32-P4, 10.1")
 display, used by [espVT](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/espVT).
@@ -18,6 +22,7 @@ Top view: [docs/board_3d_top.png](docs/board_3d_top.png)
 | J1 | Würth WR-PHD 610110249121 (2×5 pin header, SMT, right angled) | ribbon cable to IDC D-Sub 9 female Würth 618009221923 |
 | J2 | Würth WR-FPC 68711414522 (14 pin, 0.5 mm) | FFC to FPC3 "EXTEND1" of the display board |
 | J3 | Würth WR-WTB 653104131822 (4 pin, 1.25 mm) | 5 V to CN2 of the display board |
+| J4 | Würth WR-WTB 653103131822 (3 pin, 1.25 mm) | 5 V, GND and LED data to J2 of the keypad 2b |
 
 ### D-Sub 9 (via ribbon cable on J1)
 
@@ -57,7 +62,7 @@ on the board GND and CAN_L.
   9774025943R (L 2.5 mm, through hole 2.25 mm), land pattern as in the
   datasheet: 5.3 mm GND pad on top, 3.0 mm **non-plated** hole for the
   Ø 2.8 × 1.4 mm collar of the spacer. The DRC rule in
-  `JC8012P4A1C_I_W_Y_CAN.kicad_dru` allows the pad right up to the hole.
+  `JC8012P4A1C_I_W_Y_CAN_2b.kicad_dru` allows the pad right up to the hole.
 - Screws **M2×6**, without washer: spacer 2.5 mm + PCB 1.6 mm leaves 1.9 mm
   thread engagement in the 2.5 mm deep blind thread of S1–S4. M2×8 would
   bottom out.
@@ -72,6 +77,7 @@ on the board GND and CAN_L.
 | 7 | CAN_RXD (GPIO5) |
 | 8 | CAN_TXD (GPIO4) |
 | 9 | CAN_NEN (GPIO3, 10k pull-down: transceiver active by default) |
+| 10 | LED_DATA (GPIO2) -> R11 33 R -> J4 pin 3 |
 | 13, 14 | +3V3 (VDDA, transceiver VIO) |
 
 FFC: 14 pin, 0.5 mm pitch, **type B (contacts on opposite sides)**.
@@ -82,6 +88,20 @@ side seen from the back of the display, next to the TF card), so pin 1
 connects to pin 1. A type A cable would have its contacts facing up at J2;
 turning it over to make it fit reverses the pin order and swaps GND (1/2)
 and 3V3 (13/14).
+
+## Keypad backlight (J4)
+
+| J4 | Signal |
+|---|---|
+| 1 | +5V (In2 plane) |
+| 2 | GND |
+| 3 | LED data: GPIO2 (FPC3 pin 10) through R11 33 R |
+
+J4 sits at the bottom notch of the board, the opening points into the notch.
+GPIO2 is in the 3.3 V domain (VDDPST_1). GPIO45-48 on FPC3 were not used: they are
+supplied from ESP_LDO_VO4 like the SD card and can be switched to 1.8 V.
+The level shifter to 5 V is on the keypad. Six GND stitching vias under J4 / R11
+were removed, the board text was moved up and reads "Rev 2b".
 
 ## Termination
 
@@ -145,28 +165,28 @@ SMD pads (1.5 mm), labelled with the net name on the silkscreen:
 ## Manufacturing
 
 The current Gerber and drill files are in the zip
-`production/JC8012P4A1C_I_W_Y_CAN_gerber.zip` (ready for upload), the BOM
-in `production/JC8012P4A1C_I_W_Y_CAN_bom.csv`. Make them again after changes
+`production/JC8012P4A1C_I_W_Y_CAN_2b_gerber.zip` (ready for upload), the BOM
+in `production/JC8012P4A1C_I_W_Y_CAN_2b_bom.csv`. Make them again after changes
 to the board: in KiCad PCB editor → File → Fabrication Outputs → Gerbers and
 Drill Files, or from the command line:
 
 ```sh
-kicad-cli pcb export gerbers -o production/gerber -l F.Cu,In1.Cu,In2.Cu,In3.Cu,In4.Cu,B.Cu,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,F.Mask,B.Mask,Edge.Cuts --subtract-soldermask --no-x2 --no-netlist --check-zones JC8012P4A1C_I_W_Y_CAN.kicad_pcb
-kicad-cli pcb export drill -o production/gerber/ --format excellon --excellon-units mm --excellon-separate-th JC8012P4A1C_I_W_Y_CAN.kicad_pcb
+kicad-cli pcb export gerbers -o production/gerber -l F.Cu,In1.Cu,In2.Cu,In3.Cu,In4.Cu,B.Cu,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,F.Mask,B.Mask,Edge.Cuts --subtract-soldermask --no-x2 --no-netlist --check-zones JC8012P4A1C_I_W_Y_CAN_2b.kicad_pcb
+kicad-cli pcb export drill -o production/gerber/ --format excellon --excellon-units mm --excellon-separate-th JC8012P4A1C_I_W_Y_CAN_2b.kicad_pcb
 ```
 
 Zip the content of `production/gerber` (the folder itself is not in the
-repository) to `production/JC8012P4A1C_I_W_Y_CAN_gerber.zip` and upload it (e.g. JLCPCB:
+repository) to `production/JC8012P4A1C_I_W_Y_CAN_2b_gerber.zip` and upload it (e.g. JLCPCB:
 6 layers, 1.6 mm, via covering "Epoxy Filled & Capped").
 
 Interactive HTML BOM:
 
 ```sh
-python generate_interactive_bom.py --no-browser --dest-dir production --name-format "%f_ibom" --include-tracks --include-nets --highlight-pin1 all --checkboxes "Gelötet,Kontrolliert" --mark-when-checked "Gelötet" --show-fields "Value,Footprint,MPN" --group-fields "Value,Footprint,MPN" --extra-fields "MPN" --dnp-field kicad_dnp --bom-view left-right --layer-view F --show-fabrication JC8012P4A1C_I_W_Y_CAN.kicad_pcb
+python generate_interactive_bom.py --no-browser --dest-dir production --name-format "%f_ibom" --include-tracks --include-nets --highlight-pin1 all --checkboxes "Gelötet,Kontrolliert" --mark-when-checked "Gelötet" --show-fields "Value,Footprint,MPN" --group-fields "Value,Footprint,MPN" --extra-fields "MPN" --dnp-field kicad_dnp --bom-view left-right --layer-view F --show-fabrication JC8012P4A1C_I_W_Y_CAN_2b.kicad_pcb
 ```
 
 BOM export:
 
 ```sh
-kicad-cli sch export bom -o production/JC8012P4A1C_I_W_Y_CAN_bom.csv --fields "Reference,QUANTITY,Value,Manufacturer,MPN,Footprint,DNP" --labels "Reference,Qty,Value,Manufacturer,MPN,Footprint,DNP" --group-by "Value,Footprint,MPN,Manufacturer,DNP" JC8012P4A1C_I_W_Y_CAN.kicad_sch
+kicad-cli sch export bom -o production/JC8012P4A1C_I_W_Y_CAN_2b_bom.csv --fields "Reference,QUANTITY,Value,Manufacturer,MPN,Footprint,DNP" --labels "Reference,Qty,Value,Manufacturer,MPN,Footprint,DNP" --group-by "Value,Footprint,MPN,Manufacturer,DNP" JC8012P4A1C_I_W_Y_CAN_2b.kicad_sch
 ```
