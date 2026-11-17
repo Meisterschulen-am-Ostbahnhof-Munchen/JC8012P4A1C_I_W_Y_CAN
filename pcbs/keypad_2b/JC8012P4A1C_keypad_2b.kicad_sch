@@ -9,7 +9,7 @@
 		(date "2026-11-11")
 		(rev "A")
 		(company "Meisterschulen am Ostbahnhof München")
-		(comment 1 "Blatt 1 / 3: Deckblatt & Dokumentenübersicht")
+		(comment 1 "Blatt 1 / 4: Deckblatt & Dokumentenübersicht")
 		(comment 2 "Fachschule für Mechatronik- & Elektrotechnik")
 	)
 	(lib_symbols)
@@ -484,6 +484,53 @@
 			(project "JC8012P4A1C_keypad_2b"
 				(path "/3d717ebe-2c48-4d74-a932-f01128cae071"
 					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 122.6 138)
+		(size 44 22)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e3000000-0000-0000-0000-000000000003")
+		(property "Sheetname" "Beleuchtung"
+			(at 125.14 143.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "keypad_backlight.kicad_sch"
+			(at 125.14 150.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "JC8012P4A1C_keypad_2b"
+				(path "/3d717ebe-2c48-4d74-a932-f01128cae071"
+					(page "4")
 				)
 			)
 		)

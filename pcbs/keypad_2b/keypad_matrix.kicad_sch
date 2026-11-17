@@ -9,7 +9,7 @@
 		(date "2026-11-11")
 		(rev "A")
 		(company "Meisterschulen am Ostbahnhof München")
-		(comment 1 "Blatt 3 / 3: Tastenmatrix & FFC-Anschluss")
+		(comment 1 "Blatt 3 / 4: Tastenmatrix & FFC-Anschluss")
 		(comment 2 "Fachschule für Mechatronik- & Elektrotechnik")
 	)
 	(lib_symbols
