@@ -94,7 +94,7 @@ interactive BOM [production/JC8012P4A1C_keypad_2b_ibom.html](production/JC8012P4
 
 | Ref | Part |
 |---|---|
-| S1-S12, D1-D12, H1-H4, J1 | as variant 2 |
+| S1-S12, D1-D12, H1-H4, J1 | as variant 2 (spacer pads as copper ring 4.2-6.0 mm, 0.25 mm free at the non-plated hole) |
 | LED1-LED12 | Würth WL-ICLED 1312121320437 (2121, RGB, 12 bit) |
 | LED13-LED18 | Würth WL-ICLED 1313210530000 (side view 3210, RGB) |
 | J2 | Würth WR-WTB 653103131822 |
