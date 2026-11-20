@@ -197,3 +197,65 @@ with open(os.path.join(HERE, "folika_keypad_12_2b.dxf"), "w", newline="\n") as f
     f.write("".join(ents))
     f.write("0\nENDSEC\n0\nEOF\n")
 print("ok", len(ents), "DXF entities")
+
+
+# ---------------- print file for Folika (foil only, CorelDraw friendly) ----------------
+# One plain page 1:1: print image with 2 mm bleed and the cut line (magenta hairline), no notes.
+# No embedded PDF page, no fonts: labels and logo are curves. Written as SVG and PDF.
+import re
+PW, PH = W + 10, H + 10          # page = foil + 5 mm margin each side
+PX, PY = PW / 2, PH / 2
+pd = pymupdf.open()
+pp = pd.new_page(width=PW * MM, height=PH * MM)
+
+
+def pfill(geom, fill=None, color=None, width=0.0):
+    sh = pp.new_shape()
+    for ring in poly_paths(geom):
+        sh.draw_polyline([P(x, y, PX, PY) for x, y in ring])
+    sh.finish(fill=fill, color=color, width=width * MM if width else 0, closePath=True, even_odd=True)
+    sh.commit()
+
+
+pfill(rrect(-W / 2 - 2, -H / 2 - 2, W / 2 + 2, H / 2 + 2, 0.01), fill=GREY_BG)
+for (k, frame, inner, (wx, wy)) in fields:
+    pfill(frame, fill=GREY_FRAME)
+    pfill(inner, fill=k[3])
+    sh = pp.new_shape()
+    sh.draw_circle(P(wx, wy, PX, PY), WIN_D / 2 * MM)
+    sh.finish(fill=(1, 1, 1), color=None, width=0)
+    sh.commit()
+    tw = pymupdf.get_text_length(k[0], fontname="hebo", fontsize=20)
+    c = P(k[1], k[2], PX, PY)
+    pp.insert_text(pymupdf.Point(c.x - tw / 2, c.y + 7.0), k[0], fontsize=20, fontname="hebo", color=TXT)
+# logo: redraw the vector paths of the original foil (no embedded page)
+dx, dy = (PX - FX) * MM, (PY - FY) * MM
+for dr in src[0].get_drawings():
+    if not dr["rect"].intersects(logo) or dr["rect"].width > 100:
+        continue
+    sh = pp.new_shape()
+    for it in dr["items"]:
+        q = [a + (dx, dy) if isinstance(a, pymupdf.Point) else a for a in it[1:]]
+        if it[0] == "l":
+            sh.draw_line(q[0], q[1])
+        elif it[0] == "c":
+            sh.draw_bezier(*q[:4])
+        elif it[0] == "re":
+            sh.draw_rect(pymupdf.Rect(q[0]) + (dx, dy, dx, dy))
+        elif it[0] == "qu":
+            sh.draw_quad(pymupdf.Quad(q[0]) * pymupdf.Matrix(1, 0, 0, 1, dx, dy))
+    sh.finish(fill=dr.get("fill"), color=dr.get("color"), width=dr.get("width") or 0,
+              closePath=dr.get("closePath", True), even_odd=dr.get("even_odd", False))
+    sh.commit()
+pfill(rrect(-W / 2, -H / 2, W / 2, H / 2, R), color=MAG, width=0.1)
+svg = pp.get_svg_image(text_as_path=True)
+glyphs = dict(re.findall(r'<path id="([^"]+)" d="([^"]+)"/>', svg))
+svg = re.sub(r'<use data-text="[^"]*" xlink:href="#([^"]+)" transform="([^"]+)"([^>]*)/>',
+             lambda m: '<path transform="%s" d="%s"%s/>' % (m.group(2), glyphs[m.group(1)], m.group(3)), svg)
+svg = re.sub(r"<defs>.*?</defs>\n?", "", svg, flags=re.S)
+svg = re.sub(r'width="[^"]+" height="[^"]+"', 'width="%gmm" height="%gmm"' % (PW, PH), svg, count=1)
+base = os.path.join(HERE, "folika_keypad_12_2b_print")
+open(base + ".svg", "w", encoding="utf-8", newline="\n").write(svg)
+out = pymupdf.open("pdf", pymupdf.open(base + ".svg").convert_to_pdf())
+out.save(base + ".pdf", garbage=4, deflate=True)
+print("ok print file", PW, "x", PH, "mm")

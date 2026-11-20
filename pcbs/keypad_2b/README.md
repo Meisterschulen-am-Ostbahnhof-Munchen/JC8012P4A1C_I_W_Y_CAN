@@ -71,6 +71,12 @@ Drawing for Folika (1:1, A4) and DXF:
 [docs/folika_keypad_12_2b.dxf](docs/folika_keypad_12_2b.dxf),
 made by `docs/make_folika_2b.py` (PyMuPDF + shapely).
 
+Print file for Folika, foil only (no notes): print image with 2 mm bleed and the
+cut line as a magenta hairline, 1:1 on a 58 x 160 mm page. Labels and logo are
+curves, no fonts and no embedded PDF page, so CorelDraw imports it directly:
+[docs/folika_keypad_12_2b_print.svg](docs/folika_keypad_12_2b_print.svg),
+[docs/folika_keypad_12_2b_print.pdf](docs/folika_keypad_12_2b_print.pdf).
+
 - Plexiglass (glass clear): additional pocket 3 x 3 mm for every window LED at the outer
   top corner of the key pocket (merged with the diode notch, no thin webs) and
   6 pockets 3.8 x 1.85 mm in the centre strip for the side views.
