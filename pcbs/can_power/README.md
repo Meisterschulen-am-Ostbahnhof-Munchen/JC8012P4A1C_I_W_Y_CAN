@@ -39,13 +39,36 @@ adapter cable 481595 (D-Sub 9 male to In-Cab CPC-9 female).
 
 CAN_L (1/2) and CAN_H (4/7) are connected on the board to loop the bus through.
 
+**Pin numbering:** J1 is numbered like the IDC socket 61201023021: pin 1 and
+all odd pins are in the upper row (away from the PCB, pin tips away from the
+body of J1), the even pins in the lower row. Pin 1 is at the end next to R8
+(silkscreen line next to the pad). The Würth datasheet of 610110249121 numbers
+the two rows the other way round (pin 1 in the lower row); with that numbering
+every position of the IDC socket meets the neighbour pin of the other row
+(1↔2, 3↔4, ...). The footprint therefore deviates from the datasheet on
+purpose (since Rev B).
+
 **Polarisation:** J1 has no shroud (an 8 mm high part is the maximum under
 the cover, a box header with IDC socket would be too high). To prevent the
-IDC socket from being plugged in turned by 180°, cut off pin 10 of J1 and
-close position 10 of the IDC socket with a coding plug. Pin 10 is marked
-"cut" on the silkscreen. Pins 9 and 10 are
-not used. Plugged in turned, the bus TBC_PWR and ECU_PWR (12 V) would end up
-on the board GND and CAN_L.
+IDC socket from being plugged in turned by 180°, cut off pin 10 of J1 (lower
+row, end away from R8, marked "cut" on the silkscreen) and close position 10
+of the IDC socket with a coding plug. Pins 9 and 10 are not used. Plugged in
+turned, ECU_PWR (12 V) would end up on CAN_L and the board GND would stay
+open.
+
+**Boards Rev A (silkscreen "Rev A  2026-10"):** the pad rows of J1 are swapped
+(footprint as in the Würth datasheet), a ribbon cable cannot be plugged 1:1.
+Workaround cable: separate the ribbon at the J1 end for about 3 cm, cross the
+wires in pairs and press them into the IDC socket one by one:
+
+| IDC position | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| ribbon wire | 2 | 1 | 4 | 3 | 6 | 5 | 8 | 7 | – (coding plug) | 9 |
+
+Cut off the pin marked "cut" on Rev A (upper row, end away from R8) and plug
+the socket with its pin 1 mark on top, position 1 at the R8 end. Before the
+first power-up check with a continuity tester: D-Sub 6 to TP2 (GND), D-Sub 9
+to ECU_PWR_IN (F1).
 
 ## Mechanics
 
